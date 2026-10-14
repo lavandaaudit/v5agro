@@ -161,7 +161,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     updateLeasingCalc();
 });
 
-
 // ==============================================================
 // 3. CLOCK & TIMER
 // ==============================================================
@@ -2554,7 +2553,6 @@ function renderEventLog() {
     `).join('');
 }
 
-
 // ==============================================================
 // 🎯 v5.0 — РОЗШИРЕНА АНАЛІТИКА СИТУАЦІЙНОГО ЦЕНТРУ
 // 8 модулів, які перетворюють статичний "знімок" на дієвий аналітичний хаб
@@ -2572,7 +2570,6 @@ function renderEventLog() {
 //   Module 8 — AI Recommendations (rule-based, пріоритети High/Mid/Low)
 //
 // ==============================================================
-
 
 // ---- Допоміжні функції ----
 function safeNum(v, def = 0) {
@@ -2737,7 +2734,6 @@ function computeProductionRiskIndex() {
     });
 }
 
-
 // ==============================================================
 // MODULE 2: ЕКОНОМІЧНИЙ КАЛЬКУЛЯТОР АГРАРІЯ
 // ==============================================================
@@ -2824,7 +2820,6 @@ function computeAgriEconomy() {
     setText('econ-payback-sub', paybackSubText);
 }
 
-
 // ==============================================================
 // MODULE 6: WATERFALL ДЕКОМПОЗИЦІЯ АГРО-ІНДЕКСУ
 // ==============================================================
@@ -2872,7 +2867,6 @@ function renderWaterfallChart(comps, composite) {
 
     // The dynamic part renders as flex items via CSS `display: contents` wrapper
 }
-
 
 // ==============================================================
 // MODULE 8: AI-РЕКОМЕНДАЦІЇ (RULE-BASED)
@@ -3079,371 +3073,6 @@ function generateAIRecommendations() {
     `).join('');
 }
 
-
-// ==============================================================
-// LIVE-ГРАФІКИ СТАНУ СИСТЕМИ (Chart.js)
-// ==============================================================
-// 6 графіків для відстеження змін системи в реальному часі:
-//   1. Динаміка агро-індексу (live-сесія, до 60 точок / 1 год)
-//   2. Динаміка ризику врожаю (live-сесія)
-//   3. 8 компонентів агро-індексу (бар-чарт, live snapshot)
-//   4. 5 ризик-факторів врожаю (бар-чарт, live snapshot)
-//   5. Поточні метрики (doughnut: T, RH, ґрунт, вітер)
-//   6. USD/UAH за 30 днів (НБУ реальна історія)
-// ==============================================================
-
-let _liveCharts = {
-    indexTrend: null,
-    riskTrend: null,
-    components: null,
-    riskComponents: null,
-    metrics: null,
-    usdHistory: null,
-};
-let _liveHistory = {
-    index: [],   // {ts, val}
-    risk: [],    // {ts, val}
-};
-const LIVE_HISTORY_MAX = 60; // 60 точок × 60 сек = 1 година
-
-function initLiveCharts() {
-    if (typeof Chart === 'undefined') {
-        console.warn('[charts] Chart.js not loaded');
-        return;
-    }
-
-    Chart.defaults.color = 'rgba(255,255,255,0.7)';
-    Chart.defaults.borderColor = 'rgba(255,255,255,0.06)';
-    Chart.defaults.font.family = "'Inter', sans-serif";
-    Chart.defaults.font.size = 10;
-
-    // Chart 1: Agro-Index Trend
-    const ctx1 = document.getElementById('chart-index-trend');
-    if (ctx1) {
-        _liveCharts.indexTrend = new Chart(ctx1, {
-            type: 'line',
-            data: {
-                labels: [],
-                datasets: [{
-                    label: 'Агро-індекс',
-                    data: [],
-                    borderColor: '#00ff95',
-                    backgroundColor: 'rgba(0, 255, 149, 0.12)',
-                    borderWidth: 2,
-                    fill: true,
-                    tension: 0.35,
-                    pointRadius: 0,
-                    pointHoverRadius: 4,
-                    pointHoverBackgroundColor: '#00ff95',
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                animation: { duration: 400 },
-                plugins: { legend: { display: false } },
-                scales: {
-                    y: { min: 0, max: 100, grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { stepSize: 25 } },
-                    x: { grid: { display: false }, ticks: { maxTicksLimit: 6, maxRotation: 0 } }
-                }
-            }
-        });
-    }
-
-    // Chart 2: Risk Index Trend
-    const ctx2 = document.getElementById('chart-risk-trend');
-    if (ctx2) {
-        _liveCharts.riskTrend = new Chart(ctx2, {
-            type: 'line',
-            data: {
-                labels: [],
-                datasets: [{
-                    label: 'Ризик врожаю',
-                    data: [],
-                    borderColor: '#ef4444',
-                    backgroundColor: 'rgba(239, 68, 68, 0.12)',
-                    borderWidth: 2,
-                    fill: true,
-                    tension: 0.35,
-                    pointRadius: 0,
-                    pointHoverRadius: 4,
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                animation: { duration: 400 },
-                plugins: { legend: { display: false } },
-                scales: {
-                    y: { min: 0, max: 100, grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { stepSize: 25 } },
-                    x: { grid: { display: false }, ticks: { maxTicksLimit: 6, maxRotation: 0 } }
-                }
-            }
-        });
-    }
-
-    // Chart 3: 8 Components bar chart
-    const ctx3 = document.getElementById('chart-components');
-    if (ctx3) {
-        _liveCharts.components = new Chart(ctx3, {
-            type: 'bar',
-            data: {
-                labels: ['Клімат', 'Ґрунт', 'Радіація', 'Повітря', 'Річки', 'Валюта', 'Макро', 'Вегетація'],
-                datasets: [{
-                    label: 'Значення (0-100)',
-                    data: [0, 0, 0, 0, 0, 0, 0, 0],
-                    backgroundColor: [],
-                    borderWidth: 0,
-                    borderRadius: 4,
-                    barPercentage: 0.75,
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                animation: { duration: 600 },
-                plugins: { legend: { display: false } },
-                scales: {
-                    y: { min: 0, max: 100, grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { stepSize: 25 } },
-                    x: { grid: { display: false }, ticks: { font: { size: 9 } } }
-                }
-            }
-        });
-    }
-
-    // Chart 4: 5 Risk components
-    const ctx4 = document.getElementById('chart-risk-components');
-    if (ctx4) {
-        _liveCharts.riskComponents = new Chart(ctx4, {
-            type: 'bar',
-            data: {
-                labels: ['❄️ Заморозки', '🥵 Посуха', '🌊 Повені', '🔥 Спека', '💱 Валюта'],
-                datasets: [{
-                    label: 'Ризик (0-100%)',
-                    data: [0, 0, 0, 0, 0],
-                    backgroundColor: [],
-                    borderWidth: 0,
-                    borderRadius: 4,
-                    barPercentage: 0.75,
-                }]
-            },
-            options: {
-                indexAxis: 'y',
-                responsive: true,
-                maintainAspectRatio: false,
-                animation: { duration: 600 },
-                plugins: { legend: { display: false } },
-                scales: {
-                    x: { min: 0, max: 100, grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { stepSize: 25 } },
-                    y: { grid: { display: false }, ticks: { font: { size: 10 } } }
-                }
-            }
-        });
-    }
-
-    // Chart 5: Live metrics doughnut
-    const ctx5 = document.getElementById('chart-metrics-doughnut');
-    if (ctx5) {
-        _liveCharts.metrics = new Chart(ctx5, {
-            type: 'doughnut',
-            data: {
-                labels: ['Температура °C', 'Вологість %', 'Вологість ґрунту %', 'Вітер км/год'],
-                datasets: [{
-                    data: [1, 1, 1, 1],
-                    backgroundColor: ['#ef4444', '#38bdf8', '#10b981', '#f59e0b'],
-                    borderWidth: 0,
-                    hoverOffset: 8,
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                animation: { duration: 600 },
-                cutout: '60%',
-                plugins: { legend: { display: false } }
-            }
-        });
-    }
-
-    // Chart 6: USD/UAH history
-    const ctx6 = document.getElementById('chart-usd-history');
-    if (ctx6) {
-        _liveCharts.usdHistory = new Chart(ctx6, {
-            type: 'line',
-            data: {
-                labels: [],
-                datasets: [{
-                    label: 'USD/UAH',
-                    data: [],
-                    borderColor: '#38bdf8',
-                    backgroundColor: 'rgba(56, 189, 248, 0.1)',
-                    borderWidth: 2,
-                    fill: true,
-                    tension: 0.3,
-                    pointRadius: 0,
-                    pointHoverRadius: 4,
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                animation: { duration: 400 },
-                plugins: { legend: { display: false } },
-                scales: {
-                    y: { grid: { color: 'rgba(255,255,255,0.04)' } },
-                    x: { grid: { display: false }, ticks: { maxTicksLimit: 6, maxRotation: 0 } }
-                }
-            }
-        });
-    }
-
-    console.log('[v5] Live charts initialized.');
-}
-
-function colorByScore(score) {
-    if (score == null) return 'rgba(255,255,255,0.1)';
-    if (score >= 65) return '#00ff95';
-    if (score >= 45) return '#f59e0b';
-    return '#ef4444';
-}
-
-function colorByRisk(risk) {
-    if (risk == null) return 'rgba(255,255,255,0.1)';
-    if (risk >= 60) return '#ef4444';
-    if (risk >= 35) return '#f59e0b';
-    return '#00ff95';
-}
-
-function updateLiveCharts() {
-    const now = new Date();
-    const tsLabel = now.toLocaleTimeString('uk-UA', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-    const composite = globalState._lastComposite;
-    const comps = globalState._lastComps;
-    const riskIdx = globalState.riskIndex;
-    const s = globalState.lastSensorData || {};
-    const timeEl = document.getElementById('charts-update-time');
-    if (timeEl) timeEl.textContent = `Оновлено: ${now.toLocaleTimeString('uk-UA')}`;
-
-    // === Chart 1: Agro-Index Trend ===
-    if (_liveCharts.indexTrend) {
-        if (composite != null) {
-            _liveHistory.index.push({ ts: tsLabel, val: composite });
-            if (_liveHistory.index.length > LIVE_HISTORY_MAX) _liveHistory.index.shift();
-        }
-        _liveCharts.indexTrend.data.labels = _liveHistory.index.map(p => p.ts);
-        _liveCharts.indexTrend.data.datasets[0].data = _liveHistory.index.map(p => p.val);
-        _liveCharts.indexTrend.update('none');
-
-        // Stats badges
-        const vals = _liveHistory.index.map(p => p.val);
-        const setText = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
-        setText('chart-index-now', composite != null ? composite : '—');
-        setText('chart-index-min', vals.length ? Math.min(...vals) : '—');
-        setText('chart-index-avg', vals.length ? Math.round(vals.reduce((a, b) => a + b, 0) / vals.length) : '—');
-        setText('chart-index-max', vals.length ? Math.max(...vals) : '—');
-    }
-
-    // === Chart 2: Risk Index Trend ===
-    if (_liveCharts.riskTrend) {
-        const riskVal = riskIdx?.composite;
-        if (riskVal != null) {
-            _liveHistory.risk.push({ ts: tsLabel, val: riskVal });
-            if (_liveHistory.risk.length > LIVE_HISTORY_MAX) _liveHistory.risk.shift();
-        }
-        _liveCharts.riskTrend.data.labels = _liveHistory.risk.map(p => p.ts);
-        _liveCharts.riskTrend.data.datasets[0].data = _liveHistory.risk.map(p => p.val);
-        _liveCharts.riskTrend.update('none');
-
-        const setText = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
-        setText('chart-risk-now', riskVal != null ? `${riskVal}%` : '—');
-        setText('chart-risk-current', riskVal != null ? riskVal : '—');
-
-        // Trend arrow
-        const riskArr = _liveHistory.risk.map(p => p.val);
-        if (riskArr.length >= 2) {
-            const last = riskArr[riskArr.length - 1];
-            const prev = riskArr[riskArr.length - 2];
-            const diff = last - prev;
-            const arrow = diff > 0 ? '▲ зростає' : diff < 0 ? '▼ спадає' : '→ стабільно';
-            setText('chart-risk-trend-arrow', `${arrow} (${diff > 0 ? '+' : ''}${diff})`);
-        } else {
-            setText('chart-risk-trend-arrow', '—');
-        }
-    }
-
-    // === Chart 3: 8 Components bar ===
-    if (_liveCharts.components && comps) {
-        const labels = comps.map(c => c.label);
-        const values = comps.map(c => c.score ?? 0);
-        const colors = comps.map(c => colorByScore(c.score));
-        _liveCharts.components.data.labels = labels;
-        _liveCharts.components.data.datasets[0].data = values;
-        _liveCharts.components.data.datasets[0].backgroundColor = colors;
-        _liveCharts.components.update();
-    }
-
-    // === Chart 4: 5 Risk components ===
-    if (_liveCharts.riskComponents && riskIdx) {
-        const labels = riskIdx.comps.map(c => `${c.icon} ${c.label}`);
-        const values = riskIdx.comps.map(c => c.risk);
-        const colors = riskIdx.comps.map(c => colorByRisk(c.risk));
-        _liveCharts.riskComponents.data.labels = labels;
-        _liveCharts.riskComponents.data.datasets[0].data = values;
-        _liveCharts.riskComponents.data.datasets[0].backgroundColor = colors;
-        _liveCharts.riskComponents.update();
-    }
-
-    // === Chart 5: Live metrics doughnut ===
-    if (_liveCharts.metrics) {
-        const temp = s.temperature ?? 0;
-        const hum = s.humidity ?? 0;
-        const soil = s.soilMoisture != null ? s.soilMoisture * 100 : 0;
-        const wind = s.windSpeed ?? 0;
-        _liveCharts.metrics.data.datasets[0].data = [Math.max(1, temp), Math.max(1, hum), Math.max(1, soil), Math.max(1, wind)];
-        _liveCharts.metrics.update();
-
-        // Legend
-        const legendEl = document.getElementById('chart-metrics-legend');
-        if (legendEl) {
-            const items = [
-                { color: '#ef4444', label: 'T', val: temp, unit: '°C' },
-                { color: '#38bdf8', label: 'RH', val: hum, unit: '%' },
-                { color: '#10b981', label: 'Ґрунт', val: soil, unit: '%' },
-                { color: '#f59e0b', label: 'Вітер', val: wind, unit: 'км/год' }
-            ];
-            legendEl.innerHTML = items.map(it => `
-                <span class="metrics-leg-item">
-                    <span class="metrics-leg-dot" style="background:${it.color}"></span>
-                    <span class="metrics-leg-label">${it.label}</span>
-                    <span class="metrics-leg-val">${it.val != null ? (typeof it.val === 'number' ? it.val.toFixed(1) : it.val) : '—'}${it.unit}</span>
-                </span>
-            `).join('');
-        }
-    }
-
-    // === Chart 6: USD/UAH history ===
-    if (_liveCharts.usdHistory) {
-        const hs = globalState.nbuHistorySeries?.USD;
-        const usd = globalState.nbuRates?.USD;
-        if (Array.isArray(hs) && hs.length) {
-            // Generate labels (days ago)
-            const labels = hs.map((_, i) => {
-                const daysAgo = hs.length - 1 - i;
-                if (daysAgo === 0) return 'сьогодні';
-                if (daysAgo === 1) return 'вчора';
-                return `${daysAgo}д`;
-            });
-            _liveCharts.usdHistory.data.labels = labels;
-            _liveCharts.usdHistory.data.datasets[0].data = hs;
-            _liveCharts.usdHistory.update('none');
-
-            const nowEl = document.getElementById('chart-usd-now');
-            if (nowEl) nowEl.textContent = usd != null ? `${usd.toFixed(2)} ₴` : '—';
-        }
-    }
-}
-
-
 // ==============================================================
 // ОСНОВНИЙ ОРКЕСТРАТОР — викликається після кожного оновлення даних
 // ==============================================================
@@ -3461,13 +3090,7 @@ function refreshSituationalCenterV5() {
 
     // Модуль 8: AI Recommendations
     generateAIRecommendations();
-
-    // Live-графіки стану системи (оновлюються синхронно)
-    try { updateLiveCharts(); } catch (e) {
-        console.warn('[v5 charts]', e);
-    }
 }
-
 
 // ==============================================================
 // ПАТЧ: інтегрувати нову аналітику в існуючий computeAndDisplayAgroIndex
@@ -3496,15 +3119,11 @@ function refreshSituationalCenterV5() {
     console.log('[v5] Situational Center v5.0 modules hooked in.');
 })();
 
-
 // ==============================================================
 // ЗАПУСК при ініціалізації (після того, як DOM готовий і початкові дані є)
 // ==============================================================
 setTimeout(() => {
     console.log('[v5] Initializing Situational Center v5.0...');
-
-    // Ініціалізуємо графіки стану
-    try { initLiveCharts(); } catch (e) { console.warn('[v5 charts init]', e); }
 
     // Перший розрахунок після 4 секунд (дати час початковим fetch-ам)
     setTimeout(() => {
