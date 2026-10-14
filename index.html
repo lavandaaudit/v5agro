@@ -434,108 +434,87 @@
                 </div>
             </div>
 
-            <!-- Row C: Прогностична аналітика 7 днів -->
-            <div class="panel-box sit-forecast-panel">
+            <!-- Row C: LIVE-ГРАФІКИ СТАНУ СИСТЕМИ (нова замість видалених модулів) -->
+            <div class="panel-box sit-charts-panel">
                 <div class="panel-header">
-                    <span class="icon-sub">📅</span>
+                    <span class="icon-sub">📈</span>
                     <div>
-                        <h3>ПРОГНОСТИЧНА АНАЛІТИКА · 7 ДНІВ</h3>
-                        <span class="header-micro-sub">Open-Meteo forecast · оптимальні вікна польових робіт · накопичувальний GDD · прогноз вологості ґрунту</span>
+                        <h3>LIVE-ГРАФІКИ СТАНУ СИСТЕМИ</h3>
+                        <span class="header-micro-sub">Динаміка агро-індексу · ризик врожаю · ключові метрики в реальному часі · Chart.js · оновлюється щохвилини</span>
                     </div>
+                    <span class="badge-status-sat" style="margin-left:auto" id="charts-update-time">—</span>
                 </div>
-                <div class="forecast-timeline" id="forecast-timeline">
-                    <div class="forecast-loading">⏳ Завантаження 7-денного прогнозу Open-Meteo…</div>
-                </div>
-                <div class="forecast-windows" id="forecast-windows">
-                    <div class="fw-card">
-                        <div class="fw-icon">🌱</div>
-                        <div class="fw-title">Сівба ярих</div>
-                        <div class="fw-status" id="fw-sow">—</div>
-                        <div class="fw-desc" id="fw-sow-desc">T ґрунту ≥ +6°C · без заморозків 5 днів</div>
+                <div class="charts-grid">
+                    <!-- Chart 1: Agro-Index Trend (live session) -->
+                    <div class="chart-card chart-large">
+                        <div class="chart-header">
+                            <span class="chart-title">📊 Динаміка агро-індексу (live-сесія)</span>
+                            <span class="chart-badge" id="chart-index-now">—</span>
+                        </div>
+                        <div class="chart-canvas-wrap">
+                            <canvas id="chart-index-trend"></canvas>
+                        </div>
+                        <div class="chart-meta">
+                            <span class="chart-meta-item"><strong>min:</strong> <span id="chart-index-min">—</span></span>
+                            <span class="chart-meta-item"><strong>avg:</strong> <span id="chart-index-avg">—</span></span>
+                            <span class="chart-meta-item"><strong>max:</strong> <span id="chart-index-max">—</span></span>
+                        </div>
                     </div>
-                    <div class="fw-card">
-                        <div class="fw-icon">🛡️</div>
-                        <div class="fw-title">Внесення ЗЗР</div>
-                        <div class="fw-status" id="fw-spray">—</div>
-                        <div class="fw-desc" id="fw-spray-desc">вітер < 14 км/год · без опадів 12 год</div>
-                    </div>
-                    <div class="fw-card">
-                        <div class="fw-icon">🌾</div>
-                        <div class="fw-title">Збирання</div>
-                        <div class="fw-status" id="fw-harvest">—</div>
-                        <div class="fw-desc" id="fw-harvest-desc">вологість зерна ≤ 14% · без опадів 24 год</div>
-                    </div>
-                    <div class="fw-card">
-                        <div class="fw-icon">💧</div>
-                        <div class="fw-title">Полив</div>
-                        <div class="fw-status" id="fw-irrigate">—</div>
-                        <div class="fw-desc" id="fw-irrigate-desc">ET₀ × 7 днів vs опади → дефіцит води</div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Row D: Regional Heatmap (25 областей) -->
-            <div class="panel-box sit-regional-panel">
-                <div class="panel-header">
-                    <span class="icon-sub">🗺️</span>
-                    <div>
-                        <h3>ПРОСТОРОВА АНАЛІТИКА · 24 ОБЛАСТІ</h3>
-                        <span class="header-micro-sub">Ранжування регіонів за міні-агро-індексом · Open-Meteo bulk API (клімат + ґрунт + прогноз)</span>
-                    </div>
-                </div>
-                <div class="regional-grid">
-                    <div class="regional-list-block">
-                        <div class="regional-sub-title">🏆 ТОП-5 найкращих</div>
-                        <div class="regional-list" id="reg-top">
-                            <div class="regional-list-loading">⏳ Синхронізація 24 регіонів…</div>
+                    <!-- Chart 2: Risk Index Trend -->
+                    <div class="chart-card chart-large">
+                        <div class="chart-header">
+                            <span class="chart-title">⚠️ Динаміка ризику врожаю (live-сесія)</span>
+                            <span class="chart-badge chart-badge-risk" id="chart-risk-now">—</span>
                         </div>
-                        <div class="regional-sub-title">⚠️ ТОП-5 найгірших</div>
-                        <div class="regional-list" id="reg-bottom">
-                            <div class="regional-list-loading">⏳ Синхронізація 24 регіонів…</div>
+                        <div class="chart-canvas-wrap">
+                            <canvas id="chart-risk-trend"></canvas>
+                        </div>
+                        <div class="chart-meta">
+                            <span class="chart-meta-item"><strong>current:</strong> <span id="chart-risk-current">—</span>%</span>
+                            <span class="chart-meta-item"><strong>trend:</strong> <span id="chart-risk-trend-arrow">—</span></span>
                         </div>
                     </div>
-                    <div class="regional-bars-block">
-                        <div class="regional-sub-title">📊 Усі 24 області (за агро-індексом)</div>
-                        <div class="regional-bars" id="reg-bars"></div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Row E: Historical analytics + Radar -->
-            <div class="sitcenter-row-2col">
-                <!-- Модуль 5: Історична аналітика та аномалії -->
-                <div class="panel-box sit-historical-panel">
-                    <div class="panel-header">
-                        <span class="icon-sub">📉</span>
-                        <div>
-                            <h3>ІСТОРИЧНА АНАЛІТИКА ТА АНОМАЛІЇ</h3>
-                            <span class="header-micro-sub">7-денний тренд агро-індексу (localStorage) · відхилення від кліматичної норми</span>
+                    <!-- Chart 3: 8 Component Bars (live snapshot) -->
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <span class="chart-title">🎯 8 компонентів агро-індексу</span>
+                        </div>
+                        <div class="chart-canvas-wrap chart-canvas-small">
+                            <canvas id="chart-components"></canvas>
                         </div>
                     </div>
-                    <div class="historical-sparkline-wrap">
-                        <div class="hist-spark-label">Агро-індекс (7 днів):</div>
-                        <svg class="hist-sparkline" id="hist-sparkline" viewBox="0 0 280 60" preserveAspectRatio="none"></svg>
-                        <div class="hist-spark-current" id="hist-current">—</div>
-                    </div>
-                    <div class="historical-anomalies" id="hist-anomalies">
-                        <div class="hist-anom-loading">⏳ Аналіз аномалій…</div>
-                    </div>
-                </div>
 
-                <!-- Модуль 7: Радар 8 компонентів -->
-                <div class="panel-box sit-radar-panel">
-                    <div class="panel-header">
-                        <span class="icon-sub">🎯</span>
-                        <div>
-                            <h3>РАДАР 8 КОМПОНЕНТІВ ІНДЕКСУ</h3>
-                            <span class="header-micro-sub">Порівняння поточного профілю vs еталон сезону (75)</span>
+                    <!-- Chart 4: Risk 5 sub-indices (live snapshot) -->
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <span class="chart-title">🚨 5 ризик-факторів врожаю</span>
+                        </div>
+                        <div class="chart-canvas-wrap chart-canvas-small">
+                            <canvas id="chart-risk-components"></canvas>
                         </div>
                     </div>
-                    <div class="radar-wrap">
-                        <svg class="radar-svg" id="radar-svg" viewBox="-130 -130 260 260"></svg>
-                        <div class="radar-legend">
-                            <span class="radar-leg-item"><span class="radar-leg-dot current"></span> Поточний</span>
-                            <span class="radar-leg-item"><span class="radar-leg-dot ideal"></span> Еталон (75)</span>
+
+                    <!-- Chart 5: Live metrics radar-like radar (now in form of doughnut) -->
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <span class="chart-title">🌡️ Поточні метрики (real-time)</span>
+                        </div>
+                        <div class="chart-canvas-wrap chart-canvas-small">
+                            <canvas id="chart-metrics-doughnut"></canvas>
+                        </div>
+                        <div class="chart-legend" id="chart-metrics-legend"></div>
+                    </div>
+
+                    <!-- Chart 6: USD/UAH trend (НБУ real history) -->
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <span class="chart-title">💱 USD/UAH (НБУ, 30 днів)</span>
+                            <span class="chart-badge chart-badge-currency" id="chart-usd-now">—</span>
+                        </div>
+                        <div class="chart-canvas-wrap chart-canvas-small">
+                            <canvas id="chart-usd-history"></canvas>
                         </div>
                     </div>
                 </div>

@@ -2826,402 +2826,6 @@ function computeAgriEconomy() {
 
 
 // ==============================================================
-// MODULE 3: ПРОГНОСТИЧНА АНАЛІТИКА 7 ДНІВ + ОПТИМАЛЬНІ ВІКНА
-// ==============================================================
-// Fetch 7-day forecast з Open-Meteo (daily + hourly для ET₀)
-// Розраховує 4 вікна польових робіт:
-//   - Сівба ярих: T ґрунту ≥ +6°C, без заморозків 5 днів
-//   - Внесення ЗЗР: вітер < 14 км/год, без опадів 12 год
-//   - Збирання: вологість зерна ≤ 14%, без опадів 24 год
-//   - Полив: ET₀ × 7 днів − опади → дефіцит води
-// ==============================================================
-
-async function fetchForecast7d(lat, lng) {
-    try {
-        const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat.toFixed(4)}&longitude=${lng.toFixed(4)}` +
-            `&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,et0_fao_evapotranspiration,wind_speed_10m_max,soil_temperature_6cm_max,soil_moisture_9_to_27cm` +
-            `&forecast_days=7&timezone=auto`;
-        const res = await fetch(url);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const j = await res.json();
-        const d = j.daily || {};
-        const times = d.time || [];
-        const forecast = times.map((t, i) => ({
-            date: t,
-            tmax: d.temperature_2m_max?.[i] ?? null,
-            tmin: d.temperature_2m_min?.[i] ?? null,
-            precip: d.precipitation_sum?.[i] ?? 0,
-            et0: d.et0_fao_evapotranspiration?.[i] ?? 0,
-            windMax: d.wind_speed_10m_max?.[i] ?? null,
-            soilT: d.soil_temperature_6cm_max?.[i] ?? null,
-            soilM: d.soil_moisture_9_to_27cm?.[i] ?? null,
-        }));
-        globalState.forecast7d = forecast;
-        renderForecast7d(forecast);
-        computeProductionRiskIndex();  // пере-розрахунок ризиків з новим прогнозом
-        computeAgriEconomy();
-        computeOptimalWindows(forecast);
-        computeFieldWindows7d(forecast);
-    } catch (e) {
-        console.warn('[FORECAST7d]', e.message);
-        const el = document.getElementById('forecast-timeline');
-        if (el) el.innerHTML = `<div class="forecast-loading">⚠️ Не вдалося завантажити прогноз: ${e.message}</div>`;
-    }
-}
-
-function renderForecast7d(forecast) {
-    const el = document.getElementById('forecast-timeline');
-    if (!el) return;
-    if (!forecast.length) {
-        el.innerHTML = '<div class="forecast-loading">⚠️ Прогноз недоступний</div>';
-        return;
-    }
-
-    // Накопичувальний GDD (база +5°C)
-    let cumGdd = 0;
-    const cards = forecast.map((d, i) => {
-        const { dayName, dateStr } = fmtDaysAhead(i);
-        const tmax = d.tmax ?? null;
-        const tmin = d.tmin ?? null;
-        const tavg = (tmax != null && tmin != null) ? (tmax + tmin) / 2 : null;
-        if (tavg != null) cumGdd += Math.max(0, tavg - 5);
-
-        // Icon
-        let icon = '☀️';
-        if (d.precip > 5) icon = '🌧️';
-        else if (d.precip > 0.5) icon = '⛅';
-        if (tmin != null && tmin < 0) icon = '❄️';
-        else if (tmax != null && tmax > 30) icon = '🔥';
-
-        // Window status (set by computeOptimalWindows below)
-        let cls = 'fc-day-card';
-        const status = d._windowStatus || '';
-        if (status === 'open') cls += ' window-open';
-        else if (status === 'warn') cls += ' window-warn';
-        else if (status === 'block') cls += ' window-block';
-
-        return `
-            <div class="${cls}">
-                <div class="fc-day-name">${dayName}</div>
-                <div class="fc-day-date">${dateStr}</div>
-                <div class="fc-day-icon">${icon}</div>
-                <div class="fc-day-temps">
-                    ${tmax != null ? `<span class="fc-tmax">+${tmax.toFixed(0)}°</span>` : '<span class="fc-tmax">—</span>'}
-                    ${tmin != null ? `<span class="fc-tmin">${tmin.toFixed(0)}°</span>` : '<span class="fc-tmin">—</span>'}
-                </div>
-                <div class="fc-day-precip">${d.precip > 0 ? `💧 ${d.precip.toFixed(1)} мм` : '—'}</div>
-                <div class="fc-day-gdd">GDD: ${Math.round(cumGdd)}</div>
-            </div>
-        `;
-    }).join('');
-
-    el.innerHTML = cards;
-}
-
-// Розраховує оптимальні вікна 4 типів польових робіт
-function computeOptimalWindows(forecast) {
-    if (!forecast.length) return;
-
-    // 1. Сівба ярих: T ґрунту ≥ +6°C, без заморозків 5 днів
-    const sowEl = document.getElementById('fw-sow');
-    const sowDescEl = document.getElementById('fw-sow-desc');
-    const soilTWarm = forecast.filter(d => d.soilT != null && d.soilT >= 6).length;
-    const frostDays = forecast.filter(d => d.tmin != null && d.tmin < 0).length;
-    if (soilTWarm >= 4 && frostDays === 0) {
-        if (sowEl) { sowEl.textContent = 'СПРИЯТЛИВО'; sowEl.className = 'fw-status ok'; }
-        if (sowDescEl) sowDescEl.textContent = `T ґрунту +${(forecast[0].soilT ?? 0).toFixed(1)}°C ≥ +6°C · 0 заморозків за 7 днів`;
-    } else if (soilTWarm >= 2 && frostDays <= 1) {
-        if (sowEl) { sowEl.textContent = 'УВАГА'; sowEl.className = 'fw-status warn'; }
-        if (sowDescEl) sowDescEl.textContent = `T ґрунту задовільна, але ${frostDays} заморозок — ризик для насіння`;
-    } else {
-        if (sowEl) { sowEl.textContent = 'НЕ СПРИЯТЛИВО'; sowEl.className = 'fw-status bad'; }
-        if (sowDescEl) sowDescEl.textContent = `T ґрунту < +6°C або ${frostDays} заморозків — відкладіть сівбу`;
-    }
-
-    // 2. Внесення ЗЗР: вітер < 14 км/год, без опадів
-    const sprayEl = document.getElementById('fw-spray');
-    const sprayDescEl = document.getElementById('fw-spray-desc');
-    const firstDay = forecast[0];
-    if (firstDay.windMax != null && firstDay.windMax < 14 && firstDay.precip < 1) {
-        if (sprayEl) { sprayEl.textContent = 'ДОЗВОЛЕНО'; sprayEl.className = 'fw-status ok'; }
-        if (sprayDescEl) sprayDescEl.textContent = `Вітер ${firstDay.windMax.toFixed(0)} км/год < 14, опади ${firstDay.precip.toFixed(1)} мм — вікно відкрите`;
-    } else if (firstDay.windMax != null && firstDay.windMax < 18) {
-        if (sprayEl) { sprayEl.textContent = 'ОБМЕЖЕНО'; sprayEl.className = 'fw-status warn'; }
-        if (sprayDescEl) sprayDescEl.textContent = `Вітер ${firstDay.windMax.toFixed(0)} км/год або опади ${firstDay.precip.toFixed(1)} мм — перевірте прогноз на 12 год`;
-    } else {
-        if (sprayEl) { sprayEl.textContent = 'ЗАБОРОНЕНО'; sprayEl.className = 'fw-status bad'; }
-        if (sprayDescEl) sprayDescEl.textContent = `Вітер ${firstDay.windMax?.toFixed(0) ?? '—'} км/год ≥ 14 — ризик знесення ЗЗР`;
-    }
-
-    // 3. Збирання: без опадів 24 год, низька вологість зерна
-    const harvestEl = document.getElementById('fw-harvest');
-    const harvestDescEl = document.getElementById('fw-harvest-desc');
-    const rain24h = forecast[0]?.precip ?? 0;
-    const lastSensor = globalState.lastSensorData || {};
-    const soilM = forecast[0]?.soilM ?? lastSensor.soilMoisture ?? null;
-    // Оцінка вологості зерна: емпірично ~ вологість ґрунту × 50
-    const grainMoisture = soilM != null ? Math.round(soilM * 50) : null;
-    if (rain24h < 0.5 && grainMoisture != null && grainMoisture <= 14) {
-        if (harvestEl) { harvestEl.textContent = 'СПРИЯТЛИВО'; harvestEl.className = 'fw-status ok'; }
-        if (harvestDescEl) harvestDescEl.textContent = `Опади ${rain24h.toFixed(1)} мм, вологість зерна ~${grainMoisture}% ≤ 14%`;
-    } else if (rain24h < 2 && grainMoisture != null && grainMoisture <= 18) {
-        if (harvestEl) { harvestEl.textContent = 'УВАГА'; harvestEl.className = 'fw-status warn'; }
-        if (harvestDescEl) harvestDescEl.textContent = `Вологість зерна ~${grainMoisture}% — потрібне досушування`;
-    } else {
-        if (harvestEl) { harvestEl.textContent = 'ВІДКЛАСТИ'; harvestEl.className = 'fw-status bad'; }
-        if (harvestDescEl) harvestDescEl.textContent = `Опади ${rain24h.toFixed(1)} мм або вологість ~${grainMoisture ?? '—'}% — не вписується у вікно`;
-    }
-
-    // 4. Полив: ET₀ × 7 днів − опади → дефіцит
-    const irrigateEl = document.getElementById('fw-irrigate');
-    const irrigateDescEl = document.getElementById('fw-irrigate-desc');
-    const et0Sum = forecast.reduce((a, d) => a + (d.et0 ?? 0), 0);
-    const precipSum = forecast.reduce((a, d) => a + (d.precip ?? 0), 0);
-    const deficit = et0Sum - precipSum;
-    if (deficit > 25) {
-        if (irrigateEl) { irrigateEl.textContent = 'ПОТРІБЕН'; irrigateEl.className = 'fw-status bad'; }
-        if (irrigateDescEl) irrigateDescEl.textContent = `Дефіцит води ${deficit.toFixed(0)} мм за 7 днів (ET₀ ${et0Sum.toFixed(0)} − опади ${precipSum.toFixed(0)})`;
-    } else if (deficit > 10) {
-        if (irrigateEl) { irrigateEl.textContent = 'БАЖАНИЙ'; irrigateEl.className = 'fw-status warn'; }
-        if (irrigateDescEl) irrigateDescEl.textContent = `Помірний дефіцит ${deficit.toFixed(0)} мм — перевірте посівну зону`;
-    } else {
-        if (irrigateEl) { irrigateEl.textContent = 'НЕ ПОТРІБЕН'; irrigateEl.className = 'fw-status ok'; }
-        if (irrigateDescEl) irrigateDescEl.textContent = `Опади ${precipSum.toFixed(0)} мм покривають ET₀ ${et0Sum.toFixed(0)} мм`;
-    }
-}
-
-// Позначаємо статус кожного дня в прогнозі (для підсвічування карток)
-function computeFieldWindows7d(forecast) {
-    forecast.forEach(d => {
-        // Грубо: якщо tmin < 0 або tmax > 32 або precip > 5 — блок
-        if (d.tmin != null && d.tmin < 0) { d._windowStatus = 'block'; return; }
-        if (d.tmax != null && d.tmax > 32) { d._windowStatus = 'block'; return; }
-        if (d.precip > 5) { d._windowStatus = 'block'; return; }
-        if (d.windMax != null && d.windMax > 18) { d._windowStatus = 'warn'; return; }
-        if (d.precip > 1) { d._windowStatus = 'warn'; return; }
-        d._windowStatus = 'open';
-    });
-    renderForecast7d(forecast); // пере-рендер з підсвічуванням
-}
-
-
-// ==============================================================
-// MODULE 4: ПРОСТОРОВА АНАЛІТИКА · 24 ОБЛАСТІ
-// ==============================================================
-// Використовує вже існуючий fetchRegionsTelemetry() + regionTelemetry[code]
-// Рахує міні-агро-індекс для кожної області:
-//   idx = 0.40 × climateScore + 0.30 × soilScore + 0.20 × windScore + 0.10 × ndviScore
-// Рендерить: Top-5 / Bottom-5 + усі 24 області бар-чартом
-// ==============================================================
-
-function computeRegionalIndex() {
-    const rows = [];
-    OBLASTS_DATA.forEach(o => {
-        const t = regionTelemetry[o.code];
-        if (!t) return;
-        const ndvi = SAT_REGIONS[o.code]?.ndvi ?? 0.65;
-
-        // Climate score: T 5-25 оптимально, похололовання/спека — мінус
-        let cs = 50;
-        if (t.temp != null) {
-            if (t.temp >= 5 && t.temp <= 25) cs = 80;
-            else if (t.temp > 30 || t.temp < 2) cs = 20;
-            else if (t.temp > 25 || t.temp < 5) cs = 45;
-        }
-
-        // Soil score: вологість 0.18-0.35 оптимально
-        let ss = 50;
-        if (t.moisture != null) {
-            if (t.moisture >= 0.18 && t.moisture <= 0.35) ss = 85;
-            else if (t.moisture < 0.12) ss = 25;
-            else if (t.moisture > 0.42) ss = 30;
-            else ss = 55;
-        }
-
-        // Wind score: < 14 — ок, > 18 — погано (ризик знесення ЗЗР)
-        let ws = 80;
-        if (t.wind != null) {
-            if (t.wind > 18) ws = 20;
-            else if (t.wind > 14) ws = 40;
-            else if (t.wind > 10) ws = 60;
-        }
-
-        // NDVI score: > 0.7 — щільний покрив
-        const ns = Math.round(Math.min(100, Math.max(0, ndvi * 100)));
-
-        const idx = Math.round(0.40 * cs + 0.30 * ss + 0.20 * ws + 0.10 * ns);
-        rows.push({ ...o, idx, cs, ss, ws, ns, t, ndvi });
-    });
-
-    rows.sort((a, b) => b.idx - a.idx);
-    globalState.regionalRanking = rows;
-
-    // Render Top-5 / Bottom-5
-    const top = rows.slice(0, 5);
-    const bottom = rows.slice(-5).reverse();
-    const renderList = (arr, containerId) => {
-        const el = document.getElementById(containerId);
-        if (!el) return;
-        if (!arr.length) {
-            el.innerHTML = '<div class="regional-list-loading">⏳ Очікування синхронізації…</div>';
-            return;
-        }
-        el.innerHTML = arr.map(r => {
-            const cls = r.idx >= 65 ? 'high' : r.idx >= 45 ? 'mid' : 'low';
-            return `
-                <div class="reg-item">
-                    <span class="reg-emoji">${r.emoji}</span>
-                    <span class="reg-name">${r.name}</span>
-                    <span class="reg-val ${cls}">${r.idx}</span>
-                </div>
-            `;
-        }).join('');
-    };
-    renderList(top, 'reg-top');
-    renderList(bottom, 'reg-bottom');
-
-    // Render all bars
-    const barsEl = document.getElementById('reg-bars');
-    if (barsEl) {
-        barsEl.innerHTML = rows.map(r => {
-            const color = r.idx >= 65 ? '#00ff95' : r.idx >= 45 ? '#f59e0b' : '#ef4444';
-            return `
-                <div class="reg-bar-row">
-                    <span class="reg-bar-name" title="${r.full}">${r.emoji} ${r.name}</span>
-                    <div class="reg-bar-track">
-                        <div class="reg-bar-fill" style="width:${r.idx}%;background:${color}"></div>
-                    </div>
-                    <span class="reg-bar-val">${r.idx}</span>
-                </div>
-            `;
-        }).join('');
-    }
-}
-
-
-// ==============================================================
-// MODULE 5: ІСТОРИЧНА АНАЛІТИКА ТА АНОМАЛІЇ
-// ==============================================================
-// Зберігаємо 7-денний тренд агро-індексу в localStorage
-// Рахуємо аномалії: якщо поточне значення виходить за 2σ від середнього
-// ==============================================================
-
-function saveHistoricalDataPoint(score) {
-    if (score == null || !Number.isFinite(score)) return;
-    try {
-        const KEY = 'agromagaz_history_v1';
-        const today = new Date().toISOString().slice(0, 10);
-        let data = JSON.parse(localStorage.getItem(KEY) || '[]');
-        // Дедуплікація по дню + оновлення
-        data = data.filter(d => d.date !== today);
-        data.push({ date: today, score, ts: Date.now() });
-        // Зберігаємо лише останні 14 днів
-        data = data.slice(-14);
-        localStorage.setItem(KEY, JSON.stringify(data));
-    } catch (e) {
-        console.warn('[HIST] localStorage error', e);
-    }
-}
-
-function renderHistoricalSparkline() {
-    const svg = document.getElementById('hist-sparkline');
-    const currentEl = document.getElementById('hist-current');
-    const anomEl = document.getElementById('hist-anomalies');
-    if (!svg) return;
-
-    let data = [];
-    try {
-        data = JSON.parse(localStorage.getItem('agromagaz_history_v1') || '[]');
-    } catch (e) { /* ignore */ }
-
-    const composite = globalState._lastComposite;
-    if (composite != null) {
-        const today = new Date().toISOString().slice(0, 10);
-        const filtered = data.filter(d => d.date !== today);
-        data = [...filtered, { date: today, score: composite, ts: Date.now() }].slice(-14);
-    }
-
-    if (data.length < 2) {
-        svg.innerHTML = '<text x="140" y="35" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="11" font-family="Inter">Потрібно ≥2 дні даних</text>';
-        if (currentEl) currentEl.textContent = composite != null ? `${composite}/100` : '—';
-        if (anomEl) anomEl.innerHTML = '<div class="hist-anom-loading">Накопичуємо дані (потрібно ≥2 дні)…</div>';
-        return;
-    }
-
-    const W = 280, H = 60;
-    const scores = data.map(d => d.score);
-    const min = Math.min(...scores), max = Math.max(...scores);
-    const range = max - min || 1;
-
-    const points = data.map((d, i) => {
-        const x = (i / (data.length - 1)) * W;
-        const y = H - ((d.score - min) / range) * (H - 10) - 5;
-        return { x, y, score: d.score, date: d.date };
-    });
-
-    const pathD = points.map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' ');
-    const fillD = pathD + ` L ${W} ${H} L 0 ${H} Z`;
-
-    // Середнє (норма)
-    const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
-    const avgY = H - ((avg - min) / range) * (H - 10) - 5;
-
-    // Стандартне відхилення
-    const variance = scores.reduce((a, v) => a + (v - avg) ** 2, 0) / scores.length;
-    const std = Math.sqrt(variance);
-
-    svg.innerHTML = `
-        <path class="spark-fill" d="${fillD}"/>
-        <line class="spark-norm" x1="0" y1="${avgY.toFixed(1)}" x2="${W}" y2="${avgY.toFixed(1)}"/>
-        <path class="spark-line" d="${pathD}"/>
-        ${points.map(p => `<circle class="spark-point" cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="2"/>`).join('')}
-    `;
-
-    if (currentEl) currentEl.textContent = `${composite ?? scores[scores.length - 1]}/100`;
-
-    // Аномалії
-    if (anomEl) {
-        const items = [];
-        const latest = scores[scores.length - 1];
-        const dev = latest - avg;
-
-        if (std > 0 && Math.abs(dev) > 2 * std) {
-            items.push({
-                icon: '🚨', level: 'critical',
-                text: `<strong>АНОМАЛІЯ:</strong> поточний індекс ${latest} відхиляється від 7-денного середнього (${avg.toFixed(0)}) на ${dev > 0 ? '+' : ''}${dev.toFixed(0)} пунктів (>2σ). Перевірте причину.`
-            });
-        } else if (std > 0 && Math.abs(dev) > 1 * std) {
-            items.push({
-                icon: '⚠️', level: 'warning',
-                text: `<strong>Помітне відхилення:</strong> індекс ${latest} відрізняється від середнього ${avg.toFixed(0)} на ${dev > 0 ? '+' : ''}${dev.toFixed(0)} (1σ).`
-            });
-        } else {
-            items.push({
-                icon: '✅', level: 'ok',
-                text: `<strong>Стабільно:</strong> індекс ${latest} у межах норми (середнє ${avg.toFixed(0)}, σ=${std.toFixed(1)}).`
-            });
-        }
-
-        // Додатково: кліматична норма (довідкове)
-        const monthNorm = 60; // умовна норма сезону
-        if (Math.abs(latest - monthNorm) > 15) {
-            items.push({
-                icon: '📊', level: 'warning',
-                text: `<strong>Кліматична аномалія:</strong> поточний індекс ${latest} відхиляється від кліматичної норми сезону (${monthNorm}) на ${latest > monthNorm ? '+' : ''}${latest - monthNorm} пунктів.`
-            });
-        }
-
-        anomEl.innerHTML = items.map(it => `
-            <div class="hist-anom-item ${it.level}">
-                <span class="hist-anom-icon">${it.icon}</span>
-                <span class="hist-anom-text">${it.text}</span>
-            </div>
-        `).join('');
-    }
-}
-
-
-// ==============================================================
 // MODULE 6: WATERFALL ДЕКОМПОЗИЦІЯ АГРО-ІНДЕКСУ
 // ==============================================================
 // Стартуємо з 50 → кожен компонент додає/забирає → отримуємо фінал
@@ -3267,76 +2871,6 @@ function renderWaterfallChart(comps, composite) {
     if (endVal) endVal.textContent = composite;
 
     // The dynamic part renders as flex items via CSS `display: contents` wrapper
-}
-
-
-// ==============================================================
-// MODULE 7: РАДАР 8 КОМПОНЕНТІВ
-// ==============================================================
-// 8 осей: клімат, ґрунт, радіація, повітря, річки, валюта, макро, вегетація
-// Порівнюємо поточний профіль vs еталон (75)
-// ==============================================================
-
-function renderRadarChart(comps) {
-    const svg = document.getElementById('radar-svg');
-    if (!svg) return;
-
-    const active = comps.filter(c => c.score != null);
-    if (active.length < 3) {
-        svg.innerHTML = '<text x="0" y="0" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="10" font-family="Inter">⏳ Очікування даних…</text>';
-        return;
-    }
-
-    const N = active.length;
-    const R = 100; // max radius
-    const center = { x: 0, y: 0 };
-
-    // Helpers
-    const angleFor = i => (Math.PI * 2 * i / N) - Math.PI / 2; // початок зверху
-    const point = (i, r) => ({
-        x: center.x + r * Math.cos(angleFor(i)),
-        y: center.y + r * Math.sin(angleFor(i))
-    });
-
-    let html = '';
-
-    // Grid rings (4 рівні: 25, 50, 75, 100)
-    for (const r of [25, 50, 75, 100]) {
-        const pts = [];
-        for (let i = 0; i < N; i++) {
-            const p = point(i, (r / 100) * R);
-            pts.push(`${p.x.toFixed(1)},${p.y.toFixed(1)}`);
-        }
-        html += `<polygon class="radar-grid" points="${pts.join(' ')}"/>`;
-    }
-
-    // Axes + labels
-    for (let i = 0; i < N; i++) {
-        const p = point(i, R);
-        const lp = point(i, R + 14);
-        html += `<line class="radar-axis" x1="0" y1="0" x2="${p.x.toFixed(1)}" y2="${p.y.toFixed(1)}"/>`;
-        const shortLabel = active[i].icon;
-        html += `<text class="radar-label" x="${lp.x.toFixed(1)}" y="${lp.y.toFixed(1) + 3}">${shortLabel}</text>`;
-    }
-
-    // Ideal polygon (75 for all)
-    const idealPts = [];
-    for (let i = 0; i < N; i++) {
-        const p = point(i, (75 / 100) * R);
-        idealPts.push(`${p.x.toFixed(1)},${p.y.toFixed(1)}`);
-    }
-    html += `<polygon class="radar-ideal" points="${idealPts.join(' ')}"/>`;
-
-    // Current polygon
-    const currentPts = [];
-    for (let i = 0; i < N; i++) {
-        const score = active[i].score;
-        const p = point(i, (score / 100) * R);
-        currentPts.push(`${p.x.toFixed(1)},${p.y.toFixed(1)}`);
-    }
-    html += `<polygon class="radar-current" points="${currentPts.join(' ')}"/>`;
-
-    svg.innerHTML = html;
 }
 
 
@@ -3547,6 +3081,370 @@ function generateAIRecommendations() {
 
 
 // ==============================================================
+// LIVE-ГРАФІКИ СТАНУ СИСТЕМИ (Chart.js)
+// ==============================================================
+// 6 графіків для відстеження змін системи в реальному часі:
+//   1. Динаміка агро-індексу (live-сесія, до 60 точок / 1 год)
+//   2. Динаміка ризику врожаю (live-сесія)
+//   3. 8 компонентів агро-індексу (бар-чарт, live snapshot)
+//   4. 5 ризик-факторів врожаю (бар-чарт, live snapshot)
+//   5. Поточні метрики (doughnut: T, RH, ґрунт, вітер)
+//   6. USD/UAH за 30 днів (НБУ реальна історія)
+// ==============================================================
+
+let _liveCharts = {
+    indexTrend: null,
+    riskTrend: null,
+    components: null,
+    riskComponents: null,
+    metrics: null,
+    usdHistory: null,
+};
+let _liveHistory = {
+    index: [],   // {ts, val}
+    risk: [],    // {ts, val}
+};
+const LIVE_HISTORY_MAX = 60; // 60 точок × 60 сек = 1 година
+
+function initLiveCharts() {
+    if (typeof Chart === 'undefined') {
+        console.warn('[charts] Chart.js not loaded');
+        return;
+    }
+
+    Chart.defaults.color = 'rgba(255,255,255,0.7)';
+    Chart.defaults.borderColor = 'rgba(255,255,255,0.06)';
+    Chart.defaults.font.family = "'Inter', sans-serif";
+    Chart.defaults.font.size = 10;
+
+    // Chart 1: Agro-Index Trend
+    const ctx1 = document.getElementById('chart-index-trend');
+    if (ctx1) {
+        _liveCharts.indexTrend = new Chart(ctx1, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [{
+                    label: 'Агро-індекс',
+                    data: [],
+                    borderColor: '#00ff95',
+                    backgroundColor: 'rgba(0, 255, 149, 0.12)',
+                    borderWidth: 2,
+                    fill: true,
+                    tension: 0.35,
+                    pointRadius: 0,
+                    pointHoverRadius: 4,
+                    pointHoverBackgroundColor: '#00ff95',
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: { duration: 400 },
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { min: 0, max: 100, grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { stepSize: 25 } },
+                    x: { grid: { display: false }, ticks: { maxTicksLimit: 6, maxRotation: 0 } }
+                }
+            }
+        });
+    }
+
+    // Chart 2: Risk Index Trend
+    const ctx2 = document.getElementById('chart-risk-trend');
+    if (ctx2) {
+        _liveCharts.riskTrend = new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [{
+                    label: 'Ризик врожаю',
+                    data: [],
+                    borderColor: '#ef4444',
+                    backgroundColor: 'rgba(239, 68, 68, 0.12)',
+                    borderWidth: 2,
+                    fill: true,
+                    tension: 0.35,
+                    pointRadius: 0,
+                    pointHoverRadius: 4,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: { duration: 400 },
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { min: 0, max: 100, grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { stepSize: 25 } },
+                    x: { grid: { display: false }, ticks: { maxTicksLimit: 6, maxRotation: 0 } }
+                }
+            }
+        });
+    }
+
+    // Chart 3: 8 Components bar chart
+    const ctx3 = document.getElementById('chart-components');
+    if (ctx3) {
+        _liveCharts.components = new Chart(ctx3, {
+            type: 'bar',
+            data: {
+                labels: ['Клімат', 'Ґрунт', 'Радіація', 'Повітря', 'Річки', 'Валюта', 'Макро', 'Вегетація'],
+                datasets: [{
+                    label: 'Значення (0-100)',
+                    data: [0, 0, 0, 0, 0, 0, 0, 0],
+                    backgroundColor: [],
+                    borderWidth: 0,
+                    borderRadius: 4,
+                    barPercentage: 0.75,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: { duration: 600 },
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { min: 0, max: 100, grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { stepSize: 25 } },
+                    x: { grid: { display: false }, ticks: { font: { size: 9 } } }
+                }
+            }
+        });
+    }
+
+    // Chart 4: 5 Risk components
+    const ctx4 = document.getElementById('chart-risk-components');
+    if (ctx4) {
+        _liveCharts.riskComponents = new Chart(ctx4, {
+            type: 'bar',
+            data: {
+                labels: ['❄️ Заморозки', '🥵 Посуха', '🌊 Повені', '🔥 Спека', '💱 Валюта'],
+                datasets: [{
+                    label: 'Ризик (0-100%)',
+                    data: [0, 0, 0, 0, 0],
+                    backgroundColor: [],
+                    borderWidth: 0,
+                    borderRadius: 4,
+                    barPercentage: 0.75,
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: { duration: 600 },
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { min: 0, max: 100, grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { stepSize: 25 } },
+                    y: { grid: { display: false }, ticks: { font: { size: 10 } } }
+                }
+            }
+        });
+    }
+
+    // Chart 5: Live metrics doughnut
+    const ctx5 = document.getElementById('chart-metrics-doughnut');
+    if (ctx5) {
+        _liveCharts.metrics = new Chart(ctx5, {
+            type: 'doughnut',
+            data: {
+                labels: ['Температура °C', 'Вологість %', 'Вологість ґрунту %', 'Вітер км/год'],
+                datasets: [{
+                    data: [1, 1, 1, 1],
+                    backgroundColor: ['#ef4444', '#38bdf8', '#10b981', '#f59e0b'],
+                    borderWidth: 0,
+                    hoverOffset: 8,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: { duration: 600 },
+                cutout: '60%',
+                plugins: { legend: { display: false } }
+            }
+        });
+    }
+
+    // Chart 6: USD/UAH history
+    const ctx6 = document.getElementById('chart-usd-history');
+    if (ctx6) {
+        _liveCharts.usdHistory = new Chart(ctx6, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [{
+                    label: 'USD/UAH',
+                    data: [],
+                    borderColor: '#38bdf8',
+                    backgroundColor: 'rgba(56, 189, 248, 0.1)',
+                    borderWidth: 2,
+                    fill: true,
+                    tension: 0.3,
+                    pointRadius: 0,
+                    pointHoverRadius: 4,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: { duration: 400 },
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { grid: { color: 'rgba(255,255,255,0.04)' } },
+                    x: { grid: { display: false }, ticks: { maxTicksLimit: 6, maxRotation: 0 } }
+                }
+            }
+        });
+    }
+
+    console.log('[v5] Live charts initialized.');
+}
+
+function colorByScore(score) {
+    if (score == null) return 'rgba(255,255,255,0.1)';
+    if (score >= 65) return '#00ff95';
+    if (score >= 45) return '#f59e0b';
+    return '#ef4444';
+}
+
+function colorByRisk(risk) {
+    if (risk == null) return 'rgba(255,255,255,0.1)';
+    if (risk >= 60) return '#ef4444';
+    if (risk >= 35) return '#f59e0b';
+    return '#00ff95';
+}
+
+function updateLiveCharts() {
+    const now = new Date();
+    const tsLabel = now.toLocaleTimeString('uk-UA', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    const composite = globalState._lastComposite;
+    const comps = globalState._lastComps;
+    const riskIdx = globalState.riskIndex;
+    const s = globalState.lastSensorData || {};
+    const timeEl = document.getElementById('charts-update-time');
+    if (timeEl) timeEl.textContent = `Оновлено: ${now.toLocaleTimeString('uk-UA')}`;
+
+    // === Chart 1: Agro-Index Trend ===
+    if (_liveCharts.indexTrend) {
+        if (composite != null) {
+            _liveHistory.index.push({ ts: tsLabel, val: composite });
+            if (_liveHistory.index.length > LIVE_HISTORY_MAX) _liveHistory.index.shift();
+        }
+        _liveCharts.indexTrend.data.labels = _liveHistory.index.map(p => p.ts);
+        _liveCharts.indexTrend.data.datasets[0].data = _liveHistory.index.map(p => p.val);
+        _liveCharts.indexTrend.update('none');
+
+        // Stats badges
+        const vals = _liveHistory.index.map(p => p.val);
+        const setText = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+        setText('chart-index-now', composite != null ? composite : '—');
+        setText('chart-index-min', vals.length ? Math.min(...vals) : '—');
+        setText('chart-index-avg', vals.length ? Math.round(vals.reduce((a, b) => a + b, 0) / vals.length) : '—');
+        setText('chart-index-max', vals.length ? Math.max(...vals) : '—');
+    }
+
+    // === Chart 2: Risk Index Trend ===
+    if (_liveCharts.riskTrend) {
+        const riskVal = riskIdx?.composite;
+        if (riskVal != null) {
+            _liveHistory.risk.push({ ts: tsLabel, val: riskVal });
+            if (_liveHistory.risk.length > LIVE_HISTORY_MAX) _liveHistory.risk.shift();
+        }
+        _liveCharts.riskTrend.data.labels = _liveHistory.risk.map(p => p.ts);
+        _liveCharts.riskTrend.data.datasets[0].data = _liveHistory.risk.map(p => p.val);
+        _liveCharts.riskTrend.update('none');
+
+        const setText = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+        setText('chart-risk-now', riskVal != null ? `${riskVal}%` : '—');
+        setText('chart-risk-current', riskVal != null ? riskVal : '—');
+
+        // Trend arrow
+        const riskArr = _liveHistory.risk.map(p => p.val);
+        if (riskArr.length >= 2) {
+            const last = riskArr[riskArr.length - 1];
+            const prev = riskArr[riskArr.length - 2];
+            const diff = last - prev;
+            const arrow = diff > 0 ? '▲ зростає' : diff < 0 ? '▼ спадає' : '→ стабільно';
+            setText('chart-risk-trend-arrow', `${arrow} (${diff > 0 ? '+' : ''}${diff})`);
+        } else {
+            setText('chart-risk-trend-arrow', '—');
+        }
+    }
+
+    // === Chart 3: 8 Components bar ===
+    if (_liveCharts.components && comps) {
+        const labels = comps.map(c => c.label);
+        const values = comps.map(c => c.score ?? 0);
+        const colors = comps.map(c => colorByScore(c.score));
+        _liveCharts.components.data.labels = labels;
+        _liveCharts.components.data.datasets[0].data = values;
+        _liveCharts.components.data.datasets[0].backgroundColor = colors;
+        _liveCharts.components.update();
+    }
+
+    // === Chart 4: 5 Risk components ===
+    if (_liveCharts.riskComponents && riskIdx) {
+        const labels = riskIdx.comps.map(c => `${c.icon} ${c.label}`);
+        const values = riskIdx.comps.map(c => c.risk);
+        const colors = riskIdx.comps.map(c => colorByRisk(c.risk));
+        _liveCharts.riskComponents.data.labels = labels;
+        _liveCharts.riskComponents.data.datasets[0].data = values;
+        _liveCharts.riskComponents.data.datasets[0].backgroundColor = colors;
+        _liveCharts.riskComponents.update();
+    }
+
+    // === Chart 5: Live metrics doughnut ===
+    if (_liveCharts.metrics) {
+        const temp = s.temperature ?? 0;
+        const hum = s.humidity ?? 0;
+        const soil = s.soilMoisture != null ? s.soilMoisture * 100 : 0;
+        const wind = s.windSpeed ?? 0;
+        _liveCharts.metrics.data.datasets[0].data = [Math.max(1, temp), Math.max(1, hum), Math.max(1, soil), Math.max(1, wind)];
+        _liveCharts.metrics.update();
+
+        // Legend
+        const legendEl = document.getElementById('chart-metrics-legend');
+        if (legendEl) {
+            const items = [
+                { color: '#ef4444', label: 'T', val: temp, unit: '°C' },
+                { color: '#38bdf8', label: 'RH', val: hum, unit: '%' },
+                { color: '#10b981', label: 'Ґрунт', val: soil, unit: '%' },
+                { color: '#f59e0b', label: 'Вітер', val: wind, unit: 'км/год' }
+            ];
+            legendEl.innerHTML = items.map(it => `
+                <span class="metrics-leg-item">
+                    <span class="metrics-leg-dot" style="background:${it.color}"></span>
+                    <span class="metrics-leg-label">${it.label}</span>
+                    <span class="metrics-leg-val">${it.val != null ? (typeof it.val === 'number' ? it.val.toFixed(1) : it.val) : '—'}${it.unit}</span>
+                </span>
+            `).join('');
+        }
+    }
+
+    // === Chart 6: USD/UAH history ===
+    if (_liveCharts.usdHistory) {
+        const hs = globalState.nbuHistorySeries?.USD;
+        const usd = globalState.nbuRates?.USD;
+        if (Array.isArray(hs) && hs.length) {
+            // Generate labels (days ago)
+            const labels = hs.map((_, i) => {
+                const daysAgo = hs.length - 1 - i;
+                if (daysAgo === 0) return 'сьогодні';
+                if (daysAgo === 1) return 'вчора';
+                return `${daysAgo}д`;
+            });
+            _liveCharts.usdHistory.data.labels = labels;
+            _liveCharts.usdHistory.data.datasets[0].data = hs;
+            _liveCharts.usdHistory.update('none');
+
+            const nowEl = document.getElementById('chart-usd-now');
+            if (nowEl) nowEl.textContent = usd != null ? `${usd.toFixed(2)} ₴` : '—';
+        }
+    }
+}
+
+
+// ==============================================================
 // ОСНОВНИЙ ОРКЕСТРАТОР — викликається після кожного оновлення даних
 // ==============================================================
 function refreshSituationalCenterV5() {
@@ -3561,22 +3459,13 @@ function refreshSituationalCenterV5() {
     // Модуль 2: Agri-Economy
     computeAgriEconomy();
 
-    // Модуль 4: Regional ranking (використовує regionTelemetry, що вже заповнене)
-    computeRegionalIndex();
-
-    // Модуль 5: Historical + sparkline
-    if (globalState._lastComposite != null) {
-        saveHistoricalDataPoint(globalState._lastComposite);
-    }
-    renderHistoricalSparkline();
-
-    // Модуль 7: Radar chart
-    if (globalState._lastComps) {
-        renderRadarChart(globalState._lastComps);
-    }
-
     // Модуль 8: AI Recommendations
     generateAIRecommendations();
+
+    // Live-графіки стану системи (оновлюються синхронно)
+    try { updateLiveCharts(); } catch (e) {
+        console.warn('[v5 charts]', e);
+    }
 }
 
 
@@ -3609,52 +3498,13 @@ function refreshSituationalCenterV5() {
 
 
 // ==============================================================
-// ПАТЧ: запускати fetchForecast7d при кожному оновленні регіону
-// ==============================================================
-(function patchUpdatePrecisionSensors() {
-    if (typeof updatePrecisionSensors !== 'function') {
-        setTimeout(patchUpdatePrecisionSensors, 500);
-        return;
-    }
-    if (updatePrecisionSensors._v5patched) return;
-
-    const orig = updatePrecisionSensors;
-    updatePrecisionSensors = async function(lat, lng) {
-        await orig.call(this, lat, lng);
-        try { fetchForecast7d(lat, lng); } catch (e) {
-            console.warn('[v5] forecast7d fetch error', e);
-        }
-    };
-    updatePrecisionSensors._v5patched = true;
-})();
-
-
-// ==============================================================
-// ПАТЧ: оновлювати регіональну аналітику при кожному fetchRegionsTelemetry
-// ==============================================================
-(function patchFetchRegionsTelemetry() {
-    if (typeof fetchRegionsTelemetry !== 'function') {
-        setTimeout(patchFetchRegionsTelemetry, 500);
-        return;
-    }
-    if (fetchRegionsTelemetry._v5patched) return;
-
-    const orig = fetchRegionsTelemetry;
-    fetchRegionsTelemetry = async function(...args) {
-        await orig.apply(this, args);
-        try { computeRegionalIndex(); } catch (e) {
-            console.warn('[v5] regional index', e);
-        }
-    };
-    fetchRegionsTelemetry._v5patched = true;
-})();
-
-
-// ==============================================================
 // ЗАПУСК при ініціалізації (після того, як DOM готовий і початкові дані є)
 // ==============================================================
 setTimeout(() => {
     console.log('[v5] Initializing Situational Center v5.0...');
+
+    // Ініціалізуємо графіки стану
+    try { initLiveCharts(); } catch (e) { console.warn('[v5 charts init]', e); }
 
     // Перший розрахунок після 4 секунд (дати час початковим fetch-ам)
     setTimeout(() => {
@@ -3665,8 +3515,5 @@ setTimeout(() => {
     setInterval(() => {
         try { refreshSituationalCenterV5(); } catch (e) { console.warn('[v5] refresh', e); }
     }, 60 * 1000);
-
-    // Зберігання історичної точки раз на день при першому відкритті
-    // (renderHistoricalSparkline викликається всередині refreshSituationalCenterV5)
 }, 2000);
 
