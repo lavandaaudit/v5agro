@@ -1,0 +1,7 @@
+# AGRO.MAGAZ — Python dependencies for the hourly news parser
+# Used by .github/workflows/update-news.yml
+#
+# The parser is written so it can fall back to stdlib xml.etree if feedparser
+# is missing, but feedparser gives much better RSS/Atom date + entry handling,
+# so we keep it as a hard dependency inside CI.
+feedparser>=6.0.10
