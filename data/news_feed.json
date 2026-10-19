@@ -1,9 +1,18 @@
 {
-  "updated_at": "2026-10-18T23:02:35.091214+00:00",
+  "updated_at": "2026-10-19T01:09:31.231823+00:00",
   "period": "24h",
-  "ua_count": 2,
-  "en_count": 38,
+  "ua_count": 3,
+  "en_count": 33,
   "ua": [
+    {
+      "title": "Україна шукає спосіб відновити морський експорт зерна: що пропонують посередники",
+      "source": "shelter.in.ua",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQeHdaLUFxWFh3cGtkeUpuSFJTUnVLcnlpSm5peDBiXzFsd2hRaGJRbU9DUTh4bERTRzNhUVJkV204WTVybXpTaHItVHlPUEE4ano0V0ZxZUF1TWxDM3dFTjFfMHhPTWRqaEVTYXIwRDdXTHpUZVVhSS1uQWR2ZGV6aHkwbnA3UHdJcm16U3Y2UWlVbndHb2E4TklDenV5VlVyOXpIdTdvVWczalBTZjRSakhtTThUdw?oc=5",
+      "pubDate": "2026-10-18T14:45:00+00:00",
+      "pubDateStr": "Sun, 18 Oct 2026 14:45:00 GMT",
+      "category": "Експорт та Логістика",
+      "hours_ago": 10.41
+    },
     {
       "title": "Збір урожаю-2026 та сівба озимих на Закарпатті: проміжні результати й динаміка робіт",
       "source": "transkarpatia.net",
@@ -11,7 +20,7 @@
       "pubDate": "2026-10-18T13:56:21+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 13:56:21 GMT",
       "category": "Виробництво та Поля",
-      "hours_ago": 9.1
+      "hours_ago": 11.22
     },
     {
       "title": "Жнива-2026 тривають: в Україні намолотили 37,1 млн тонн зернових",
@@ -20,18 +29,54 @@
       "pubDate": "2026-10-18T04:26:00+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 04:26:00 GMT",
       "category": "Агро Ринок",
-      "hours_ago": 18.61
+      "hours_ago": 20.73
     }
   ],
   "en": [
     {
-      "title": "Sandstorm: Can crops grow underneath solar panels? Greg Barron-Gafford believes they can thrive",
-      "source": "University of Arizona News",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQX0k5YU1uLW00cUo4alpaX2tIalVubW5FajRTUG5wSmN1Q0hmQ0M2UUJ6eFJhZ1F0Vl8zSlkxRnZDc0VZYi05V2NMYlRDWTdzQkQ0M0NTRWwzRHYzUWh6bnB4RWtBa3RYUTB4aGxuNU9FVE9CX3Q5ZEtydTNDQUpVMzk4R0lUY05qYnNJZTVOOWRiR3NwMEs0cDIxaTBwN0hGUDVRVkdzdFNsbGdJeXdFVlNucGN3RGpWQlRtTl9OYVU?oc=5",
-      "pubDate": "2026-10-18T22:14:24+00:00",
-      "pubDateStr": "Sun, 18 Oct 2026 22:14:24 GMT",
+      "title": "VT Ag & Timber Assistance Program Opens Oct. 26",
+      "source": "Vermont Business Magazine",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRDBic3UwTURBN0FNXzBvaEszZlNIS3ZuNmxiRV9RcHgtNlVKbXA4TUZseUljX2hwV0hjdWc1cEFvcWlnS2x0R0dtOXYtZnBnQ0tSWi0yWjBDZGdmOEZTMnJXR0FzT0hjVlN0SjNmMnZpcFFrem5LZk5iRWlRVUNNSFIydThQRzFGRUJJNVB2a0w1Zw?oc=5",
+      "pubDate": "2026-10-19T00:09:50+00:00",
+      "pubDateStr": "Mon, 19 Oct 2026 00:09:50 GMT",
       "category": "Crops",
-      "hours_ago": 0.8
+      "hours_ago": 0.99
+    },
+    {
+      "title": "Farming requires early tech adoption over hesitation",
+      "source": "Farm Progress",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZWRkemJjNUNRY0VMZllxdUVVTE9JLTA4eGlkbFZIUDRETFhNenVGUlpPRng5bk83TXZhSTBOUVR0UDhGRVJ1UndJLUNYRTFwOEdLN1ZORDdjTlNtbU8zV24zZnQ1V0NPZmY2eUl0dnVWRWdpZnNvTXZKdlIybzZONE1sbldWNUVOQzV5Y0xITFFSX1FzdXpRcWptTUZhXzVsclFHU05mX2hONGppTE9vRw?oc=5",
+      "pubDate": "2026-10-18T23:59:14+00:00",
+      "pubDateStr": "Sun, 18 Oct 2026 23:59:14 GMT",
+      "category": "Crops",
+      "hours_ago": 1.17
+    },
+    {
+      "title": "Seminar series brings farm economy into focus for ag lenders",
+      "source": "Kirksville Daily Express",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYXNHUTZDbUFESVVBWGZhWDJ1eEVLbnA5TnFGdmZFSjQ1X3RUc0h5ODZQd2xpWFd2SHN4Mmp0ZndXNzhCQU85U3ZzUXFZajlkNGZwQVRlMDdSU05qUktsV1I0bUF6bFY0M0xkaHlDU3AxcW8wREJ2VTE4OU13NzUzYXBlWC1fMm1IVWdCMzFqNWdET1g4Q0hEWjM1ZkRhcmtWY05sTWJ2aWkxamM?oc=5",
+      "pubDate": "2026-10-18T23:26:46+00:00",
+      "pubDateStr": "Sun, 18 Oct 2026 23:26:46 GMT",
+      "category": "AgTech",
+      "hours_ago": 1.71
+    },
+    {
+      "title": "Taking Comfort in Food: Why Investors Are Developing an Appetite for Agricultural Private Credit",
+      "source": "Livewire Markets",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQdmlBbXlqRG1rMnNSVFN2eWE3LUtxakZRamdpNXBBS0dCaU1MTGcxU1RNeXNlRmQ5OGhKNEhadEwxdGoydXRnazJ3YWtuem0xN0Y2ZnRjeWtkcTJFM1BGcXh1WE5LcjN3MG8tSTJRWjZEU3FYYzhLbWlIRm92a2NTTURwWGxlRE1HTnFGWm55X09GckpJMTN1V1MxZDlnN2lBS2NSNXpJdVc4S3NQbmFsSlJ2WEZpLVV0OUFVdWdIUE1Td1gyNVdYNU1Pb3B1dw?oc=5",
+      "pubDate": "2026-10-18T23:03:22+00:00",
+      "pubDateStr": "Sun, 18 Oct 2026 23:03:22 GMT",
+      "category": "Commodity Markets",
+      "hours_ago": 2.1
+    },
+    {
+      "title": "Oil Prices Near $110 Raise New Cost Concerns for U.S. Agriculture",
+      "source": "AgroLatam",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWHJJSkYtbE9YQzh0YTUxQkItUUh6VU9nX1pWUFdqdk9XM1FLUzRKTlp3X2VWVjhTRnFzQ0NFV1h5TlRrVU1XVXhtM2RadjZFT1FjMktwUkdxX3RmSTNER1RNNi1rT1hMbVNpbGNldUtuWTg3d3pMdTlhZktOdERqa2FYbUJ6aG9DUi1DdV9HTVhyMkJzMkx5T1c5dE43cUE2?oc=5",
+      "pubDate": "2026-10-18T23:01:39+00:00",
+      "pubDateStr": "Sun, 18 Oct 2026 23:01:39 GMT",
+      "category": "AgTech",
+      "hours_ago": 2.13
     },
     {
       "title": "Blue Jackets in the Spotlight",
@@ -40,7 +85,7 @@
       "pubDate": "2026-10-18T21:08:48+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 21:08:48 GMT",
       "category": "Crops",
-      "hours_ago": 1.9
+      "hours_ago": 4.01
     },
     {
       "title": "GUEST COLUMN: Farmers face thousands in extra fuel costs this harvest",
@@ -49,16 +94,7 @@
       "pubDate": "2026-10-18T21:03:05+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 21:03:05 GMT",
       "category": "Crops",
-      "hours_ago": 1.99
-    },
-    {
-      "title": "Farming requires early tech adoption over hesitation",
-      "source": "Farm Progress",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZWRkemJjNUNRY0VMZllxdUVVTE9JLTA4eGlkbFZIUDRETFhNenVGUlpPRng5bk83TXZhSTBOUVR0UDhGRVJ1UndJLUNYRTFwOEdLN1ZORDdjTlNtbU8zV24zZnQ1V0NPZmY2eUl0dnVWRWdpZnNvTXZKdlIybzZONE1sbldWNUVOQzV5Y0xITFFSX1FzdXpRcWptTUZhXzVsclFHU05mX2hONGppTE9vRw?oc=5",
-      "pubDate": "2026-10-18T20:46:52+00:00",
-      "pubDateStr": "Sun, 18 Oct 2026 20:46:52 GMT",
-      "category": "Crops",
-      "hours_ago": 2.26
+      "hours_ago": 4.11
     },
     {
       "title": "East Norman farmer pushes for development restrictions to protect farmland, water resource",
@@ -67,7 +103,7 @@
       "pubDate": "2026-10-18T20:18:38+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 20:18:38 GMT",
       "category": "Crops",
-      "hours_ago": 2.73
+      "hours_ago": 4.85
     },
     {
       "title": "Crimean farmers have stopped harvesting grain due to losses",
@@ -76,7 +112,7 @@
       "pubDate": "2026-10-18T19:44:48+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 19:44:48 GMT",
       "category": "AgTech",
-      "hours_ago": 3.3
+      "hours_ago": 5.41
     },
     {
       "title": "Farm and Garden Penn State Extension",
@@ -85,7 +121,7 @@
       "pubDate": "2026-10-18T19:42:31+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 19:42:31 GMT",
       "category": "Crops",
-      "hours_ago": 3.33
+      "hours_ago": 5.45
     },
     {
       "title": "Op-Ed: The growing cost for Ohio farm families – Ohio Ag Net",
@@ -94,7 +130,7 @@
       "pubDate": "2026-10-18T19:15:00+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 19:15:00 GMT",
       "category": "Crops",
-      "hours_ago": 3.79
+      "hours_ago": 5.91
     },
     {
       "title": "‘Farm to fork’: UT Institute of Agriculture constructs new Center for Protein Innovation",
@@ -103,7 +139,7 @@
       "pubDate": "2026-10-18T18:10:23+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 18:10:23 GMT",
       "category": "AgTech",
-      "hours_ago": 4.87
+      "hours_ago": 6.99
     },
     {
       "title": "Iowa's Farm Economy Puts Republican Rural Support to the Test Ahead of Midterms",
@@ -112,16 +148,7 @@
       "pubDate": "2026-10-18T17:05:38+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 17:05:38 GMT",
       "category": "Crops",
-      "hours_ago": 5.95
-    },
-    {
-      "title": "Exemplary Eritrean farmer honored as one of Food and Agriculture Organization (FAO)’s Women Heroes",
-      "source": "Africa.com",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUmFvbTFmMHl3SFcwR1pXWEdFa29xR2NGdDVYY01acTVpQjJqaVh2Mm0yMUZfUkFNUTE4akFsemh2RV82SWpkNGZTUWR5SWNXOVVQNnBlWGEwdFg2Szdmd2dqRVZqT2QxXzJPNkRUVHEzUUJVS19aSXoxOU5UV2ROa0FfN1hPTDVDR05QZ3dQeW5xbjhEV08wYlJWZEY5c2swalE4Q21ldGlKN2txaXktTWJ5WUlyVDRsb1E?oc=5",
-      "pubDate": "2026-10-18T16:20:08+00:00",
-      "pubDateStr": "Sun, 18 Oct 2026 16:20:08 GMT",
-      "category": "Crops",
-      "hours_ago": 6.71
+      "hours_ago": 8.06
     },
     {
       "title": "From the Peace Corps to Essex: Racey Henderson found home at Reber Rock Farm",
@@ -130,7 +157,7 @@
       "pubDate": "2026-10-18T16:15:56+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 16:15:56 GMT",
       "category": "Crops",
-      "hours_ago": 6.78
+      "hours_ago": 8.89
     },
     {
       "title": "Eighteenth Century Surveyors Mapped Ohio’s Farming Future",
@@ -139,7 +166,7 @@
       "pubDate": "2026-10-18T16:00:00+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 16:00:00 GMT",
       "category": "Crops",
-      "hours_ago": 7.04
+      "hours_ago": 9.16
     },
     {
       "title": "Trump guts ‘win-win’ solar energy program for rural farmers",
@@ -148,7 +175,7 @@
       "pubDate": "2026-10-18T15:00:00+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 15:00:00 GMT",
       "category": "Crops",
-      "hours_ago": 8.04
+      "hours_ago": 10.16
     },
     {
       "title": "Trump's 33% Approval Rating Raises New Questions for U.S. Farm Policy",
@@ -157,25 +184,7 @@
       "pubDate": "2026-10-18T14:59:59+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 14:59:59 GMT",
       "category": "AgTech",
-      "hours_ago": 8.04
-    },
-    {
-      "title": "Black Death Farmland Abandonment Triggered a 40% Drop in Plant Biodiversity",
-      "source": "cristinaiglesias.com",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYjFRNVhjcFVIXzRtQ01SN1VMY2JUekEyZkV3THRQZGpCN2pPS3l2dm5KMWNXU0dTcU1KMjJIb3hRWklnVGJWaHEyWFptUGw3MFptOTFPTG52TVdjYnNYSmp5LW5hZDUyX3NhRWNGa1VaVXlpQXFmOW9wS0d0bTZNM0Q2aXFnMmZ5cnltNUk4ZFViMWtvalBDRVpYQm5URE9DOWItcWtzVW1LTi1DZ2JCd0lR?oc=5",
-      "pubDate": "2026-10-18T14:15:13+00:00",
-      "pubDateStr": "Sun, 18 Oct 2026 14:15:13 GMT",
-      "category": "AgTech",
-      "hours_ago": 8.79
-    },
-    {
-      "title": "Why farmers are suddenly demanding tractors they can fix themselves",
-      "source": "SooToday.com",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcWQwSTh2Y1oydFJYcHZYWmpMekhMOVRQTi1jU2dhUDMxU2U2Qlh0dmI0a3dVN2dNcTdsREdBZlBXQlZUeVZUdTVfcXNlMG1NYzFIMExKTnFOWERJLU03QjdFdG4tbElwWldEa01BaDRPa0tUTW1EcDBfUkIzelB6QnJmVGgtR01Ta3pOamNCZnFHUGxuT28wNWZLdG1xdUVqODVyLU9kaXV5dXBPOWpMLU1n?oc=5",
-      "pubDate": "2026-10-18T14:15:13+00:00",
-      "pubDateStr": "Sun, 18 Oct 2026 14:15:13 GMT",
-      "category": "Commodity Markets",
-      "hours_ago": 8.79
+      "hours_ago": 10.16
     },
     {
       "title": "All things poultry at the IPE/IFE",
@@ -184,7 +193,7 @@
       "pubDate": "2026-10-18T13:15:09+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 13:15:09 GMT",
       "category": "Crops",
-      "hours_ago": 9.79
+      "hours_ago": 11.91
     },
     {
       "title": "Before hunger wins, invest in the world's farmers | Opinion",
@@ -193,7 +202,7 @@
       "pubDate": "2026-10-18T13:10:00+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 13:10:00 GMT",
       "category": "Crops",
-      "hours_ago": 9.88
+      "hours_ago": 11.99
     },
     {
       "title": "Aging farmers and the government want to save farms, but for many the cost is too high",
@@ -202,7 +211,7 @@
       "pubDate": "2026-10-18T12:10:10+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 12:10:10 GMT",
       "category": "Crops",
-      "hours_ago": 10.87
+      "hours_ago": 12.99
     },
     {
       "title": "Vine Support Clips Market To 2035: Greenhouse Automation and Smart Clips Fuel Growth - News and Statistics",
@@ -211,7 +220,7 @@
       "pubDate": "2026-10-18T12:01:04+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 12:01:04 GMT",
       "category": "Commodity Markets",
-      "hours_ago": 11.03
+      "hours_ago": 13.14
     },
     {
       "title": "Kelly Brandlee Hired To Lead Ag United For South Dakota",
@@ -220,7 +229,7 @@
       "pubDate": "2026-10-18T11:00:03+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 11:00:03 GMT",
       "category": "Crops",
-      "hours_ago": 12.04
+      "hours_ago": 14.16
     },
     {
       "title": "University of Hawaiʻi Mānoa to co-lead federal program to boost coffee, cacao production in US and globally",
@@ -229,7 +238,7 @@
       "pubDate": "2026-10-18T11:00:00+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 11:00:00 GMT",
       "category": "AgTech",
-      "hours_ago": 12.04
+      "hours_ago": 14.16
     },
     {
       "title": "Iowa farm grants restored by court order — for now",
@@ -238,7 +247,7 @@
       "pubDate": "2026-10-18T10:30:00+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 10:30:00 GMT",
       "category": "Crops",
-      "hours_ago": 12.54
+      "hours_ago": 14.66
     },
     {
       "title": "Climate Change Spurs Interest in New Crops at Philly Suburb Farm",
@@ -247,7 +256,7 @@
       "pubDate": "2026-10-18T10:00:00+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 10:00:00 GMT",
       "category": "Crops",
-      "hours_ago": 13.04
+      "hours_ago": 15.16
     },
     {
       "title": "War made planting difficult. Now it could boost farmers’ profits.",
@@ -256,7 +265,7 @@
       "pubDate": "2026-10-18T10:00:00+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 10:00:00 GMT",
       "category": "Crops",
-      "hours_ago": 13.04
+      "hours_ago": 15.16
     },
     {
       "title": "Leadership Southern Maryland Gets to the Roots of Agriculture and the Environment",
@@ -265,7 +274,7 @@
       "pubDate": "2026-10-18T10:00:00+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 10:00:00 GMT",
       "category": "AgTech",
-      "hours_ago": 13.04
+      "hours_ago": 15.16
     },
     {
       "title": "Italian rice farmer brings conservation to agriculture",
@@ -274,7 +283,7 @@
       "pubDate": "2026-10-18T09:23:32+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 09:23:32 GMT",
       "category": "Crops",
-      "hours_ago": 13.65
+      "hours_ago": 15.77
     },
     {
       "title": "At this Hunterdon farm, solar panels and robots grow alongside crops",
@@ -283,7 +292,7 @@
       "pubDate": "2026-10-18T09:04:00+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 09:04:00 GMT",
       "category": "AgTech",
-      "hours_ago": 13.98
+      "hours_ago": 16.09
     },
     {
       "title": "Women have always shared in the work of American agriculture",
@@ -292,16 +301,7 @@
       "pubDate": "2026-10-18T08:59:00+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 08:59:00 GMT",
       "category": "Crops",
-      "hours_ago": 14.06
-    },
-    {
-      "title": "Grants for pioneering farms which use lasers and GPS",
-      "source": "BBC",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1jMkxMTnUzZ0FwakpKYks2SHpZZHdnYzZfcEEwMzBIQ3RfcnBsaGI1UFE4QVR4NGxXMTRXMzVtMGY4ZThrOWFzSXFiNGM0anlrQUs4eU1PLVRZVG8?oc=5",
-      "pubDate": "2026-10-18T06:04:31+00:00",
-      "pubDateStr": "Sun, 18 Oct 2026 06:04:31 GMT",
-      "category": "Crops",
-      "hours_ago": 16.97
+      "hours_ago": 16.18
     },
     {
       "title": "Aroostook farm “matchmaker” invents agriculture trading card game for schools",
@@ -310,7 +310,7 @@
       "pubDate": "2026-10-18T05:00:00+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 05:00:00 GMT",
       "category": "AgTech",
-      "hours_ago": 18.04
+      "hours_ago": 20.16
     },
     {
       "title": "Westfall Ag Students Visit Farm Science Review",
@@ -319,7 +319,7 @@
       "pubDate": "2026-10-18T04:00:00+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 04:00:00 GMT",
       "category": "Crops",
-      "hours_ago": 19.04
+      "hours_ago": 21.16
     },
     {
       "title": "Corn could offer clues to China’s $17 billion ag purchase pledge",
@@ -328,43 +328,7 @@
       "pubDate": "2026-10-18T02:18:02+00:00",
       "pubDateStr": "Sun, 18 Oct 2026 02:18:02 GMT",
       "category": "Crops",
-      "hours_ago": 20.74
-    },
-    {
-      "title": "Flanagan talks affordability, farm policy in Moorhead campaign stop",
-      "source": "Valley News Live",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcGt5cGxDR0J5c0kxeEQ2b1BnaXpnamdYZmlDSEQ5X0pDT2RkVG5mdzZkNWxHd3Fka0dYZGFSSFpXa1NrT2U4ZjhSeF95SElVOU12dnJjQ1Jjc1BJTmVDbXBhT3VLTHViZlRNbDYzMHU1dmFIUEN6ckhLdVljVWhzd21CSC15MzMtWEg2b0JZYXJfejEwMi1XRG8zN043dGpDeDJmdFRYNjVEUdIBvgFBVV95cUxQcS1YMFgwb2ZBMUQ0U1lMMXJXYzNLM2x3THFaRzRkQzk5OVNXMUloR09TcjdoU3NQWWJla2tpQXpiQk90ekVScUhwb2Z2cGJ1TGZaTFNwRnJtOXdLbDZDTUJlMm1YQXlsTkVWd2hvbDlHYmdyVmFtLUxzWEl1cDJSUmN5ZUZpUXFWNHpKS1dUVkk2RDc1RGxPVHYzZ0dnMTZpTlVUZTVlRXEycFc2bjJndHVqSm5uYTZVc0VXd21R?oc=5",
-      "pubDate": "2026-10-18T01:03:00+00:00",
-      "pubDateStr": "Sun, 18 Oct 2026 01:03:00 GMT",
-      "category": "AgTech",
-      "hours_ago": 21.99
-    },
-    {
-      "title": "Mitchell Farms celebrates Agritourism Month with crops and community fun",
-      "source": "WDAM-TV",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPODZ3UUN1cU9fQW9idzRkREQ1eExjVHBHbm5CY0FHZTA4OExFaVBYVWgzYXZMcHNpR1B1SW9QVjlBWlMwWjUzLTFpV3ZIRjZrNFVOd0U0dWozRG1ia0lWSl9RNUFaTV9fNHRhb2tTUGtMYWhHSFBPbUVzRVBSakhPWnlBd3l2S0EycXlucVJHR3JyblBUdlVoN0gtMUdUVV9zSGNn?oc=5",
-      "pubDate": "2026-10-18T00:51:00+00:00",
-      "pubDateStr": "Sun, 18 Oct 2026 00:51:00 GMT",
-      "category": "Crops",
-      "hours_ago": 22.19
-    },
-    {
-      "title": "Hungary is ready to allow Ukrainian grain transit to Western Europe.",
-      "source": "Vietnam.vn",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQc1lsbVNhTThzcWJJcXZIbHl5ZWo4Rk9IRC1DQksyVWloVnVnem1tU0dUckcyYjRkQTByYnM3cWJuemtDMDBkdVJGSTUyci0zWjJCVlkxZlIzX291WUtZQnE2WHRWV1FFTFJOQmRGRGU5LU5maUV0NWRsNGNBLTlDQ01aVVFfZ2wtZk9F?oc=5",
-      "pubDate": "2026-10-18T00:12:37+00:00",
-      "pubDateStr": "Sun, 18 Oct 2026 00:12:37 GMT",
-      "category": "AgTech",
-      "hours_ago": 22.83
-    },
-    {
-      "title": "EXCLUSIVE: El-Sayed addresses affordability, agriculture and Great Lakes Bay economy",
-      "source": "Midland Daily News",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYjl1LW5KQ3FkcS1uUlYyZjVQZ1F0SzRJX3FYejJfTjlhYTc5X3NKN2JIc0Z2RDNPMXdOdzg0cXN0QTRXTEN2VU5JdnM1cmZySndxOGViV1ZuTENFdlp5a1FLa01lVE1PbU5SUjdSTjBmRlV3d0dZblhmcXlwcGVHVDlGVVpCNUhjckozYy1OOHNEYjhVdVNxTGFFdy1Vdw?oc=5",
-      "pubDate": "2026-10-17T23:21:09+00:00",
-      "pubDateStr": "Sat, 17 Oct 2026 23:21:09 GMT",
-      "category": "AgTech",
-      "hours_ago": 23.69
+      "hours_ago": 22.86
     }
   ]
 }
