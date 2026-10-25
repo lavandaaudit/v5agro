@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-25T16:04:13.712989+00:00",
+  "updated_at": "2026-10-25T18:59:26.492521+00:00",
   "period": "24h",
   "ua_count": 2,
-  "en_count": 23,
+  "en_count": 26,
   "ua": [
     {
       "title": "Україна на 20% збільшила експорт яєць",
@@ -11,7 +11,7 @@
       "pubDate": "2026-10-25T11:55:00+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 11:55:00 GMT",
       "category": "Експорт та Логістика",
-      "hours_ago": 4.15
+      "hours_ago": 7.07
     },
     {
       "title": "Новоросійськ частково відновив експорт зерна",
@@ -20,10 +20,55 @@
       "pubDate": "2026-10-25T11:39:07+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 11:39:07 GMT",
       "category": "Експорт та Логістика",
-      "hours_ago": 4.42
+      "hours_ago": 7.34
     }
   ],
   "en": [
+    {
+      "title": "MDARD, MSU Extension partner to to bolster PFAS monitoring across the state",
+      "source": "SooLeader.com",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWkw2QlJsaEZLdVpCX0VwR3ViOW01YzFTUGpXeU9nTjN1OHM1M3lURkptWHhLSkJXVVl3alFpMlJRV2JmQjhuTm9nOGppelBrWURRMW12dEZFWUU5TXBHNHNuMjZhT0Q5ZXYyOENYNnpnZkdORDRDSURjUGZGaHZRN0ZueXVYbG5mLUlkN3dHeWJTc19FZkhBQjVha1F1VEtGT1ZtamFseGJ0eEdzWDVfc1FMT1ZQajJwVlVhNQ?oc=5",
+      "pubDate": "2026-10-25T18:32:37+00:00",
+      "pubDateStr": "Sun, 25 Oct 2026 18:32:37 GMT",
+      "category": "Crops",
+      "hours_ago": 0.45
+    },
+    {
+      "title": "Farm equipment sales slide in September as demand weakens",
+      "source": "Farm Progress",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNU1J0TGxiVXRPVUZ6V3loVHVWR19oRktrS2gzM0lZenZkZS1XZ1hWZTFuY202eVNFckQ1ZGhQVkZFOFpqWkJBc0s4TzZPRTM5b1psNVgxNkp2ZlFkaG5GeFd5d1NQMUh0dnJxbXVlRDZfWnY0bVQwX0tua0c3cWNmTEJCY1JYRjQ1Ml91elBWUGRkVTgwNFZvRzZIdVBxTmd5U2wyVDU3czVjemZUeGFDMDhR?oc=5",
+      "pubDate": "2026-10-25T18:09:59+00:00",
+      "pubDateStr": "Sun, 25 Oct 2026 18:09:59 GMT",
+      "category": "Commodity Markets",
+      "hours_ago": 0.82
+    },
+    {
+      "title": "Two Lodi-area ag advocates inducted into San Joaquin County Ag Hall of Fame",
+      "source": "Lodinews.com",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOVXhWVUJTX0NBbG5ya2NnTVJRUW5yZlgxUF9HQXZNaUJseWc2T1hMNXRyMkNUc1V5TzJPbkV1OFhELUNpOGhyd1lOay01dEtOanM4LUoxVk5Sa2tzLXhyVV9abzdYSGJybWVNekdhYkUtXzh0UHpNT1VGSFYyWDdmWW51UG5oZw?oc=5",
+      "pubDate": "2026-10-25T18:00:00+00:00",
+      "pubDateStr": "Sun, 25 Oct 2026 18:00:00 GMT",
+      "category": "Crops",
+      "hours_ago": 0.99
+    },
+    {
+      "title": "7th Congressional District candidates discuss tariffs, future of family farms at town hall",
+      "source": "Civic Media",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPRDVnWHRkNXhlVzhLeERERVNyV3U5WUNKeHFocml0MVRmVDRwNWI4LUp6VTM3aG92MUw4RHpXMTROREJEOERPdWtKbHc3dFFYVE5IMU1Ub0x2QmpoU3k2aU5KMEZDMFRyLUxUXy1DQ3JEdGdNTXBqUmp6eGlZYlR5OWlxUEJGbnk5N2VOU1drMHBSMW5SUFU4UTVXMTZUTzdQSGQ4MHJZRUlHZXRxS0ZtZ3FMX0JnbjV0Vjl5X1pJT1hpeDl5bGc?oc=5",
+      "pubDate": "2026-10-25T16:57:44+00:00",
+      "pubDateStr": "Sun, 25 Oct 2026 16:57:44 GMT",
+      "category": "Trade",
+      "hours_ago": 2.03
+    },
+    {
+      "title": "Local schools return to Smokey House Center to plant ginseng and explore forest farming",
+      "source": "Bennington banner",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNS0hhR25iWHhqYlNHNW1rQ1lxM1dRaXJ2VHl3NDk5SVFYMTFaRDFDOGc2eW5IZ3pES1Y2X2FwYnZLX2ZEUllXVzFFTndhbDdocURqWXdVaWlBZjJaTjVZc3Q4WU5PTlpNY3FKT3c5SHZLYlVka2lINlRUVFJQcXBZcnJ5LVNqQnJfM0QtSERwWXJXUVpsNUZTekIxRTk3NnE2Tmc5cXN0ay1kaTRIdmYtaGJzNkw4YTNoUmVwYXEydXFnVXJMSm1KekVQMWw2SjdyTkJN?oc=5",
+      "pubDate": "2026-10-25T15:55:33+00:00",
+      "pubDateStr": "Sun, 25 Oct 2026 15:55:33 GMT",
+      "category": "Crops",
+      "hours_ago": 3.06
+    },
     {
       "title": "These farms show what Iowa could be like if we choose change | Opinion",
       "source": "The Des Moines Register",
@@ -31,25 +76,16 @@
       "pubDate": "2026-10-25T15:40:07+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 15:40:07 GMT",
       "category": "Crops",
-      "hours_ago": 0.4
+      "hours_ago": 3.32
     },
     {
-      "title": "Ukraine’s grain exports: why world needs Black Sea Corridor",
-      "source": "AzerNews",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA1SEtDOWx1T1htNFdXRWFXR1BkN2lVTnVlaGNXNW9FY2ZNYjEycEFzdjNYLTg4bFR2Qmlya0cwVnNwUkRxOGtUblVSNS1mdlgzYWs2SVZBZw?oc=5",
-      "pubDate": "2026-10-25T15:37:00+00:00",
-      "pubDateStr": "Sun, 25 Oct 2026 15:37:00 GMT",
+      "title": "Ukraine's Grain Exports: Why World Needs Black Sea Corridor",
+      "source": "Menafn",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQeGZ5Qmk5UkZwU2J4clZZTF9NMWxsLXBlaUI1cXB4aHdjR3pramZIMzhfQXZOWTRtbVNCNjZQamIyZjdGNGVhd21idnFlVTA2dnEtdmlJVTN1RE05cGttb1NiMVZVR1ZVTFg4ZV9qREs4UWtBRXE2NUZMd2M4bmZuNTc4Rlc4RnVnc3Z4aTdodHk?oc=5",
+      "pubDate": "2026-10-25T15:37:30+00:00",
+      "pubDateStr": "Sun, 25 Oct 2026 15:37:30 GMT",
       "category": "AgTech",
-      "hours_ago": 0.45
-    },
-    {
-      "title": "Farm equipment sales slide in September as demand weakens",
-      "source": "Farm Progress",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNU1J0TGxiVXRPVUZ6V3loVHVWR19oRktrS2gzM0lZenZkZS1XZ1hWZTFuY202eVNFckQ1ZGhQVkZFOFpqWkJBc0s4TzZPRTM5b1psNVgxNkp2ZlFkaG5GeFd5d1NQMUh0dnJxbXVlRDZfWnY0bVQwX0tua0c3cWNmTEJCY1JYRjQ1Ml91elBWUGRkVTgwNFZvRzZIdVBxTmd5U2wyVDU3czVjemZUeGFDMDhR?oc=5",
-      "pubDate": "2026-10-25T15:05:43+00:00",
-      "pubDateStr": "Sun, 25 Oct 2026 15:05:43 GMT",
-      "category": "Commodity Markets",
-      "hours_ago": 0.98
+      "hours_ago": 3.37
     },
     {
       "title": "Central Pennsylvania Conservationists Contend at National FFA Convention",
@@ -58,7 +94,7 @@
       "pubDate": "2026-10-25T15:00:00+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 15:00:00 GMT",
       "category": "Crops",
-      "hours_ago": 1.07
+      "hours_ago": 3.99
     },
     {
       "title": "Western N.C. pumpkin farmer survives storm with pre­paredness",
@@ -67,25 +103,34 @@
       "pubDate": "2026-10-25T14:56:00+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 14:56:00 GMT",
       "category": "Crops",
-      "hours_ago": 1.14
+      "hours_ago": 4.06
     },
     {
-      "title": "Opinion: Big ag puts band back together to rescue Mike Naig",
-      "source": "The Gazette",
-      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPYTZCeVNGLXNRSGdRTkQyTk95eVd3R2I1cXdmLU1fcEVWTDhuYXJRS2hPWVFxNTN2NEJhZjA5eXpHR1EyWm5PRzRJdWxJT01wM3YybXl4clo2UWFNQ09kQjlZd0dQWlVCV2prTmZOMjNxOG5iYlhPMzRzRHl1SUw0b0UydlZPcGEzNTQyV1NrMlNMTUkxbGVkVlR5S3l0SjVvczBrb1VXbW9Wd3I4SXhBN00xOE91b0hITzkxVlI3UWFlZjRGQzJsTlRQb0EyWXdKWmdaSmNRbHRTZw?oc=5",
-      "pubDate": "2026-10-25T13:59:00+00:00",
-      "pubDateStr": "Sun, 25 Oct 2026 13:59:00 GMT",
-      "category": "AgTech",
-      "hours_ago": 2.09
-    },
-    {
-      "title": "Women in Agriculture Event to Celebrate International Year of the Woman Farmer",
-      "source": "Farming Life",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOX3hpbUVLeXZwTDNSb2lSTnpQbjZyWUFmV19VdUIzdmJTS29ldlF0UkltVEtyeHlXd3lHLUE5VWhuanFoWko5cWxzQnlGLVFwVnNTX1hmSTNJZElraEZPVmxNODEzNU9GcjFiQ2M2Q0Z1LVFBTWJyWVhWanFOYklKVWQ3VkRCbjNwOVZPTDZFUnJYYVk2djEwSGlNOVN2MGZBNm1qUEV5dkNmZXgxQU9Sck9xVlNzMk5CM2xZYTVQZXA?oc=5",
-      "pubDate": "2026-10-25T12:00:00+00:00",
-      "pubDateStr": "Sun, 25 Oct 2026 12:00:00 GMT",
+      "title": "N.J. bill targets highway safety around farm equipment. What drivers should know",
+      "source": "Yahoo",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSlBmb0V0WFdJMldIZF9wQlhwcXFuazRHaDM4c21ONlJpLTdlQ1JjckZIRV92X2VrN0hMLS14M0dwWmphWmN3SnFZemxfdUZEN1FZZ2d6akptSWgwZVlqel9aWngyRUoyOEhOS01SVXRfZFd1VVJFUDlvdHJfNGN1dGhDaGQ?oc=5",
+      "pubDate": "2026-10-25T13:24:51+00:00",
+      "pubDateStr": "Sun, 25 Oct 2026 13:24:51 GMT",
       "category": "Crops",
-      "hours_ago": 4.07
+      "hours_ago": 5.58
+    },
+    {
+      "title": "Cline holds annual Agricultural Conference in the Valley",
+      "source": "The Northern Virginia Daily",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPN2l1MEVad0hrXy0yU29KWEw3M21BNmhXWUlaaVNuNjl6czJ5c0ZJUUdJaWNJVHZwZjVwZXFJYzN1TTNTYzFPYWVfMnNZUHRXdjdzSURZVHlVWlQ4QUx3NGFBZllacW5yVkNXMldRcU9oWGxBRUZvYnVTT2otZG9XV2J5RUVoVEJqR19Ld0Q4SjVFU3pvaEdrcFlSR2ltMFcybXJxS1VLbXVCQjBqVDBwSEUyQWgtcHBBYkFTWW51aHNibmkzMVFrMUlySDBFSzRjZHBqTA?oc=5",
+      "pubDate": "2026-10-25T13:00:00+00:00",
+      "pubDateStr": "Sun, 25 Oct 2026 13:00:00 GMT",
+      "category": "AgTech",
+      "hours_ago": 5.99
+    },
+    {
+      "title": "California Agriculture Leads the Nation in Funding for Specialty Crops, California Department of Food and Agriculture Announces",
+      "source": "Sierra Sun Times",
+      "link": "https://news.google.com/rss/articles/CBMiowJBVV95cUxNQW9VeTBPRHR1SlhCc0hQcDBHbkxPQ1NaQlhzU05NOFVjX2J0U2VvbFNqLTB0anVoS21WbDRIdTFCcjBHSUJTR09ZUzEyaldydVRwY3lESEtTMDI0dlM5VUtWaEo0R21sWUVlNk1KVDlrZTlqX1pZTXRVOHVfNF9mNXVvMjZsZGk2RHdUZHdxZ0d6NDVuZmplMk1WaUE4QmNNZXVZbTBta3g4clI3MzBZY1M2SDdhY3hQSHRUWW1MV3lwaXZNbVZIejB0TVlhMGN1RE1pekZKdGhFYmxaSnFWMTBWOGtKcUtQOFlfVVRweTRTWWxqODV3bkdUU2pwWURFUUhmbS1mbzhfX3RMRF9qNXdHTkRwTGFmLThqRTZtbmwyTHc?oc=5",
+      "pubDate": "2026-10-25T12:05:53+00:00",
+      "pubDateStr": "Sun, 25 Oct 2026 12:05:53 GMT",
+      "category": "Crops",
+      "hours_ago": 6.89
     },
     {
       "title": "Freedom Organization cultivates vision for East End Farm Campus",
@@ -94,7 +139,7 @@
       "pubDate": "2026-10-25T11:30:00+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 11:30:00 GMT",
       "category": "Crops",
-      "hours_ago": 4.57
+      "hours_ago": 7.49
     },
     {
       "title": "Maryland Drivers Urged to Use Caution as Harvest Season Continues",
@@ -103,7 +148,7 @@
       "pubDate": "2026-10-25T11:00:16+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 11:00:16 GMT",
       "category": "Crops",
-      "hours_ago": 5.07
+      "hours_ago": 7.99
     },
     {
       "title": "Farms, Barns & Rural Heritage event celebrates WCOLC 20th anniversary",
@@ -112,7 +157,16 @@
       "pubDate": "2026-10-25T10:13:17+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 10:13:17 GMT",
       "category": "Crops",
-      "hours_ago": 5.85
+      "hours_ago": 8.77
+    },
+    {
+      "title": "National FFA Convention Gives Members Opportunities To Grow",
+      "source": "Madison's Country Q106",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNUZzeTU1V1FiaENzZDZsdmJZQUtyUjBKSXg1QXlLOFpVR1U5RXRjeEZBMmFwNGRZbFRMbnAzMXd1TXJjU3ZoU2lhSmJiRmd5NDItV1BRTUozalJtOFdHNjZXQVA5b1J2ZWpJelg5MFBBUE9sdWhpMFZZU3ZWV3pLdlVyd3p5ZzhOdXZLTTZSMEV6c29GbGNZ?oc=5",
+      "pubDate": "2026-10-25T10:06:18+00:00",
+      "pubDateStr": "Sun, 25 Oct 2026 10:06:18 GMT",
+      "category": "Crops",
+      "hours_ago": 8.89
     },
     {
       "title": "Cab Talk: Farmers Size Up the 2026 Season",
@@ -121,7 +175,7 @@
       "pubDate": "2026-10-25T09:50:00+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 09:50:00 GMT",
       "category": "Crops",
-      "hours_ago": 6.24
+      "hours_ago": 9.16
     },
     {
       "title": "$34.1-M US GRANT FOR PH UBE INDUSTRY 🍠 The Department of Agriculture (DA) welcomed the US$34.1-million grant from the United States to develop the Philippines’ ube (purple yam) industry, which is expected to benefit more than 12,500 Filipino farm",
@@ -130,7 +184,7 @@
       "pubDate": "2026-10-25T09:15:23+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 09:15:23 GMT",
       "category": "Crops",
-      "hours_ago": 6.81
+      "hours_ago": 9.73
     },
     {
       "title": "Roy Oyama Obituary (2026) - Honolulu, HI",
@@ -139,7 +193,7 @@
       "pubDate": "2026-10-25T07:43:11+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 07:43:11 GMT",
       "category": "AgTech",
-      "hours_ago": 8.35
+      "hours_ago": 11.27
     },
     {
       "title": "Cambodia Explores EV Tractors to Boost Farm Productivity and Cut Fuel Costs",
@@ -148,16 +202,7 @@
       "pubDate": "2026-10-25T06:43:37+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 06:43:37 GMT",
       "category": "AgTech",
-      "hours_ago": 9.34
-    },
-    {
-      "title": "N.J. bill targets highway safety around farm equipment. What drivers should know",
-      "source": "Yahoo",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSlBmb0V0WFdJMldIZF9wQlhwcXFuazRHaDM4c21ONlJpLTdlQ1JjckZIRV92X2VrN0hMLS14M0dwWmphWmN3SnFZemxfdUZEN1FZZ2d6akptSWgwZVlqel9aWngyRUoyOEhOS01SVXRfZFd1VVJFUDlvdHJfNGN1dGhDaGQ?oc=5",
-      "pubDate": "2026-10-25T05:41:00+00:00",
-      "pubDateStr": "Sun, 25 Oct 2026 05:41:00 GMT",
-      "category": "Crops",
-      "hours_ago": 10.39
+      "hours_ago": 12.26
     },
     {
       "title": "NMSU research centers celebrate fall with outreach events",
@@ -166,7 +211,7 @@
       "pubDate": "2026-10-25T01:16:13+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 01:16:13 GMT",
       "category": "AgTech",
-      "hours_ago": 14.8
+      "hours_ago": 17.72
     },
     {
       "title": "SoftBank-backed drone maker wants every farmer to ‘have their own robot’",
@@ -175,7 +220,7 @@
       "pubDate": "2026-10-25T01:00:27+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 01:00:27 GMT",
       "category": "AgTech",
-      "hours_ago": 15.06
+      "hours_ago": 17.98
     },
     {
       "title": "Secretary Rollins and NASA Administrator Isaacman Sign MOU to Advance USDA Data Modernization Plan",
@@ -184,7 +229,7 @@
       "pubDate": "2026-10-24T23:30:00+00:00",
       "pubDateStr": "Sat, 24 Oct 2026 23:30:00 GMT",
       "category": "Crops",
-      "hours_ago": 16.57
+      "hours_ago": 19.49
     },
     {
       "title": "Proposed amendment aims to shield more Georgia farms from development",
@@ -193,7 +238,7 @@
       "pubDate": "2026-10-24T22:07:50+00:00",
       "pubDateStr": "Sat, 24 Oct 2026 22:07:50 GMT",
       "category": "AgTech",
-      "hours_ago": 17.94
+      "hours_ago": 20.86
     },
     {
       "title": "Hankinson farmer launches Agri Spray Drone Solutions",
@@ -202,7 +247,7 @@
       "pubDate": "2026-10-24T21:05:05+00:00",
       "pubDateStr": "Sat, 24 Oct 2026 21:05:05 GMT",
       "category": "AgTech",
-      "hours_ago": 18.99
+      "hours_ago": 21.91
     },
     {
       "title": "Athens FFA Excels in Forestry at National Convention",
@@ -211,25 +256,7 @@
       "pubDate": "2026-10-24T19:00:00+00:00",
       "pubDateStr": "Sat, 24 Oct 2026 19:00:00 GMT",
       "category": "Crops",
-      "hours_ago": 21.07
-    },
-    {
-      "title": "Meet the 2026 National FFA American Star Award winners",
-      "source": "Brownfield Ag News",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTHJGMnJMY3F2ZjFKRTVwcHpyTE9ILVJ3U3dIal93bndVN1k0QUtMeS1CejRVcWpGVjlmTlRUTmI1Nzl6SHFQaHJvcnpLT3NKOWFtV3B1NFA2OXFRS29vZEgtbW10Z25KaFY5MmpseS0tUk01Z01qM18xV1NVM3lOOW5ncTJLMjhvaEZyOGZKVEdJM1U?oc=5",
-      "pubDate": "2026-10-24T18:29:28+00:00",
-      "pubDateStr": "Sat, 24 Oct 2026 18:29:28 GMT",
-      "category": "Crops",
-      "hours_ago": 21.58
-    },
-    {
-      "title": "Strong first-year results from Food Hub and Farm Stop Grant Program",
-      "source": "SooLeader.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdlVJRzY3OFZqNE5RdjFWcHBMemx0MmdGUjRfTkNVMzhkanNFeWxacmc5RnJFWUl5eHBvMUFDaThqRWlFc2t6djdWT0IwbXJhSmRidXc1SHFMUl9aeVBFQUVjcXpEcWJsTVVnaXFRRVB5cUM1N2lZTXlIWXV3Tlc4cUdvWXpnRWdRdzV2dmVMbFB3aTV4YTZSdGhOR0hsb3ctTkhmemtEUlNUM0Y4aFE5VEg3dw?oc=5",
-      "pubDate": "2026-10-24T17:00:00+00:00",
-      "pubDateStr": "Sat, 24 Oct 2026 17:00:00 GMT",
-      "category": "Crops",
-      "hours_ago": 23.07
+      "hours_ago": 23.99
     }
   ]
 }
