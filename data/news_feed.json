@@ -1,18 +1,9 @@
 {
-  "updated_at": "2026-10-25T21:41:29.480161+00:00",
+  "updated_at": "2026-10-26T00:11:14.962835+00:00",
   "period": "24h",
-  "ua_count": 4,
-  "en_count": 36,
+  "ua_count": 3,
+  "en_count": 35,
   "ua": [
-    {
-      "title": "Енергетика, зерно, обмін всіх на всіх: якої конкретики Київ чекає від переговорів, пояснив президент України",
-      "source": "uatv.ua",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPTnZLdlZmUTRBYUhJc1JDZ3JxaWNqMldmX2xxelpTYk9TbVRvcGJmWTNKek5RY08tQ1piVjFudTRqTUJhRElXUHBRRnRvaFdSbEI5b29rX3JkaGhKRzZ5WU00dXVhWHRNX1RScGJIWjc4Si1iLVJjM1ljLTBPdkpxdjdXcmE1OTQ3WTFmeklJVTJ4NV9RWGd4dklZd0ZXbTREUjhUV2hDNVlHRmYxdVRFQ3lfOENKUl9xdzRIYTh3R3ZxOTB5ZWJEUVVTZw?oc=5",
-      "pubDate": "2026-10-25T19:43:00+00:00",
-      "pubDateStr": "Sun, 25 Oct 2026 19:43:00 GMT",
-      "category": "Агро Ринок",
-      "hours_ago": 1.97
-    },
     {
       "title": "Україна хоче перенести митний контроль вантажівок із зерном углиб двох країн",
       "source": "Твоє місто",
@@ -20,7 +11,7 @@
       "pubDate": "2026-10-25T14:05:26+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 14:05:26 GMT",
       "category": "Експорт та Логістика",
-      "hours_ago": 7.6
+      "hours_ago": 10.1
     },
     {
       "title": "Україна на 20% збільшила експорт яєць",
@@ -29,7 +20,7 @@
       "pubDate": "2026-10-25T11:55:00+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 11:55:00 GMT",
       "category": "Експорт та Логістика",
-      "hours_ago": 9.77
+      "hours_ago": 12.27
     },
     {
       "title": "Новоросійськ частково відновив експорт зерна",
@@ -38,10 +29,19 @@
       "pubDate": "2026-10-25T11:39:07+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 11:39:07 GMT",
       "category": "Експорт та Логістика",
-      "hours_ago": 10.04
+      "hours_ago": 12.54
     }
   ],
   "en": [
+    {
+      "title": "Ohio Likely to Gain Ag Committee Influence",
+      "source": "Red River Farm Network",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUU5iY1lIVjlQNGNMNnZnbU9ZZGpESGJJdjBRNFNPRngtRWFQaVo4N0IzaFJxMThlNFlDUWhQSVpxQldlWGtHZkZkNkljbFA2VjRidTNYTlRwb0Y1MDZnZFFEMUZVMERhSnlMeEpkby0wUUEtSHNXcDRkcVl4b0xRdw?oc=5",
+      "pubDate": "2026-10-26T00:02:48+00:00",
+      "pubDateStr": "Mon, 26 Oct 2026 00:02:48 GMT",
+      "category": "AgTech",
+      "hours_ago": 0.14
+    },
     {
       "title": "Farm and Garden Penn State Extension",
       "source": "Franklin County Free Press",
@@ -49,7 +49,7 @@
       "pubDate": "2026-10-25T21:40:10+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 21:40:10 GMT",
       "category": "Crops",
-      "hours_ago": 0.02
+      "hours_ago": 2.52
     },
     {
       "title": "Federal fertilizer program picks 8 projects, including one with Minnesota sites",
@@ -58,7 +58,7 @@
       "pubDate": "2026-10-25T21:19:00+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 21:19:00 GMT",
       "category": "Crops",
-      "hours_ago": 0.37
+      "hours_ago": 2.87
     },
     {
       "title": "Tennessee farmer describes rising costs as USDA announces $8 billion in relief payments",
@@ -67,7 +67,7 @@
       "pubDate": "2026-10-25T21:16:00+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 21:16:00 GMT",
       "category": "Crops",
-      "hours_ago": 0.42
+      "hours_ago": 2.92
     },
     {
       "title": "K-State Researchers Develop Technology to Improve Crop Sprayer Accuracy",
@@ -76,7 +76,7 @@
       "pubDate": "2026-10-25T21:10:31+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 21:10:31 GMT",
       "category": "Crops",
-      "hours_ago": 0.52
+      "hours_ago": 3.01
     },
     {
       "title": "Farm equipment sales slide in September as demand weakens",
@@ -85,7 +85,7 @@
       "pubDate": "2026-10-25T21:10:02+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 21:10:02 GMT",
       "category": "Commodity Markets",
-      "hours_ago": 0.52
+      "hours_ago": 3.02
     },
     {
       "title": "Daisey, Messick Recognized at Sussex County Farm Bureau Annual Meeting",
@@ -94,7 +94,7 @@
       "pubDate": "2026-10-25T20:58:21+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 20:58:21 GMT",
       "category": "AgTech",
-      "hours_ago": 0.72
+      "hours_ago": 3.21
     },
     {
       "title": "USDA earmarks $573M for fertilizer production",
@@ -103,7 +103,7 @@
       "pubDate": "2026-10-25T20:36:44+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 20:36:44 GMT",
       "category": "Crops",
-      "hours_ago": 1.08
+      "hours_ago": 3.58
     },
     {
       "title": "MDARD, MSU Extension partner to to bolster PFAS monitoring across the state",
@@ -112,7 +112,7 @@
       "pubDate": "2026-10-25T20:01:32+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 20:01:32 GMT",
       "category": "Crops",
-      "hours_ago": 1.67
+      "hours_ago": 4.16
     },
     {
       "title": "Farmers, state officials tout $2 million wine investment amid farmland pressures",
@@ -121,16 +121,7 @@
       "pubDate": "2026-10-25T19:49:49+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 19:49:49 GMT",
       "category": "AgTech",
-      "hours_ago": 1.86
-    },
-    {
-      "title": "West Darfur Food Crisis: Hunger Worsens After Crop Failure",
-      "source": "Sudan Tribune",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBGQlF0TUQzVG45eWZKQ09GbnhRb19jY1Y5bEpPT1hQZ2xsM1VmRzBmTExKRHBmcmc4ODlRbnNaeDlTZTdGcHA4bjBnTGlJcl9f?oc=5",
-      "pubDate": "2026-10-25T19:42:32+00:00",
-      "pubDateStr": "Sun, 25 Oct 2026 19:42:32 GMT",
-      "category": "AgTech",
-      "hours_ago": 1.98
+      "hours_ago": 4.36
     },
     {
       "title": "From Patterson Fruit Farm to a lifetime of serving Ohio agriculture – Ohio Ag Net",
@@ -139,7 +130,7 @@
       "pubDate": "2026-10-25T19:30:00+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 19:30:00 GMT",
       "category": "Crops",
-      "hours_ago": 2.19
+      "hours_ago": 4.69
     },
     {
       "title": "Texas agriculture commissioner: GOP could pay price for data center push",
@@ -148,7 +139,7 @@
       "pubDate": "2026-10-25T19:21:24+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 19:21:24 GMT",
       "category": "Commodity Markets",
-      "hours_ago": 2.33
+      "hours_ago": 4.83
     },
     {
       "title": "USDA directs $594 million to Ohio through farm safety net and conservation programs – Ohio Ag Net",
@@ -157,7 +148,7 @@
       "pubDate": "2026-10-25T19:00:00+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 19:00:00 GMT",
       "category": "Crops",
-      "hours_ago": 2.69
+      "hours_ago": 5.19
     },
     {
       "title": "Smart farm operating system goes from lab to tractor",
@@ -166,7 +157,16 @@
       "pubDate": "2026-10-25T19:00:00+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 19:00:00 GMT",
       "category": "Crops",
-      "hours_ago": 2.69
+      "hours_ago": 5.19
+    },
+    {
+      "title": "4-H members deliver harvest thank-yous to area grain elevators",
+      "source": "Shaw Local",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcFpsZXJfRXU1MUJMSGJoQUN5dzJrSDc4cm0zdlU5ckpaNTA4SjUyOGU2cnpmblpUam5rTUMzUDRsbWh2STBQQ2xkdUpYNDVzbHd3V2JYZ2FWVy1MU2p5V1pIcTQ4NkhRYmc2aS05QzVmT2phQkpBVmNSVGJ4OFNsZ0ZZREpxdTlRQXh6dmtPcjNqUXpNMENOTndYMW43SVFPczBEU3RQNjBrRlBqMDNGSTlCOENsSXZqNHZN?oc=5",
+      "pubDate": "2026-10-25T19:00:00+00:00",
+      "pubDateStr": "Sun, 25 Oct 2026 19:00:00 GMT",
+      "category": "AgTech",
+      "hours_ago": 5.19
     },
     {
       "title": "Two Lodi-area ag advocates inducted into San Joaquin County Ag Hall of Fame",
@@ -175,16 +175,16 @@
       "pubDate": "2026-10-25T18:00:00+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 18:00:00 GMT",
       "category": "Crops",
-      "hours_ago": 3.69
+      "hours_ago": 6.19
     },
     {
       "title": "7th Congressional District candidates discuss tariffs, future of family farms at town hall",
       "source": "Civic Media",
       "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPRDVnWHRkNXhlVzhLeERERVNyV3U5WUNKeHFocml0MVRmVDRwNWI4LUp6VTM3aG92MUw4RHpXMTROREJEOERPdWtKbHc3dFFYVE5IMU1Ub0x2QmpoU3k2aU5KMEZDMFRyLUxUXy1DQ3JEdGdNTXBqUmp6eGlZYlR5OWlxUEJGbnk5N2VOU1drMHBSMW5SUFU4UTVXMTZUTzdQSGQ4MHJZRUlHZXRxS0ZtZ3FMX0JnbjV0Vjl5X1pJT1hpeDl5bGc?oc=5",
-      "pubDate": "2026-10-25T16:57:44+00:00",
-      "pubDateStr": "Sun, 25 Oct 2026 16:57:44 GMT",
+      "pubDate": "2026-10-25T17:00:00+00:00",
+      "pubDateStr": "Sun, 25 Oct 2026 17:00:00 GMT",
       "category": "Trade",
-      "hours_ago": 4.73
+      "hours_ago": 7.19
     },
     {
       "title": "These farms show what Iowa could be like if we choose change | Opinion",
@@ -193,7 +193,16 @@
       "pubDate": "2026-10-25T16:38:00+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 16:38:00 GMT",
       "category": "Crops",
-      "hours_ago": 5.06
+      "hours_ago": 7.55
+    },
+    {
+      "title": "Be alert for farm equipment on roadways",
+      "source": "Kenbridge Victoria Dispatch",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOVzRlN0tpLUxkSS1yRXZud3Z4ckdfTHJ1cjdXZ3lKR2VGc2R5ZTF2V2NGS1JHRXBnNktGSFplQmhaelpkTnlVSjV5c1hlNmQydEtzSHNjWXV1RDlTLWdIX2V5SFJKaTVCR20xaV9MSy1JVFZGSVUxeW9JTUE2Rm1vZ0VROGhEVWQtVS1fbkFIbld1UEE?oc=5",
+      "pubDate": "2026-10-25T16:16:23+00:00",
+      "pubDateStr": "Sun, 25 Oct 2026 16:16:23 GMT",
+      "category": "AgTech",
+      "hours_ago": 7.91
     },
     {
       "title": "Local schools return to Smokey House Center to plant ginseng and explore forest farming",
@@ -202,7 +211,7 @@
       "pubDate": "2026-10-25T15:55:33+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 15:55:33 GMT",
       "category": "Crops",
-      "hours_ago": 5.77
+      "hours_ago": 8.26
     },
     {
       "title": "Ukraine’s grain exports: why world needs Black Sea Corridor",
@@ -211,7 +220,7 @@
       "pubDate": "2026-10-25T15:37:00+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 15:37:00 GMT",
       "category": "AgTech",
-      "hours_ago": 6.07
+      "hours_ago": 8.57
     },
     {
       "title": "Central Pennsylvania Conservationists Contend at National FFA Convention",
@@ -220,7 +229,7 @@
       "pubDate": "2026-10-25T15:00:00+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 15:00:00 GMT",
       "category": "Crops",
-      "hours_ago": 6.69
+      "hours_ago": 9.19
     },
     {
       "title": "Western N.C. pumpkin farmer survives storm with pre­paredness",
@@ -229,7 +238,7 @@
       "pubDate": "2026-10-25T14:56:00+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 14:56:00 GMT",
       "category": "Crops",
-      "hours_ago": 6.76
+      "hours_ago": 9.25
     },
     {
       "title": "Farmers in California are in crisis: ‘Costs are too high; we can’t keep this up for long’",
@@ -238,7 +247,7 @@
       "pubDate": "2026-10-25T13:43:49+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 13:43:49 GMT",
       "category": "AgTech",
-      "hours_ago": 7.96
+      "hours_ago": 10.46
     },
     {
       "title": "N.J. bill targets highway safety around farm equipment. What drivers should know",
@@ -246,8 +255,8 @@
       "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSlBmb0V0WFdJMldIZF9wQlhwcXFuazRHaDM4c21ONlJpLTdlQ1JjckZIRV92X2VrN0hMLS14M0dwWmphWmN3SnFZemxfdUZEN1FZZ2d6akptSWgwZVlqel9aWngyRUoyOEhOS01SVXRfZFd1VVJFUDlvdHJfNGN1dGhDaGQ?oc=5",
       "pubDate": "2026-10-25T13:24:51+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 13:24:51 GMT",
-      "category": "AgTech",
-      "hours_ago": 8.28
+      "category": "Crops",
+      "hours_ago": 10.77
     },
     {
       "title": "Cline holds annual Agricultural Conference in the Valley",
@@ -256,7 +265,7 @@
       "pubDate": "2026-10-25T13:00:00+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 13:00:00 GMT",
       "category": "AgTech",
-      "hours_ago": 8.69
+      "hours_ago": 11.19
     },
     {
       "title": "California Agriculture Leads the Nation in Funding for Specialty Crops, California Department of Food and Agriculture Announces",
@@ -265,7 +274,7 @@
       "pubDate": "2026-10-25T12:05:53+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 12:05:53 GMT",
       "category": "Crops",
-      "hours_ago": 9.59
+      "hours_ago": 12.09
     },
     {
       "title": "Freedom Organization cultivates vision for East End Farm Campus",
@@ -274,7 +283,7 @@
       "pubDate": "2026-10-25T11:30:00+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 11:30:00 GMT",
       "category": "Crops",
-      "hours_ago": 10.19
+      "hours_ago": 12.69
     },
     {
       "title": "Maryland Drivers Urged to Use Caution as Harvest Season Continues",
@@ -283,7 +292,7 @@
       "pubDate": "2026-10-25T11:00:16+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 11:00:16 GMT",
       "category": "Crops",
-      "hours_ago": 10.69
+      "hours_ago": 13.18
     },
     {
       "title": "Farms, Barns & Rural Heritage event celebrates WCOLC 20th anniversary",
@@ -292,7 +301,7 @@
       "pubDate": "2026-10-25T10:13:17+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 10:13:17 GMT",
       "category": "Crops",
-      "hours_ago": 11.47
+      "hours_ago": 13.97
     },
     {
       "title": "Cab Talk: Farmers Size Up the 2026 Season",
@@ -301,16 +310,7 @@
       "pubDate": "2026-10-25T09:50:00+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 09:50:00 GMT",
       "category": "Crops",
-      "hours_ago": 11.86
-    },
-    {
-      "title": "$34.1-M US GRANT FOR PH UBE INDUSTRY 🍠 The Department of Agriculture (DA) welcomed the US$34.1-million grant from the United States to develop the Philippines’ ube (purple yam) industry, which is expected to benefit more than 12,500 Filipino farm",
-      "source": "Facebook",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPOFdwY240eWx4cFJMVHJHUXEzWF9GV05fdzJ1NTJmMHVKOGU3TDVWcEFIYm0xUUhjTXdFN1Z3VDBqX2w0WFFmSEVjNVpFVnE1bHNkc3dIREJndUhaVDlIc0JIRXJMMmxNV3lRd1hmdWJZNmxrd2RvTUk3cy1mcjN6VTFxRkFIS3ZGTWpsM0hoSlJRZEo1OUlYS3d0QTk4bF9GTnlKWWp5UEJXMTVFdDRCSHBGUGxrSURkaXQ4VlRxWmhRdVJoV3gxRmtLZEJUbEZmUEc0?oc=5",
-      "pubDate": "2026-10-25T09:15:23+00:00",
-      "pubDateStr": "Sun, 25 Oct 2026 09:15:23 GMT",
-      "category": "Crops",
-      "hours_ago": 12.44
+      "hours_ago": 14.35
     },
     {
       "title": "Roy Oyama Obituary (2026) - Honolulu, HI",
@@ -319,7 +319,7 @@
       "pubDate": "2026-10-25T07:43:11+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 07:43:11 GMT",
       "category": "AgTech",
-      "hours_ago": 13.97
+      "hours_ago": 16.47
     },
     {
       "title": "Cambodia Explores EV Tractors to Boost Farm Productivity and Cut Fuel Costs",
@@ -328,7 +328,7 @@
       "pubDate": "2026-10-25T06:43:37+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 06:43:37 GMT",
       "category": "AgTech",
-      "hours_ago": 14.96
+      "hours_ago": 17.46
     },
     {
       "title": "NMSU research centers celebrate fall with outreach events",
@@ -337,7 +337,7 @@
       "pubDate": "2026-10-25T01:16:13+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 01:16:13 GMT",
       "category": "AgTech",
-      "hours_ago": 20.42
+      "hours_ago": 22.92
     },
     {
       "title": "SoftBank-backed drone maker wants every farmer to ‘have their own robot’",
@@ -346,25 +346,7 @@
       "pubDate": "2026-10-25T01:00:27+00:00",
       "pubDateStr": "Sun, 25 Oct 2026 01:00:27 GMT",
       "category": "AgTech",
-      "hours_ago": 20.68
-    },
-    {
-      "title": "Secretary Rollins and NASA Administrator Isaacman Sign MOU to Advance USDA Data Modernization Plan",
-      "source": "USDA (.gov)",
-      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQVWNHWkFzUWFKak9MQWs0aGpSSGRidzFIU1FtWWxGYkhzQTV0b2JYRWNReXgza1FpVmJ3MGx4UERiQjViQnBtX0hsMUwybmZIQ1BCeWp0bldKWllaOW55eFQwcy05bW05UnNRX1B1WjBXZFBqYmUyaXRDZ0JBZlRoeVZOWnZzWGlfSzJ6NFpvY1Nvek9LNjQwcjRUel9Qc0NrWkpaTUNEZFlWS01fSjNLck03TkFDeXpiUlkxWXFyd1ZWYkJNYklzdE04bWdPTE5nMjB1UGxMWENwZXl0ZG4weWk4TVh0dlRKYWdiZEdLTQ?oc=5",
-      "pubDate": "2026-10-24T23:30:00+00:00",
-      "pubDateStr": "Sat, 24 Oct 2026 23:30:00 GMT",
-      "category": "Crops",
-      "hours_ago": 22.19
-    },
-    {
-      "title": "Proposed amendment aims to shield more Georgia farms from development",
-      "source": "The Current",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYWQ1V1RhNThXTzJkVHoyUVhoZkxYQlFzekdYTG5Ld29CbFJsNFA2Ung3c05lQXhqbFdkMHlOVjYzeG1FWk5vNnk5R3huZ3JPM2dmR2tudWhkUkFLTnhGb25Tb3FuaXlZREQtU3FBNDBlVmtPOFJlQnluTXpMSXpIRTNUZlJiak1zSU55dlZ5ajlibEYtMlc2MnVadGV1LUdTMzRnN2FCangzUQ?oc=5",
-      "pubDate": "2026-10-24T22:07:50+00:00",
-      "pubDateStr": "Sat, 24 Oct 2026 22:07:50 GMT",
-      "category": "AgTech",
-      "hours_ago": 23.56
+      "hours_ago": 23.18
     }
   ]
 }
