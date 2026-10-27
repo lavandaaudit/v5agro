@@ -1,9 +1,72 @@
 {
-  "updated_at": "2026-10-27T04:53:28.392169+00:00",
+  "updated_at": "2026-10-27T10:26:09.993807+00:00",
   "period": "24h",
-  "ua_count": 26,
+  "ua_count": 29,
   "en_count": 80,
   "ua": [
+    {
+      "title": "Міжнародна допомога. Українські аграрії почали отримувати рукави для зберігання зерна",
+      "source": "Ukr.net",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAyWmktR3JnS1ZOWmYtZXM0T0tWOFVFZ3gwTmdzQ044SHQwdUVZOG1mSk9xS0hOQnhLRUNIekVYT2FJX20wRGFlaDRNRHVqeDdsTnZ1UWxPVEx3V3J1RHN4VHFyTnFwWWt1?oc=5",
+      "pubDate": "2026-10-27T10:02:20+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 10:02:20 GMT",
+      "category": "АПК України",
+      "hours_ago": 0.4
+    },
+    {
+      "title": "Експорт українського зерна через Констанцу цьогоріч перевищив мільйон тонн - ЗМІ",
+      "source": "Укрінформ - актуальні новини України та світу",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPblRYNmpjWEdXMENtcGR3SmZXVjYxM084d0FKZklEVkJwcW9CRDl1bnBTamJyZklxVjVVRXZJRFp6RGFPb0NjeUJYOFhFWllMQUxqejVMQTBQXzBhWlFGYXhhWWF6NWlVbElQeUpmR19OcUM2Rml6aXVvSW9mSTdLZEg2dFFqQ0hBTWoxdEFwQVc5YnN2LWstd1laNzJUaG9kbjF0Y3hIMFRIQkZ2TWlQTmNfdmo5NlRZZ000aFBJLUJoOGJJNk9J0gHMAUFVX3lxTE11Z0VhMDNjTmhLRFlxMW5FNDBKc2JLZjNUbFdETk5hR0tDc0k0MDJiY0gtcll3NGUxc1Z0bEdxenhPWlJDcFRDay0wQUFLVXJmcW9DT0RVZ0NZLWZvSzRwUm5Xc3gwckFMNVR4ZmxJSGhPcGZUaHVJUDJpMEtEdXh3S3JUMEZieU16NTJSZkYzbi1BNHpRZHhhOWRzSUpWbG5uOFBGb0V2Z1BUQ19Ob29yRGl0djg5bnp0b2dDZzlVUzVsb2FEdmJiM201RQ?oc=5",
+      "pubDate": "2026-10-27T09:40:05+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 09:40:05 GMT",
+      "category": "Експорт та Логістика",
+      "hours_ago": 0.77
+    },
+    {
+      "title": "Продовольча програма ООН готова закупити до 1 млн т українського зерна",
+      "source": "AgroPortal.ua",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLVI0eXk3UWJaaTJDM3N4Z1FyMjJsNDB4UFlia2FZb2JaVUtReHRic21CRXlnY0FXN0RGSlc5SS1uMmo0THU5cmZWdzhOQnBtMEJCMlprYkR1V2xoMU8yMWVJbXc0U204YlFqVWQ5NktrOEZNN1liVjF0a2ZMWDNubWFMTUVvcWUwYkZwektncDF4TTZVUGl2R2RMb1FPa0VtbEFNNURCMDY?oc=5",
+      "pubDate": "2026-10-27T09:08:46+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 09:08:46 GMT",
+      "category": "Експорт та Логістика",
+      "hours_ago": 1.29
+    },
+    {
+      "title": "Україна відкрила 29 нових ринків для експорту: що зможуть продавати аграрії",
+      "source": "Новини аграрного бізнесу",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdS1oazRMSWJtc2RDLUp4WFpUOWVWVU5lSW9pa3lqWmt4UVpudlFtOE5aeWJmLTY0Yy1hbnpnbUFDQ3R5NjJJZldqdDA0cUtoeTN5R1M2QVFDaDkxOVVZcGxLSmFwbXAwa2tESG11dEFCRmdlWkdHVTA1YmFxT3V6Y2ZZV1dfN2dyZXJTZlJoRk9IcmJTdTl0SFZRTUZENXNUbzNyXzlfVnE?oc=5",
+      "pubDate": "2026-10-27T09:08:00+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 09:08:00 GMT",
+      "category": "Експорт та Логістика",
+      "hours_ago": 1.3
+    },
+    {
+      "title": "В Україні обмолотили майже 30% площ кукурудзи",
+      "source": "Kurkul.com",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOWXc5enBWMnFLNFpfcG5IWmJ6NldaOU1UbktyYlQzdVF4VnA5UnU4S180MktGS0tnYTViRWl0djhkeTlYbWNpOFZsemx5dTVZYU5ZZ3pxMVBfN05tZENGY1JoQ0RncFJKcWozWmttQXVyYm8zNkgxWWJweC0xSW90ajVTWdIBiwFBVV95cUxNbjBLWWxLVlgyOWZXbEMzTE0wcEJFWFN6RkRCZlV2MjlMR3VWT0lxMktfMUxMQ1pKMzlMaFZxbU5pTld1NkZtSE1jSVByc1pOU0dqcXE2S1RvYTg5dHdQSTNfOEt5czQ2RUlwV015bU9aYlNZcGl5TkVhaE1LVU81VGtKVmw1RnNnM0F3?oc=5",
+      "pubDate": "2026-10-27T08:31:59+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 08:31:59 GMT",
+      "category": "Агро Ринок",
+      "hours_ago": 1.9
+    },
+    {
+      "title": "В прифронтових регіонах України розпочалася видача рукавів для зберігання врожаю",
+      "source": "SEEDS",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVnN5ZFlRV1Y3UVBPV19fRllOOGZLZ2VzRGM3YVQwN2JoS3RCQWhoVVJ6emJaYnpVS200WjZpSlJqNjdlQXZDZGZKU2ZYeHNmVUtkM2JFYzV2V2JXd1JBRXpXTnlLMm1nMDY5b19GajBMc2F0ajhoeXhkMmhLbDdfRjBuT3pPWmNnOWRlbTl1dXBwTkpaSzYxcEhpbHJrT29fVUg2TFkxM0tJX3poTjY2NEdpV1daLUFf?oc=5",
+      "pubDate": "2026-10-27T07:17:24+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 07:17:24 GMT",
+      "category": "Агро Ринок",
+      "hours_ago": 3.15
+    },
+    {
+      "title": "Українські агрокомпанії залишають до 80% посівів кукурудзи зимувати в полі",
+      "source": "Дзеркало тижня",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZ0FHSy1ERTh4VHVjamRkVUJwUGdmTTl3WVVDT0ZtRUpwRXpXbjhCMjJ5VUZVR25LZVBES19jY2RiQnpvMjJuVTFBWDR4RldsSGxacFpwSl9JX2xyVENmLXY3eDktdFRaRFpCUDI5ZXZ6bFRIVEp0V1NMZ3NvdGNKeGNYUmpRUVppOHNuUDRPQW5ZRUxDUGRoTDE0ZlNFbkZZX0pkZktzUWQtcGQ20gGyAUFVX3lxTE9RQl94N3FkNVZDRHFtMGxHaERIaGhCMDJOcTZuMEdya2w1ODl2aWpBcGdKeV81T0RyYS14eHdHTE51R2xzOV9YeGo0c3JwblljUWNEcUczRWJHaG1NZWNJN3dnYmVPYjMwWjduUHR0eVI0QlphN0owamQtUGw2R21uRDg0M3F3dzNtSTJrNTNucWF3bVgwLVFOS3k3ZHdQRHVZakxscWxkenJNQjctRDlpV2c?oc=5",
+      "pubDate": "2026-10-27T07:09:00+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 07:09:00 GMT",
+      "category": "Виробництво та Поля",
+      "hours_ago": 3.29
+    },
     {
       "title": "Україна експортувала на 3 млн тонн зерна менше, ніж торік",
       "source": "AgroPortal.ua",
@@ -11,16 +74,7 @@
       "pubDate": "2026-10-27T03:29:06+00:00",
       "pubDateStr": "Tue, 27 Oct 2026 03:29:06 GMT",
       "category": "Експорт та Логістика",
-      "hours_ago": 1.41
-    },
-    {
-      "title": "Укрзалізниця обмежила перевезення вантажів до Угорщини та Польщі",
-      "source": "AgroPortal.ua",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQb1NXbUpiT0gzd0lfcThfQkVwc0NPLWF5NEFsYWozNGZ2ek9RM1JuVjJaMUxDbXBmOGJhU3dURmlNMHo4UWoyX2NKNmUwdjdaNTdDLU1CcG5BRDRSUkJCUjlMWGYzdVBHTzRQUTVndXA3RTFoRHg1RURNbzNOUXZHSy1aNjZzWEtaem1LRFNLSjBENUs3dC1oOWJwMWtFWmdEMktKVDBRWUF3MC10?oc=5",
-      "pubDate": "2026-10-27T03:23:49+00:00",
-      "pubDateStr": "Tue, 27 Oct 2026 03:23:49 GMT",
-      "category": "Експорт та Логістика",
-      "hours_ago": 1.49
+      "hours_ago": 6.95
     },
     {
       "title": "Від борошна до молока: куди розширює експорт Україна",
@@ -29,7 +83,7 @@
       "pubDate": "2026-10-26T18:25:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 18:25:00 GMT",
       "category": "Експорт та Логістика",
-      "hours_ago": 10.47
+      "hours_ago": 16.02
     },
     {
       "title": "Заклик до аграріїв: збільшення площ хрону в Україні",
@@ -38,7 +92,7 @@
       "pubDate": "2026-10-26T18:17:17+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 18:17:17 GMT",
       "category": "АПК України",
-      "hours_ago": 10.6
+      "hours_ago": 16.15
     },
     {
       "title": "Експорт олії з України впав вдвічі внаслідок блокування портів",
@@ -47,16 +101,7 @@
       "pubDate": "2026-10-26T17:47:15+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 17:47:15 GMT",
       "category": "Експорт та Логістика",
-      "hours_ago": 11.1
-    },
-    {
-      "title": "Задля безпеки Україна хоче перенести митні перевірки вантажівок із зерном на територію Польщі та Словаччини",
-      "source": "SEEDS",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQVzhJRFRTbnM4N09JN2NUTWNlQnhXVHd3VHFDRU8yUEhCSG1CcktEN3pOVkViYzhodi1rSFB5SGdpblphcGoyNFllbDh0Mnd5aEtiOVFHVGY5WFh0NVpwVGxndHI4Z2VnV3QwU1k4SG5YcWd0S2Y0Q1ZiZ0tNY1BieUxqbUpjRENmdHJpVTA2cHlwR1RZTExrVk9hbFZkZW9RODlsaHZtNFkzejJOOTJiTTlnR2RXWi03SlJSd0hhN3lCV0JxcEwwLWtiTVJCSkplVTlJQ1VMcw?oc=5",
-      "pubDate": "2026-10-26T17:43:37+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 17:43:37 GMT",
-      "category": "Експорт та Логістика",
-      "hours_ago": 11.16
+      "hours_ago": 16.65
     },
     {
       "title": "Kernel скоротив експорт зерна з України на 54%, а продажі олії — на 48% через російські атаки на порти",
@@ -65,7 +110,7 @@
       "pubDate": "2026-10-26T17:02:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 17:02:00 GMT",
       "category": "Експорт та Логістика",
-      "hours_ago": 11.86
+      "hours_ago": 17.4
     },
     {
       "title": "Литва вимагає перевірок, щоб крадене Росією в Україні зерно не вивозилось через ЄС",
@@ -74,7 +119,7 @@
       "pubDate": "2026-10-26T16:21:47+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 16:21:47 GMT",
       "category": "Фінанси та Держпідтримка",
-      "hours_ago": 12.53
+      "hours_ago": 18.07
     },
     {
       "title": "Росія атакує судна в Чорному морі: як Кремль намагається зупинити експорт українського зерна",
@@ -83,7 +128,7 @@
       "pubDate": "2026-10-26T14:51:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 14:51:00 GMT",
       "category": "Експорт та Логістика",
-      "hours_ago": 14.04
+      "hours_ago": 19.59
     },
     {
       "title": "Аграрії дев’яти прифронтових областей отримують безоплатні рукави для зберігання зерна",
@@ -92,7 +137,7 @@
       "pubDate": "2026-10-26T14:44:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 14:44:00 GMT",
       "category": "АПК України",
-      "hours_ago": 14.16
+      "hours_ago": 19.7
     },
     {
       "title": "Українських аграріїв почали забезпечувати рукавами для зберігання зерна",
@@ -101,7 +146,7 @@
       "pubDate": "2026-10-26T14:30:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 14:30:00 GMT",
       "category": "АПК України",
-      "hours_ago": 14.39
+      "hours_ago": 19.94
     },
     {
       "title": "️️️️️ Понад 500 агрогосподарств отримають 3600 зернових рукавів: ВАР і Prosper Global розпочали передачу допомоги",
@@ -110,7 +155,7 @@
       "pubDate": "2026-10-26T14:25:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 14:25:00 GMT",
       "category": "Агро Ринок",
-      "hours_ago": 14.47
+      "hours_ago": 20.02
     },
     {
       "title": "Аграрії дев’яти прифронтових областей отримають рукави для зберігання 2,8 млн тонн зерна",
@@ -119,7 +164,7 @@
       "pubDate": "2026-10-26T14:21:21+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 14:21:21 GMT",
       "category": "АПК України",
-      "hours_ago": 14.54
+      "hours_ago": 20.08
     },
     {
       "title": "«Я навіть голову області катала на комбайні»: історія аграрійки з Одещини, яку відзначила ООН",
@@ -128,7 +173,16 @@
       "pubDate": "2026-10-26T14:00:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 14:00:00 GMT",
       "category": "Агротех та Техніка",
-      "hours_ago": 14.89
+      "hours_ago": 20.44
+    },
+    {
+      "title": "Україна хоче перенести митні перевірки вантажівок із зерном на територію Польщі та Словаччини через російські атаки — FT",
+      "source": "Latifundist.com",
+      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQNUo3VmY5NHpKUVRXX2RxUThPRUN4OFdHQWRMX1RLTExCQlNHX3JKT1c5T2g4SnJXSjdUNWZlU18zZlVrb2RScVhVNjZwSWJJNFlkX1lORGRCbkJ6ZDZuTVhsQ0p2MWFrZEd1TzlpWmFMYmZYTS1YbWU4QUI1YWswR2tlMmd3c3FSVi11eWloRS1qWktPVlRNdEhkclA4Vzc3M1NCTVUzQ0hpUmltVG4xMzltY05WdVQ5aGVDNWU5d3hMRERtY1N5Rzk1UzViVndLNWl4WkdjQ3NtaWJJMTFISGNrRXI4MWtjN1BFYk5pbnM0NW5LWXRsONIBgAJBVV95cUxOUVBkbHRCamlsZHN0QUlPbW9YZXRsamx0Si04NkM4T0ozRWQ4UU5UOVBoRjVOXzBDSmxQSnhraFZkblVkMklMUHJheFVCdXRURE5GY081eTBzWTFDbHp1MzZoTy1OMElpWUtkUFNLd1pnSno3V1g3aHFWaVZEeklGb2dQMEdBNGNOUC1YQTFKWXB4MllQLWVkanZUWTZoelZwRHNEMHBSbktJUGJfS3o5R2xlQkFEbW1rZHU0TVRkaHZsdjByWXZQNDZ4Uk5GRndtMHVUbWJKYW1NZy1XZm4yUmdVVmNsZnVNSFExcWdxT01PdjF3bHhIRm1xWW5LNkxt?oc=5",
+      "pubDate": "2026-10-26T13:05:10+00:00",
+      "pubDateStr": "Mon, 26 Oct 2026 13:05:10 GMT",
+      "category": "Експорт та Логістика",
+      "hours_ago": 21.35
     },
     {
       "title": "Україна у жовтня майже вдвічі зменшила експорт пшениці, проте значно наростила продаж кукурудзи",
@@ -137,7 +191,7 @@
       "pubDate": "2026-10-26T12:47:47+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 12:47:47 GMT",
       "category": "Експорт та Логістика",
-      "hours_ago": 16.09
+      "hours_ago": 21.64
     },
     {
       "title": "Україна може не встигнути вивезти все зерно на експорт: під ризиком близько 20 млн тонн",
@@ -146,7 +200,7 @@
       "pubDate": "2026-10-26T12:31:20+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 12:31:20 GMT",
       "category": "Експорт та Логістика",
-      "hours_ago": 16.37
+      "hours_ago": 21.91
     },
     {
       "title": "В Україні стартувала видача рукавів для зберігання врожаю аграріям прифронтових регіонів",
@@ -155,7 +209,16 @@
       "pubDate": "2026-10-26T12:09:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 12:09:00 GMT",
       "category": "АПК України",
-      "hours_ago": 16.74
+      "hours_ago": 22.29
+    },
+    {
+      "title": "Зерна багато, а хліб дорожчає: чому українцям не варто чекати дешевих продуктів",
+      "source": "Mind.ua",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQVR5Tm02bjFHc2xxRjRadnVERFlMSW5meFZiUnZycjZ1cW5rNlBxWGtjdkhNamN6aGVrVFIwaF9UVDU3UzNPOTlNeFZQS0V1VTREaVBBZ2o3V1U5ZzRpY1A2Q2o5dkY1LVdaNm90VkdRZGNRcHE0SUNBTlBJWkVWb3F0V0Z4LXdGNTNoWjNPUE9jZGtmWjJCeGJoNjlISFhHTTFkYTVFRVlyeTluMFVHYmNmZWg2cTVGUkHSAboBQVVfeXFMTkFUeU5tNm4xR3NscUY0WnZ1RERZTEluZnhWYlJ2cnI2dXFuazZQcVhrY3ZITWpjemhla1RSMGhfVFQ1N1MzTzk5TXhWUEtFdVU0RGlQQWdqN1dVOWc0aWNQNkNqOXZGNS1XWjZvdFZHUWRjUXBxNElDQU5QSVpFVm9xdFdGeC13RjUzaFozT1BPY2RrZloyQnhiaDY5SEhYR00xZGE1RUVZcnk5bjBVR2JjZmVoNnE1RlJB?oc=5",
+      "pubDate": "2026-10-26T11:56:00+00:00",
+      "pubDateStr": "Mon, 26 Oct 2026 11:56:00 GMT",
+      "category": "АПК України",
+      "hours_ago": 22.5
     },
     {
       "title": "Аграрії дев’яти прифронтових областей отримають рукави для зберігання зерна: які умови",
@@ -164,7 +227,16 @@
       "pubDate": "2026-10-26T11:43:43+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 11:43:43 GMT",
       "category": "АПК України",
-      "hours_ago": 17.16
+      "hours_ago": 22.71
+    },
+    {
+      "title": "Оренда паїв в Україні може подешевшати: аграрії вже не витримують нинішніх ставок",
+      "source": "Експерт",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTUZEelVaLUd4bE0zNXJEUldGdWlJZXdpck1IZXRVNDItSUp2LTFPdGs5QUdsZklTRHdlNDRyTldrNXpIdVJtV05QVmU1cFVzOFhxcmVfWm8zcXEzaUFlNU5XVVZGczZzWFBjSHZ0MmJ6VnpqN2o2a2V6UGxFVjl5S01qbW8tdkpHM2YwQWljcE9kUUV4TTE3N3BxNzFnUWotUzJjV2pjMzV6dF82M1N3RERocWVVb3FicXNLLQ?oc=5",
+      "pubDate": "2026-10-26T11:19:44+00:00",
+      "pubDateStr": "Mon, 26 Oct 2026 11:19:44 GMT",
+      "category": "АПК України",
+      "hours_ago": 23.11
     },
     {
       "title": "Дефіцит вологи змусив скоротити площі сівби",
@@ -173,7 +245,7 @@
       "pubDate": "2026-10-26T11:15:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 11:15:00 GMT",
       "category": "Виробництво та Поля",
-      "hours_ago": 17.64
+      "hours_ago": 23.19
     },
     {
       "title": "Прифронтові аграрії почали отримувати безкоштовні зернові рукави",
@@ -182,7 +254,7 @@
       "pubDate": "2026-10-26T11:10:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 11:10:00 GMT",
       "category": "Агро Ринок",
-      "hours_ago": 17.72
+      "hours_ago": 23.27
     },
     {
       "title": "Експорт зерна «Кернела» у I кварталі 2027 ФР скоротився на 54%",
@@ -191,63 +263,252 @@
       "pubDate": "2026-10-26T10:29:47+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 10:29:47 GMT",
       "category": "Експорт та Логістика",
-      "hours_ago": 18.39
-    },
-    {
-      "title": "Аграрії назвали дві причини, через які скоротився експорт яблук з України",
-      "source": "TrueUA",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQLURMVlB5cGpWdzBNaGtLdnVQc3psY1l2YWRiQ0dILUtJa1NTRFg2ak5UR3huckpJbU9BX3JURzdxXy1oUE4xa2xMWXEtendVT3RuSDBTbmxmUGpranUwUUowTGF0RWhDQ053WWIzZHM2UUZEZEl5Z2tvS3NMNGlkRkl2WWFTU1p3NllnRkVwMVNkdmRSZ2kwRW51bVNKZUNfWncw?oc=5",
-      "pubDate": "2026-10-26T09:56:00+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 09:56:00 GMT",
-      "category": "Експорт та Логістика",
-      "hours_ago": 18.96
-    },
-    {
-      "title": "Аграрії Сумщини отримали першу партію зернових рукавів від ФАО",
-      "source": "Elevatorist.com",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPLUhjQmVya1FaZjZ6RWhwalZEV2U5VEk0dkNzcWFKaXRFZVotZjlCVk9ITHh1cFJCUEMyaTNWcGt3SnptVHJhZ1FMVE5ubUlJSldCLUJTNVo5TU1SNktLbk5HNjVtZXRCTWZGZF91YWFkYUdhZ29kVkhWV3hmMG9FN3VqNzJrNXFuM3I0bTNuT05LNlpjR1NldG9wTnNVYUF1SEQwVEtDeVRsTkotVzhiS9IBsAFBVV95cUxPLUhjQmVya1FaZjZ6RWhwalZEV2U5VEk0dkNzcWFKaXRFZVotZjlCVk9ITHh1cFJCUEMyaTNWcGt3SnptVHJhZ1FMVE5ubUlJSldCLUJTNVo5TU1SNktLbk5HNjVtZXRCTWZGZF91YWFkYUdhZ29kVkhWV3hmMG9FN3VqNzJrNXFuM3I0bTNuT05LNlpjR1NldG9wTnNVYUF1SEQwVEtDeVRsTkotVzhiSw?oc=5",
-      "pubDate": "2026-10-26T08:41:35+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 08:41:35 GMT",
-      "category": "Агро Ринок",
-      "hours_ago": 20.2
-    },
-    {
-      "title": "Kernel удвічі скоротив продажі олії та експорт зерна",
-      "source": "AgroPortal.ua",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPbnEtOU1ZRG9nc05uSVFiOGFoR2Z1SXhqYzlGZ2RFZWZCRm5scVBOZ2FGbkdPb1Vrb3pEVk5nSV9hRzhZQlBpcmttVVZrVDQwc01uTk1WLU94Q2p3ZVAxYlp6NW05TE5SblNZRjdNMkFQMVNxbVdCUzlFVkJtRTJ0bkNZb3JGSHBnM0o5ZEdDT2dEYkdaS2l1QXBQTlF4Y2N6?oc=5",
-      "pubDate": "2026-10-26T08:31:00+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 08:31:00 GMT",
-      "category": "Експорт та Логістика",
-      "hours_ago": 20.37
-    },
-    {
-      "title": "Україна, Британія та Латвія об’єднаються, щоб викривати походження викраденого українського зерна",
-      "source": "УСІ Online",
-      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9fN1g0RVB5LUZfLWtSc2VJUnNpdFQ2WUk1bUZKaW9QVzQ4UnlHWjI5S3RPM2x1WjVoREpHc3VLYmptbW1WM09N?oc=5",
-      "pubDate": "2026-10-26T07:15:00+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 07:15:00 GMT",
-      "category": "Агро Ринок",
-      "hours_ago": 21.64
-    },
-    {
-      "title": "Українські дрони б’ють по гаманцю кремля: що відбувається з нафтою та зерном",
-      "source": "The Page",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOaVVFZXFTSUp5d2lDdUFGZnJiTF9WTHdsRzVqQmh0ODVDWnR0dmF4Z0Y4Qlp3dmJwak1fbEJjOHdERkV6czFacDl6YnFLeU9YUGhJLU1JLXRqdWlLTTZLMkFtQWR6VjJvRkoyWl94V2tjWkcyYXhUekE0bXlXdnZ4Szctb0p1N19PNkxNcHNwTTlFcHBS?oc=5",
-      "pubDate": "2026-10-26T06:24:00+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 06:24:00 GMT",
-      "category": "Агро Ринок",
-      "hours_ago": 22.49
+      "hours_ago": 23.94
     }
   ],
   "en": [
     {
+      "title": "OneSoil Global Analytics now identifies up to 28 crops from satellite imagery, up from 12",
+      "source": "Farmers Review Africa",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPN3Z1dV9WNndzSG5hNVp1dXpkNDRYTHlSdENrWXU0dFk0bTdGbXVQRUdWWW5aOFdCUU53RGNGV1pQZlgybjhNQ01nX0NhOWZXZmJzQS04cGh4c0ZUUU52M1hYc2thNjdIZGszWmZHSmFSdklYXzJEY1dONXQ3S1ktaWdZSzFMVWtJcVFCU1dvbEVzM2JkeEstemh6WHdzVm40bHBmTzNVaERnakgtS1A3Njk4Mk9HTkZFdHdiRHZR?oc=5",
+      "pubDate": "2026-10-27T10:17:26+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 10:17:26 GMT",
+      "category": "AgTech",
+      "hours_ago": 0.15
+    },
+    {
+      "title": "$8 billion harvest fuel aid offers relief, but not a cure for farm woes",
+      "source": "Wisconsin Farmer",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNREFQS1BGcDlZcXNPV2M5T2ptRUx3aVVZZ1Q2QTNoUWFJekhXR2JTSFF0SDJMS1hqM1JGQUV5QVNLSDAxdC1RcjM1S1I3SUNaNDdTc0JlXzdZVlVzZlJnNm52UHVhZGpJRTNZemlDM0cyN0taZkptckhXa055N0pPVm5jWkNPMUJyakJ3aDc2X3pFWC1rZjN6N3BBZXlObWZ6aWtHSkpGRjUzOVJGeDFydVQ3S25WSnFObHRJYm43NW91UQ?oc=5",
+      "pubDate": "2026-10-27T10:11:36+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 10:11:36 GMT",
+      "category": "AgTech",
+      "hours_ago": 0.24
+    },
+    {
+      "title": "EU farm reform: Governments push for more control over subsidies, weaker environmental rules",
+      "source": "EU Perspectives",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVjgxbTE5UEJ6Z0xJUHVWZU00OUlqUU9RN1FyRkI5cnoySFBEbDgxUWxWM1lFZTlaVDFDZGVjclVuVTEzcS1DVy1jell0OGpEZkpySWhuQzNOdk9wOGZBX1BSbVMxMklBRnBOWEczZ29OMXZabDFRTlZvdWFKOXN0cUVFOTFkNHRrLWNodDh3UFJJaVVzaTlLSVVBcFhzdUJ5dXZETUhGWE9BX0htbUN0RF85YVdHeXN3MmNVTTVYOHhfWEE?oc=5",
+      "pubDate": "2026-10-27T09:51:03+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 09:51:03 GMT",
+      "category": "Crops",
+      "hours_ago": 0.59
+    },
+    {
+      "title": "DATCP Nitrogen Optimization Pilot Grant Program Open to Apply",
+      "source": "Morning Ag Clips",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaC11ZDFab3hUVFh4LTRoM2cyUUFlQThKQTg5bFhHM2VaQVVyVVFlZi1DUzVIR3JudnlHak9zeFZXSFd5ZEZobThpMlpkaUV1WXIzeHJIbERCODE1bVh1a0xGTm5rQWF1WDlhWVJNemtSeE5XVk5pOG5IZzY0NWQtUnhWR2xhYzVzdGl4TWFINEI5RVJVa2F5NA?oc=5",
+      "pubDate": "2026-10-27T09:46:35+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 09:46:35 GMT",
+      "category": "Crops",
+      "hours_ago": 0.66
+    },
+    {
+      "title": "US Government announces major investment in domestic fertilizer manufacturing",
+      "source": "World Fertilizer",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZF96MnpJd1ZCS1M4YjhuM25aM3p3UHYyZ1h4N2ZCX0twWFpwdEV4NUgzdDB6V0YxWi01X2lweDRBZWVCOG1RNEZyM2Y1Um94alNScmV4Yy15UGNQcmpJZ3l6d3U2ejdpc2ZvdWk2MUN3SGFDaXNicU1oZS1GQTFRS21nNDBJVWpiN3FSX2g3emVfMmhmd1pxcGtpaWl4eTRjTDYtVTNYRE9ic0V0ZGtxRXhXcGNielhiU2ZsdGU5dUtUb3NPSXV3?oc=5",
+      "pubDate": "2026-10-27T09:43:51+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 09:43:51 GMT",
+      "category": "Crops",
+      "hours_ago": 0.71
+    },
+    {
+      "title": "Agri & rural-tech marketplace TractorNext launched to empower informed equipment decisions in India’s rural economy",
+      "source": "AgroSpectrum India",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQUFZBczdEWlptQkFlSUJJdmJnTHlOR2xZdFlHWVBQX0txUVAxUktESjdEU1lST2JTMnZ6eUtxVjJ3eHR5VWkxZlFPWkFRRm1YWUV5NUpySVJaaDUwOERkd0k4RkNTbzNjNHM3RGV0ck1ZWkRxdjA2al9IVlRYMmRRWmZFRkNCcUFZeHVrYXRfdnBUTjBYS0tBUnQ2OHhmbldhazJGV1dCVUQwMkJOYTBhZWxoNVRRMGhFTXgtb0dtU251OU41UE9fR1FHM05nRDM3UGR4RzhOanFVcnRhLXdlZDZ5MGhKd01HSWgwV1BYeDJ5eHM?oc=5",
+      "pubDate": "2026-10-27T09:05:49+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 09:05:49 GMT",
+      "category": "Commodity Markets",
+      "hours_ago": 1.34
+    },
+    {
+      "title": "What to know about the Florida agriculture commissioner race",
+      "source": "WUSF",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPOWpXRHF3U1VFVVNWc0R4WllmTmxVTTVuZ1JTVUg1b0p0QnpiTkZFWkplekt5UnR0ZTZhRGRvUDNpR2swS3NuY0FFSWpRWXNJRk9ZZnVfYzROaTNPaXpXU0t5TldzNHF2ZEdlV01pX1pwRkYxRVhGcXh2SmNqSWQtSnVibF80RGVfaV9KeTZIVklsd1Y0ZkNXdkd1dVU0cnc?oc=5",
+      "pubDate": "2026-10-27T09:00:00+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 09:00:00 GMT",
+      "category": "Crops",
+      "hours_ago": 1.44
+    },
+    {
+      "title": "Camas Commons moves forward",
+      "source": "The Journal of the San Juan Islands",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBrY2tjX2dLMGJWWnMtNHJrUzdWck53QVNscHpMRW9OU0JZZjZoZDZZRklkWFU5ZlU1T2F5U1V5WWpXeC1naVNEYkY4RWFvQ1FhNnBlWGNybUFVYW9ELXBSRGhMOVhmQXNaNkxnUGlieGxrQlRaci15a0hB?oc=5",
+      "pubDate": "2026-10-27T08:31:44+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 08:31:44 GMT",
+      "category": "Crops",
+      "hours_ago": 1.91
+    },
+    {
+      "title": "AI and IoT Transform Poultry Farming with Predictive Microclimate Control",
+      "source": "Bioengineer.org",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOemRtSWNDdDlVSXExSEdLdEJDeTdGRGptNURPTENzWlptMUxoS09zTnh6UWdCYUpBZlN1NDlNTnoxRFJMRjNNenJhS0V1d2pRRk1lbG11dmxEVkJ5a1NKT2U0WkpOVTRRWFhFUUcydnlIeFRnZUkwRmg2czJzQ1kwaG1UM0lqa25fT0Z0U1J1anVwNUxSLUN6QklMNVBsVzQ?oc=5",
+      "pubDate": "2026-10-27T08:29:25+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 08:29:25 GMT",
+      "category": "AgTech",
+      "hours_ago": 1.95
+    },
+    {
+      "title": "EU agriculture ministers choose fewer conditions and more flexibility for CAP spending, just when Europe needs the opposite",
+      "source": "BirdLife International",
+      "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNZ2dqcDJtQ3lzSzZTaFdfS2lxVzZmUWtSOU5sVjdJYzJybjNDTEFwQUFaWXg2V2lrZ1ZwOUVEUkVhTFNPTEh6MjBld2xiOEV1Nk83SmN6VXhDc29rTXdWY3QyYkhEZHFHcWt1MVlQaHJsQ01UMW9PWFhGTm12aDJxY2pzUlNhTkk5c01tZjFGd1k5Q2laYjJpekVhNXEtaHd3cE9UYlJMTXVNblYzTmIyUVB2ZngtSmtaZmZDQXhiaXJBcDF3WlZaZVltaHpwNFpzTzhSWUdBekdWem1BODBOdWQ3Y0NqTEJTTFF1RHJfdV91dEJaTDZZ?oc=5",
+      "pubDate": "2026-10-27T08:24:58+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 08:24:58 GMT",
+      "category": "Crops",
+      "hours_ago": 2.02
+    },
+    {
+      "title": "How Radio Helped Transform American Agriculture",
+      "source": "Southeast AgNET",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE05YU5oazRzaktiMWFqZGNsOWxrUEt0OVNJUkRpNXAtUVpjc2FwT3d1czhvcEpQRVRxTWJWUW1fUkdLby05dkYtWE51QWZ1OGNPdEVGUEZOYmNJY3poeHhmRHZpeWQ1UXMwNlp0aHBISWNCeFBpQ2lJUU1IYWpEdw?oc=5",
+      "pubDate": "2026-10-27T08:05:41+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 08:05:41 GMT",
+      "category": "Commodity Markets",
+      "hours_ago": 2.34
+    },
+    {
+      "title": "EU member states agree on reform of agricultural policy",
+      "source": "Belga Share",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNY2RZbG5Eb2RWM0h4T2Y1RVd3UjV2Y3c1X0JTOEtpMDRhLWFJUW8tSERJczRpZ18teUVxSWNFOHphdWVnT3VEX2ppaEQ5ekVDTE1aZzg2RUFScG1wNVJKUzlEY1pVQTliQnhfaUZCSWdveUlXc2dxMUpHd2lHM0Ftd2xWSGtGRjJ5a05TNE9sWjYwNTZuMHRRZGFRbEg2TDJpNVVIYWRRREVoS2NWb3MxdmZ5elRuZXc5bjl1TUlB?oc=5",
+      "pubDate": "2026-10-27T07:40:39+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 07:40:39 GMT",
+      "category": "Crops",
+      "hours_ago": 2.76
+    },
+    {
+      "title": "From Wild Potatoes to Resilient Varieties: Crop Trust and International Potato Centre Expand Potato Work in East Africa",
+      "source": "Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWkFteUFzVVlPX29aT0RnMEpFTjhVcWJZRXgzdnE4VnkxbkpKVzRpMDItVXpuNHQ4Wkt6eGVrQTlhYkp3LXFVMnVLVUs3Unk2RHM1ODVSUVJlak9QOFk5WXpCSzQ5WnJJX2JGekRXaWhROWthOFRqV3ZmdmlzY2RMektlTFJ6dmRMaFpDeEd4VDBtRkJvQ045QVB1WjFxRkdJ?oc=5",
+      "pubDate": "2026-10-27T07:30:00+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 07:30:00 GMT",
+      "category": "Crops",
+      "hours_ago": 2.94
+    },
+    {
+      "title": "MDARD Celebrates Transformative Outcomes from First Farm to Family Grant Program",
+      "source": "Morning Ag Clips",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObEpnVUpYYjdRcXNVVlhxTFZiMDBrNWhOM3ZybHpYZWFMbVA3X0kyTE9pNU5pclRrVXF1QUJ5a0ozZV9aSFdJNVJnNkRWcFZyazZLYk8tRmhiNm13YzdQekpxZmc0Nlk3SlJVSkthYjhFQ2xIcTFEZXgxR1R1OVJoUlh5bmRGWk53M0tKYnFwdVU2MjZUS1QyUEl2RjVWRkNVQVpHanBHejZ5bkhxd2JjellR?oc=5",
+      "pubDate": "2026-10-27T07:18:45+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 07:18:45 GMT",
+      "category": "Crops",
+      "hours_ago": 3.12
+    },
+    {
+      "title": "Russian Senate Agriculture Committee to Seek Continued Support for Small Farms",
+      "source": "Dairynews.today",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQaXVxQl9CMGV2VUJEMmpISk5ZTEx5UVdSb2xqb2I2MEhVMWRaZmJGVWpIekJtOElGNlVaNHQ4QjhtTFpWeE0zWExqQ08xa1BNSngyeHNXdjV1WllwNzd0Y0h5OEl4VXBVVDZVYVYyUUtGSDJUbDUtbDJvREdXelIyVjZCakttN2pBejNrUGgzSGtnUXliZVZsN09kZ0praGJzYWFheUItQXpBbDFLd2FKWVZFN1YwLXVPNXZJMzQxdVFVZkI2dHlvVkZzbDBFX3psZXFpTVM2UzNudFZHQVE?oc=5",
+      "pubDate": "2026-10-27T07:17:33+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 07:17:33 GMT",
+      "category": "AgTech",
+      "hours_ago": 3.14
+    },
+    {
+      "title": "FIELDS, US-Mexico Trade Update",
+      "source": "AG INFORMATION NETWORK OF THE WEST",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWlVMMXRCeUpTZlJpODEzMkJVNU81dVZzUFlaQ0txMmM1SzlmQ2RSazhBNEVkbWpkSDB0d0NnbkxQVzVxME9wM3NYYXE1X3NtSzBRVEo0ZllBTW1hc0kzRUc2UVowMEw3Q2w3X2dibjRfSHQ2NllSRlZ0d0F5dUdXcmJJdjFadVN1OVVoOV93?oc=5",
+      "pubDate": "2026-10-27T07:08:47+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 07:08:47 GMT",
+      "category": "Trade",
+      "hours_ago": 3.29
+    },
+    {
       "title": "Viewpoint: The organic, good-food, small-farm movement is seductive but wrongheaded. Here’s the sustainability and environmental case for industrial farming",
       "source": "Genetic Literacy Project",
       "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxQY1hLeUhFSUdmbHdUZ19FVjFQamVVYVBGX0h2UGpTQ2FrblVhSkpDNV9VaFo1dnVONzlsWkZHTjFQZUlkc2ZjaVZzRHFLSlZIdHBVS0tGa3pQUEE1Ukwzd3dhdU9RZW1TeXVfSGZ5QXo1TFZXUExRV3EzYnhoRks1eXREWnZ0aThRQl9iVjNiYnBWbXJPTXE3b1BlOWQ5YUx0aVJZbTJ1U3FVNEpVMWpCMkdpOGQ5Rld0X0I4cTBhVTdBbGNIemFnbzBlYkZKUDVVN0VBV1NDdGhYMFlVX2syUm9BU1hpUDRSbzZLOWNRcTVPcnJzczR6dHdTalp6Y1d1bkpjWk5rZEdxLWVVMW5ucTlCWnVxQzNBdmlVRjh3dmtDM1l0?oc=5",
-      "pubDate": "2026-10-27T04:06:10+00:00",
-      "pubDateStr": "Tue, 27 Oct 2026 04:06:10 GMT",
+      "pubDate": "2026-10-27T07:05:56+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 07:05:56 GMT",
       "category": "AgTech",
-      "hours_ago": 0.79
+      "hours_ago": 3.34
+    },
+    {
+      "title": "Cream of the crop: one brand’s quiet quest to reinvent the dairy industry",
+      "source": "Positive News",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNN3FlSjAxNS1iVlhUWW95SWhrUlVqbExpVDA0MGI3V2dTTUxEVmpoLTFtaXdDMklBbzRGSmtJSG5oUDdPay1sUm13TElGU3ZfRWtTYjg4bW1ibjBKdXZ6NHJtdkZ1Z1hyakwwb0hxX3MzbFRDa1RSaXRnYVVrckZwdXFudDV1NG5tU3Y2T1dZTmNtTk9DODJ0WkdRUTlMYVJqTXR1WHZqVC10elpNN2hv?oc=5",
+      "pubDate": "2026-10-27T07:05:49+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 07:05:49 GMT",
+      "category": "AgTech",
+      "hours_ago": 3.34
+    },
+    {
+      "title": "Data Center Concerns and $369.2 Million in 2024 Ag Exports",
+      "source": "AG INFORMATION NETWORK OF THE WEST",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQMHpYd3BGdGdmcnRhOWZ4Yi0wbTJ1OTJYeGROTHZzSUprT3RyeTJaXzlEYkxLLWl4blpwT3MwVGVOSTBJU3I5V2hubU1ZS0JnOExmcWEzNDVXLS1EOHJXMFFzUFk0cjNtN3ZzTGhJM3EtakVKWThiV1FLbmR4Q0NRT2VzTzRobzVXbGFSSURhamdnSmNqWWVabVg0VlRWYXpjZGFsN0ptcTVuYnNyWXFubENoX2RuSjlD?oc=5",
+      "pubDate": "2026-10-27T07:01:31+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 07:01:31 GMT",
+      "category": "Trade",
+      "hours_ago": 3.41
+    },
+    {
+      "title": "Idaho per capita farm income",
+      "source": "AG INFORMATION NETWORK OF THE WEST",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOQkFPSVp0V0VJNmJUNTlJczB4N21NOGN5aXVla2FiZjdVMElwSkRsOVhFYldwZ1ozd2RkNUJ4dk1ScmI3X0xQVlg5S0RkaHFJSHRqWnFBd3dFLUpDOFJMZjEzTGY4NWNrdDZEdDJfbVY1RUtPZGtLTEpyZmxlNlRsX05nTnVqZw?oc=5",
+      "pubDate": "2026-10-27T07:01:22+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 07:01:22 GMT",
+      "category": "Crops",
+      "hours_ago": 3.41
+    },
+    {
+      "title": "Will More American-Made Fertilizer Mean Lower Costs?",
+      "source": "AG INFORMATION NETWORK OF THE WEST",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSkstTDAxMm1LZlY3ZTJLTjVSUEN1VjBNRlc2cTFhNlhlcmlVNkdHb3BLMllTZ1hlcl9sQi1haVBMeHlIME5wX2ctRHpfSEFlN0ozaE10RVUzTWktUVVxNWlPbjdWeGpTZXpIemVKelpXd1RoZHROenBzQ1I5NkZxbjFDVG5fcjN1cW02THBTRHUtUVdZYmNfWlZzSTFUOFUtaXh6TUs1VnZoT1Bk?oc=5",
+      "pubDate": "2026-10-27T07:01:07+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 07:01:07 GMT",
+      "category": "Crops",
+      "hours_ago": 3.42
+    },
+    {
+      "title": "Florida farmer builds business on handshakes, not contracts",
+      "source": "Farm Progress",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSXAtWWRkTXBaYjdIUUZtSEJhLVpsc1JVMjBqd2hVQW1oRU44QnRCc3A4azg3WUxWc2s3ejFDQTdjQzNuQ2hvM2NLZ3V4R3RzUk5ubktKNjNWckNjZWY1YUx1MUVkcndVSXhNRkpqOG1mRmRkSGRacHNfS0tDdC1tQ1Q5eDh2aVUtXzFONXZHU0c3WXhHckI5c3p2d2tWdWlELTJlVkRTN2w?oc=5",
+      "pubDate": "2026-10-27T07:00:43+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 07:00:43 GMT",
+      "category": "Crops",
+      "hours_ago": 3.42
+    },
+    {
+      "title": "How to find the right crop insurance plan",
+      "source": "Farm Progress",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPODRPT294aGw3NlRMMkZHbTZ5M1pXNXBsMVVyc1o5SWx2WElBaDJmUlBNZGxIVFFUNnhFcGFBWDQ2SlI1enVzRDJQcFUycEViYkIteVprb3k0dEpXbEVMUHU0czItbWZfX1pfNFE4REJhZUpJTHN2ZmNiOXhabTJueFlUbXdIRllsQlJtTGoyS0RGX2hQdTdJRQ?oc=5",
+      "pubDate": "2026-10-27T07:00:43+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 07:00:43 GMT",
+      "category": "Crops",
+      "hours_ago": 3.42
+    },
+    {
+      "title": "Did you know Stihl once built tractors?",
+      "source": "Farm Progress",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNFEzaWFMWk1LOEtKT0tXVEdxV1VhVi05Qm54R244bXZRMXJPX004TlVCSXd2X1l0NE1IZER4d2VMUTFSbXpLLTNIQmhYdVdpeFQwQWFyT2pROUg0ZE05dE5WaDgzYXdtTmlMek80RXg5V3F2QUVTV1JYS1FYZnowenBGWjZwWWpPazZ4VDVtWQ?oc=5",
+      "pubDate": "2026-10-27T07:00:43+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 07:00:43 GMT",
+      "category": "AgTech",
+      "hours_ago": 3.42
+    },
+    {
+      "title": "Diesel price surge squeezes farm budgets hard",
+      "source": "Farm Progress",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUHh4el90T0U3U0tFcHBOQXRBbERhX2dLdGtDZFhyWVo1MHBVanF0d2t1czIxMXZzUko5cG5kY2k4YUNSUGQwbFY0aTRESGt3YWRpOU82MmxaZ2dzNEFfM1oydWIzRS1KYURWVUlqYm5US2thMjdZNmlHU1VhTzU3NjlYTDNpdTMxM0tyenhkX25mdjdTblNNSm9sZw?oc=5",
+      "pubDate": "2026-10-27T06:44:00+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 06:44:00 GMT",
+      "category": "Commodity Markets",
+      "hours_ago": 3.7
+    },
+    {
+      "title": "Taiwan’s tea growers rethink farming as climate pressures intensify",
+      "source": "Eco-Business",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcjVIektwM3ZwUFVxQnBlakMzdmlHc0s1ajl2VWN4ekM5TG9QSDQycDRSWWoxWklESV9HMW05Ty15b1hRY1NZbFc5c281SndCcnROaXlhZkFwTjFrcG9GWWdCSjgwTnR0aEFhLXVhYTRSODJtTHJWQVplTTNERUdOU0dDYXVobkdnSjE3SFRiSmVheW1PdlhhYm45ZlQ3ZWpmMGc4?oc=5",
+      "pubDate": "2026-10-27T06:07:00+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 06:07:00 GMT",
+      "category": "AgTech",
+      "hours_ago": 4.32
+    },
+    {
+      "title": "Beyond Tractors: Daedong Expands Its North American Push into Lawn Mowers and Excavators",
+      "source": "파이낸셜뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qTEJOeGprd3NaSDBxZGRuSEh3TTgzQUFpZDBmeTMxTUhEMVFVOUs4bkMtdXpsVElNU1NUZ09GcEJ6ZjBDQmpTOFZqYWFicDAwNmRIWUNCQ08?oc=5",
+      "pubDate": "2026-10-27T04:53:54+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 04:53:54 GMT",
+      "category": "AgTech",
+      "hours_ago": 5.54
     },
     {
       "title": "Ag at BMCC in Pendleton gets big boost from industry partnership",
@@ -256,16 +517,7 @@
       "pubDate": "2026-10-27T04:02:52+00:00",
       "pubDateStr": "Tue, 27 Oct 2026 04:02:52 GMT",
       "category": "Crops",
-      "hours_ago": 0.84
-    },
-    {
-      "title": "ODA H2Ohio Funding for Pasture and Hayland Conservation Practices",
-      "source": "Morning Ag Clips",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUEhCalJ3N0FiOWxJQWNMRFlpczVNU09Hem00dm5yb1NaQUNjdUppdGUtekJlQ3ZoY0dwa2k3UXRfYXJ6VVVfUmpiNTBtWkhRU3pLY3VOTDY3SHVFWFBtd1dObmxEbnMyWDBhZHN6RXdkUi1mNXBDczJPQXNxWm1qaW1YbTZBZGhZUnJrMFozc0lneFlfTXhILUpDTzBiZw?oc=5",
-      "pubDate": "2026-10-27T02:25:58+00:00",
-      "pubDateStr": "Tue, 27 Oct 2026 02:25:58 GMT",
-      "category": "Crops",
-      "hours_ago": 2.46
+      "hours_ago": 6.39
     },
     {
       "title": "Daedong targets North America with KIOTI at U.S. ag and landscaping expos",
@@ -274,25 +526,7 @@
       "pubDate": "2026-10-27T02:01:00+00:00",
       "pubDateStr": "Tue, 27 Oct 2026 02:01:00 GMT",
       "category": "AgTech",
-      "hours_ago": 2.87
-    },
-    {
-      "title": "UC Davis Joins Feed the Future Innovation Lab for Coffee and Cacao",
-      "source": "UC Davis",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRTQ2NlA3MGV1TnhUWXVRUmt5Q19NT29PWl8zenlYTFVOdVF1dTVISDM3eGtOODNhc2thRU1WX1U5aE1ya0JQR0JwOHd4a3pNekJkSzBYc21kbWZadzZQOTRTRW5Sa21yMV9qT2U1ZWgtQ1YxRUtRb09VTU1JdTQtZmh2ekVSeWF0Z1MzRkVCV3M?oc=5",
-      "pubDate": "2026-10-27T01:50:13+00:00",
-      "pubDateStr": "Tue, 27 Oct 2026 01:50:13 GMT",
-      "category": "AgTech",
-      "hours_ago": 3.05
-    },
-    {
-      "title": "Oklahoma farmers weigh diesel relief as harvest continues",
-      "source": "KOKI FOX 23",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNnE1MVRkY0Q3UldEaEFWcDdHNUVoNHVabWNfUlpXM3lfbUdmT1FVQkJfNjVlMmRxMjdkRTNVTmUtVVJaLTdicnNIb010TDVZcWhwZHpfTDA2NzhscjVnYXNPcjNaQzBJRnJraE91NE5mRDRLQ3RjNVhEOEhER2ZZVVUtZnRxNEVUZ1BzczZwdnBPOVZ3QmpWMm1YNG5MUQ?oc=5",
-      "pubDate": "2026-10-27T01:44:30+00:00",
-      "pubDateStr": "Tue, 27 Oct 2026 01:44:30 GMT",
-      "category": "Crops",
-      "hours_ago": 3.15
+      "hours_ago": 8.42
     },
     {
       "title": "S. Korea's Lee pledges to pursue Pacific trade pact despite opposition",
@@ -301,7 +535,7 @@
       "pubDate": "2026-10-27T01:36:15+00:00",
       "pubDateStr": "Tue, 27 Oct 2026 01:36:15 GMT",
       "category": "Trade",
-      "hours_ago": 3.29
+      "hours_ago": 8.83
     },
     {
       "title": "Warren County Celebrates 30,000 Acres of Preserved Farmland",
@@ -310,16 +544,25 @@
       "pubDate": "2026-10-27T01:34:00+00:00",
       "pubDateStr": "Tue, 27 Oct 2026 01:34:00 GMT",
       "category": "Crops",
-      "hours_ago": 3.32
+      "hours_ago": 8.87
+    },
+    {
+      "title": "Smart data reshaping agriculture in Heilongjiang",
+      "source": "China Daily",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1nWS1aaktCeTlVY1F1eG5jWDUzdWZPV3ZweElackZLRUlmSjFrMzRKQ3YzWnBCQzBHdEo3MzNzQ0dWdmxYMlJUWFNmTTZOLWd5OHZvcjU3a2N5TnFhWjlhSktPU0hDQ1NVdHZCNUxvRmYwT2hzWkdHei1vUXA3Zw?oc=5",
+      "pubDate": "2026-10-27T01:23:16+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 01:23:16 GMT",
+      "category": "AgTech",
+      "hours_ago": 9.05
     },
     {
       "title": "84th annual Professional Agricultural Workers Conference kicks off in Montgomery",
-      "source": "WAKA 8",
+      "source": "WAKA Action 8 News",
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPNnpvcTdPcVNkYS1YUTJSV0Q4czFKRjZJVzc1N3NwZUFtX3J2M0tiMklPYkdNby1jTlZLWEotQUszYVVpWWxOVnlZZi1QU3FmZXRXalA2UVBYaHpRUDVGajFoczh2RXdxR0taQTluc2ZHUWp2VzlPcXhqRDdFak41SVIxZlpCQWVRVUltNkoyV081cXZwQy1SVmIzRE9ucWNRWVE?oc=5",
       "pubDate": "2026-10-27T01:22:00+00:00",
       "pubDateStr": "Tue, 27 Oct 2026 01:22:00 GMT",
       "category": "Crops",
-      "hours_ago": 3.52
+      "hours_ago": 9.07
     },
     {
       "title": "Bootheel farmer’s soybean yields top average but short of record",
@@ -328,7 +571,7 @@
       "pubDate": "2026-10-27T01:08:15+00:00",
       "pubDateStr": "Tue, 27 Oct 2026 01:08:15 GMT",
       "category": "Crops",
-      "hours_ago": 3.75
+      "hours_ago": 9.3
     },
     {
       "title": "Tested models, tech boost Shandong corn harvest",
@@ -337,25 +580,16 @@
       "pubDate": "2026-10-27T01:03:54+00:00",
       "pubDateStr": "Tue, 27 Oct 2026 01:03:54 GMT",
       "category": "AgTech",
-      "hours_ago": 3.83
-    },
-    {
-      "title": "Chico State launches new farming resource website",
-      "source": "Action News Now",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPLVl6aFRDTkdDRW1tbnIwTWxlTi1QZTV4d0VXVWd6VGlsb3ctdG4xU3pxTk1vSkdtelc2dmtCNzg0NXdQUnVranQ1MWJHbE1ZVEZIX3JfMlRnbDJGUlBORGlJbll2MzIxWDFiR1RaaURBTUxBTmhQQ0lmN0F2cllRNVRyMlJYWHB1TkpBZDJCanA3dnNSc00wRDFvdFZxRTZueEtOYTlfZXlCU2JwTFg3aU83ZVhGUkZ2OWFETzRkOEFCbW53TjlabTFlSGI0dw?oc=5",
-      "pubDate": "2026-10-27T00:59:00+00:00",
-      "pubDateStr": "Tue, 27 Oct 2026 00:59:00 GMT",
-      "category": "Crops",
-      "hours_ago": 3.91
+      "hours_ago": 9.37
     },
     {
       "title": "Department of Agriculture invests over $325 million into 42 farming projects",
       "source": "WWAYTV3",
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVmdKQVFHZWNYa0xfZzBtS3JORWg0Z09VSW1saGZJMlVLUGZfWnphY1QzQnlMbkdsRS1Wa0F4UWMxMDUzTG1EeDhpcVIyNVE5ZHM0OXg0OWQwZHpSRFlaOXEyM1FFWXBEN0xqMVBHVGNRZmllb2JyTnQ5R05Id1F6OWJPRVdMSUVxZVkyRTFoaHctcFRBM0JGQjRUdGhIMnh3THc?oc=5",
-      "pubDate": "2026-10-27T00:31:55+00:00",
-      "pubDateStr": "Tue, 27 Oct 2026 00:31:55 GMT",
+      "pubDate": "2026-10-27T00:34:55+00:00",
+      "pubDateStr": "Tue, 27 Oct 2026 00:34:55 GMT",
       "category": "Crops",
-      "hours_ago": 4.36
+      "hours_ago": 9.85
     },
     {
       "title": "Insights from the September 2026 USDA Quarterly Hogs and Pigs Report",
@@ -364,7 +598,7 @@
       "pubDate": "2026-10-26T23:50:18+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 23:50:18 GMT",
       "category": "Commodity Markets",
-      "hours_ago": 5.05
+      "hours_ago": 10.6
     },
     {
       "title": "USDA to Invest $57 Million to Boost American Meat Processing Capacity and Support U.S. Ranchers",
@@ -373,7 +607,7 @@
       "pubDate": "2026-10-26T23:30:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 23:30:00 GMT",
       "category": "Crops",
-      "hours_ago": 5.39
+      "hours_ago": 10.94
     },
     {
       "title": "Corn Growers Demand Answers After USDA NASS Data Error",
@@ -382,7 +616,7 @@
       "pubDate": "2026-10-26T23:16:46+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 23:16:46 GMT",
       "category": "Crops",
-      "hours_ago": 5.61
+      "hours_ago": 11.16
     },
     {
       "title": "Iowa Crop Progress Report Issued",
@@ -391,16 +625,7 @@
       "pubDate": "2026-10-26T23:14:04+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 23:14:04 GMT",
       "category": "Crops",
-      "hours_ago": 5.66
-    },
-    {
-      "title": "CPTPP Membership and Farmers’ Support: A Viable Path",
-      "source": "조선일보",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNenBWdHZoV0hvOFFfZHVUbF9FVWVObllVYUE5ZHVfSnZScGFTam1uYnZLb3lfeDN5MGREemk0TE14VHpnaTZ5VzZrSG9OSUdxOVVTNnNLSnVOVjg1dFJ5cVF2XzZWWTc4dFdFQ3V0RFlNYWFVYVROb2lQMjRNcTB0eDNpOG9MYkU?oc=5",
-      "pubDate": "2026-10-26T23:02:22+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 23:02:22 GMT",
-      "category": "Crops",
-      "hours_ago": 5.85
+      "hours_ago": 11.2
     },
     {
       "title": "KAITE Expo opens with business, agriculture and family entertainment Staff Reporter THE 70th Keetmanshoop Agricultural, Industrial and Tourism Expo (KAITE) runs from 27 to 31 October at the Keetmanshoop Show Grounds, bringing together businesses, go",
@@ -409,7 +634,7 @@
       "pubDate": "2026-10-26T23:00:56+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 23:00:56 GMT",
       "category": "AgTech",
-      "hours_ago": 5.88
+      "hours_ago": 11.42
     },
     {
       "title": "USDA Invests Over $325 million in 42 Projects to Boost Farm Operations and Conserve Natural Resources",
@@ -418,7 +643,7 @@
       "pubDate": "2026-10-26T23:00:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 23:00:00 GMT",
       "category": "Crops",
-      "hours_ago": 5.89
+      "hours_ago": 11.44
     },
     {
       "title": "Opinion: Iowa’s agricultural future is on the ballot",
@@ -427,7 +652,7 @@
       "pubDate": "2026-10-26T22:50:29+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 22:50:29 GMT",
       "category": "Crops",
-      "hours_ago": 6.05
+      "hours_ago": 11.59
     },
     {
       "title": "Record diesel prices hurting Illinois farmers at height of harvest season",
@@ -436,7 +661,7 @@
       "pubDate": "2026-10-26T22:29:49+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 22:29:49 GMT",
       "category": "Crops",
-      "hours_ago": 6.39
+      "hours_ago": 11.94
     },
     {
       "title": "Kansas Farmers to Share $808 Million in Payments from USDA",
@@ -445,25 +670,7 @@
       "pubDate": "2026-10-26T22:19:26+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 22:19:26 GMT",
       "category": "Crops",
-      "hours_ago": 6.57
-    },
-    {
-      "title": "USDA and NASA sign pact to use satellite data in crop estimates",
-      "source": "Herald-Whig",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMmFKZ1AxYml6TEFVT3ljckRqOFdBdmJ0eEVfNVhIeU9NWTBKWU95VVFoUXBLRWRyN3BHcUp2ZnR4M2EyNTBKb1Y3bGEyLVNIQjZaemdvVjZEaC1BYlA1QTcyUGtXSEVfQWI0Y1R0clBFSkh0alNvSjRjenVoaEl2d3Bwdm44cmxxSklpVUZVdU5OU29NWExr?oc=5",
-      "pubDate": "2026-10-26T22:02:10+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 22:02:10 GMT",
-      "category": "AgTech",
-      "hours_ago": 6.86
-    },
-    {
-      "title": "Riverhead Farmers Market returns with a new nonprofit operator and a home at Hallockville",
-      "source": "RiverheadLOCAL",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdDlYRDJ3SWhOQ0QySUlvWEVGT2RJcDhqbUFFUTlFUlBBNXBRTUtEY3BKek11STJDcGUtNHIwNVZhVEViUk5hX29ETk0xSWx2RGpQcTNkN3pKeUdRZzB6VXJ4N2R5ckpYVDZoc3FWbHZHUHdtMkQtUmlOZ3Z0X0xJMDBhLWhCdWI4ZkFzNmM4Z0czMDNRbjQwTGJHT3ZRWDhzc3lBMTItVm93VXJPd2xjbDdmblZrT0N1cXozUUdFRXBweWsxUGc0?oc=5",
-      "pubDate": "2026-10-26T21:50:11+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 21:50:11 GMT",
-      "category": "Commodity Markets",
-      "hours_ago": 7.05
+      "hours_ago": 12.11
     },
     {
       "title": "USDA Revises September Corn Yield as Analysts Weigh Impact",
@@ -472,7 +679,7 @@
       "pubDate": "2026-10-26T21:41:43+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 21:41:43 GMT",
       "category": "Crops",
-      "hours_ago": 7.2
+      "hours_ago": 12.74
     },
     {
       "title": "Arkansas farm bankruptcies near 2025 total with quarter left",
@@ -481,7 +688,7 @@
       "pubDate": "2026-10-26T21:06:45+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 21:06:45 GMT",
       "category": "Crops",
-      "hours_ago": 7.78
+      "hours_ago": 13.32
     },
     {
       "title": "MFF 2028-2034: Council secures negotiating position for a strong and future-oriented common agricultural policy",
@@ -490,7 +697,7 @@
       "pubDate": "2026-10-26T21:05:18+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 21:05:18 GMT",
       "category": "Crops",
-      "hours_ago": 7.8
+      "hours_ago": 13.35
     },
     {
       "title": "Aging farmers and the government want to save farms, but for many the cost is too high",
@@ -499,7 +706,16 @@
       "pubDate": "2026-10-26T20:56:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 20:56:00 GMT",
       "category": "Commodity Markets",
-      "hours_ago": 7.96
+      "hours_ago": 13.5
+    },
+    {
+      "title": "Lincoln University meat processing plant set to open in April 2027",
+      "source": "Brownfield Ag News",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQeFFTNW1Rd084bGlCTlhYOGNCQ1hVRkdwV0hHd1B4aURqWGRpa2RqQUtqci13RVRMdi1Ta3BOVzJZMC1nXzVDYUVzek5QX0RBMlJXenJ0Zkk0NDV5Uzh0eTFoQWRkcXhRMDc2ZzhDM1JHZndPWGdLQlR1MVlmV2FNTXdrNmNyOTZxZnA0OXlleVVBVnlhSnpDUGFXMjNDTUJXRFZ3?oc=5",
+      "pubDate": "2026-10-26T20:51:35+00:00",
+      "pubDateStr": "Mon, 26 Oct 2026 20:51:35 GMT",
+      "category": "Crops",
+      "hours_ago": 13.58
     },
     {
       "title": "USDA Crop Progress: Corn Harvest at 60%, Soybeans 79% as of October 25, 2026 - News and Statistics",
@@ -508,7 +724,7 @@
       "pubDate": "2026-10-26T20:50:36+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 20:50:36 GMT",
       "category": "Crops",
-      "hours_ago": 8.05
+      "hours_ago": 13.59
     },
     {
       "title": "Corn Crop Condition Index closes out the year with a slight increase from last week",
@@ -517,7 +733,7 @@
       "pubDate": "2026-10-26T20:50:16+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 20:50:16 GMT",
       "category": "Crops",
-      "hours_ago": 8.05
+      "hours_ago": 13.6
     },
     {
       "title": "U.S. Corn Harvest Falls Behind as Farmers Race Against the Fall Calendar",
@@ -526,7 +742,16 @@
       "pubDate": "2026-10-26T20:49:05+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 20:49:05 GMT",
       "category": "AgTech",
-      "hours_ago": 8.07
+      "hours_ago": 13.62
+    },
+    {
+      "title": "Dry central Illinois fall leads to quick harvest and average yields",
+      "source": "Brownfield Ag News",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRU1RMVFIdm1US3pDUk93QUJKMWZsX05SRzc0RmVFMXRmVFlKNGc1ZHBCMW5zNUZTejlQb2VJX2llaU51X1VtbHV6V180aDJkeDNTWnM4WHBKNk9VUE9aR05sVjE5ODIyZjQ4WHp4R21tbm1Xa0IxWjZTTDhGVnRYeWR3STM1T3lPMTRCY0NlX1RQMUJpOTlRNi1LWUwwR1NUTjRNUg?oc=5",
+      "pubDate": "2026-10-26T20:41:31+00:00",
+      "pubDateStr": "Mon, 26 Oct 2026 20:41:31 GMT",
+      "category": "Crops",
+      "hours_ago": 13.74
     },
     {
       "title": "$5,000 Grants Open for Colorado Farms, Ranches, Ag Businesses to Hire Interns in 2027",
@@ -535,7 +760,7 @@
       "pubDate": "2026-10-26T20:29:35+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 20:29:35 GMT",
       "category": "Crops",
-      "hours_ago": 8.4
+      "hours_ago": 13.94
     },
     {
       "title": "Kansas harvest pace picks up steam",
@@ -544,7 +769,7 @@
       "pubDate": "2026-10-26T20:11:18+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 20:11:18 GMT",
       "category": "Crops",
-      "hours_ago": 8.7
+      "hours_ago": 14.25
     },
     {
       "title": "Fewer farms, bigger operations: The changing economics of Pennsylvania agriculture",
@@ -553,7 +778,7 @@
       "pubDate": "2026-10-26T20:09:38+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 20:09:38 GMT",
       "category": "Crops",
-      "hours_ago": 8.73
+      "hours_ago": 14.28
     },
     {
       "title": "Corn Harvest Reaches 60%, Remains Behind Average",
@@ -562,7 +787,7 @@
       "pubDate": "2026-10-26T20:07:41+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 20:07:41 GMT",
       "category": "AgTech",
-      "hours_ago": 8.76
+      "hours_ago": 14.31
     },
     {
       "title": "Harvest Update: Southeast Indiana farmer says corn yields are strong, but variable",
@@ -571,7 +796,7 @@
       "pubDate": "2026-10-26T20:06:15+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 20:06:15 GMT",
       "category": "Crops",
-      "hours_ago": 8.79
+      "hours_ago": 14.33
     },
     {
       "title": "Farm equipment downturn stretches into fifth year",
@@ -580,16 +805,7 @@
       "pubDate": "2026-10-26T19:54:29+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 19:54:29 GMT",
       "category": "AgTech",
-      "hours_ago": 8.98
-    },
-    {
-      "title": "Montana Grain Growers Association Welcomes Federal Farm Aid and Investments in Domestic Fertilizer Production",
-      "source": "Northern Ag Network",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPenVuRm5hQkpjSG1OSjUtMnFIVTdjSVVRZWtYNnItOERVM2gybFo3Y2M2Z2FraTZjRnJQSUFQRllPVmdGU0xpSGxpLXZRTmM1bml4UHMxT1VNNVM5SERKN0xDa2ZlY094anNUSFVkaUplTTFnSF8tdk56Zmw1V1B4RE1TZnk0bkIxbndDQ1hCYW81VHNMT0xvb09CbDlQZUQ4ZjlYUHpkSjVoeVJUU2ZVdXJxVGtwcWlSOWtKeFo4aTNSOTlFUmlEaU5NSDQ4R2xHOVFn?oc=5",
-      "pubDate": "2026-10-26T19:40:21+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 19:40:21 GMT",
-      "category": "AgTech",
-      "hours_ago": 9.22
+      "hours_ago": 14.53
     },
     {
       "title": "Elevators Own More Grain This Harvest. Watch Basis",
@@ -598,7 +814,7 @@
       "pubDate": "2026-10-26T19:34:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 19:34:00 GMT",
       "category": "AgTech",
-      "hours_ago": 9.32
+      "hours_ago": 14.87
     },
     {
       "title": "Ohio agricultural spray drone association begins to take off – Ohio Ag Net",
@@ -607,25 +823,7 @@
       "pubDate": "2026-10-26T19:05:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 19:05:00 GMT",
       "category": "AgTech",
-      "hours_ago": 9.81
-    },
-    {
-      "title": "Robots and AI are changing orchard work. What does that mean for jobs?",
-      "source": "Michigan Farm News",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNczBOZXMycUpfbElMRnZfZVVkeHV4WElBekswRzlQQ0JJZHJ2U1lNM3l0QXEwTXA4bW5URVl5QkQ0MEZTZ0w3SG5xRmxpakpxOVV0cWpCTDVKREpuRXdkdkNaalJMOG1hRjRkOHRmUzhjMnRkYVhXU2lpSm85WkZzR2oxWWxhZnVXbUZRQWJVQ0JnU0FCdkE4VXhlcXlFeGt1eG1WMFlTZjBPZWY0SkE?oc=5",
-      "pubDate": "2026-10-26T19:04:05+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 19:04:05 GMT",
-      "category": "AgTech",
-      "hours_ago": 9.82
-    },
-    {
-      "title": "Temporary guest workers are key to U.S. agriculture | New Albany Gazette",
-      "source": "Northeast Mississippi Daily Journal",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPUGYydXc3NW1fMWU1ZTNQa19zTGZiUWhkTnd2U3ZxWnhLTGYzTDE4T0JxMG9kUWxIRURIcFp0SjBJeE5CODNvTWxnbnFYc19NOXJqeWNUWTJKWDZZYW1xTUZPck42bUlqeU9vSFYyZWJrOUowTXFRaDJoTWFGcXBudVVpN0dWM25WN1RkY3FLNXFhUG01eDNpdmVIY19kQVRHUzR3SmFnMTRoUTQxcW5ya3pKaVhHMkNwamJIeUNsRTJod3N0OXNZdVRFRjBWa3VnOUE?oc=5",
-      "pubDate": "2026-10-26T19:00:00+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 19:00:00 GMT",
-      "category": "AgTech",
-      "hours_ago": 9.89
+      "hours_ago": 15.35
     },
     {
       "title": "USDA and NASA Sign Agreement to Support Agricultural Statistics",
@@ -634,7 +832,7 @@
       "pubDate": "2026-10-26T18:41:45+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 18:41:45 GMT",
       "category": "Commodity Markets",
-      "hours_ago": 10.2
+      "hours_ago": 15.74
     },
     {
       "title": "AgriThority Launches Development Tool to Help Agricultural Innovators Gauge Commercialization Readiness",
@@ -643,7 +841,7 @@
       "pubDate": "2026-10-26T18:35:59+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 18:35:59 GMT",
       "category": "AgTech",
-      "hours_ago": 10.29
+      "hours_ago": 15.84
     },
     {
       "title": "Farm Bureau Seeks More Agricultural Relief as USDA Payment Details Remain Unclear",
@@ -652,16 +850,7 @@
       "pubDate": "2026-10-26T18:30:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 18:30:00 GMT",
       "category": "AgTech",
-      "hours_ago": 10.39
-    },
-    {
-      "title": "Is Farm Action a legit ag group? A new report digs into their views",
-      "source": "AGDAILY",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOVjZHQm9xTGJGZ1Nuci16c2wyb0VlejZ1NXZqd2tjYWdjQ0ZTeE1BMC1xUXpwS3N4RTBLOEVhaExET1MzMG03NExXWElPbjdlT2tEQUNUSUNLcjNDMXYzX0FKYS1xLVg5R1V0VUJKZDY1bFY1OGFJVVBsdHJaM3RNTg?oc=5",
-      "pubDate": "2026-10-26T18:27:50+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 18:27:50 GMT",
-      "category": "AgTech",
-      "hours_ago": 10.43
+      "hours_ago": 15.94
     },
     {
       "title": "Gilbert’s Agritopia celebrates 20 years of farm-to-table roots",
@@ -670,7 +859,7 @@
       "pubDate": "2026-10-26T18:27:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 18:27:00 GMT",
       "category": "Crops",
-      "hours_ago": 10.44
+      "hours_ago": 15.99
     },
     {
       "title": "Lithuania Urges Stronger Controls Against Stolen Ukrainian Grain Transit",
@@ -679,7 +868,7 @@
       "pubDate": "2026-10-26T18:12:10+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 18:12:10 GMT",
       "category": "AgTech",
-      "hours_ago": 10.69
+      "hours_ago": 16.23
     },
     {
       "title": "How one Michigan farmer is navigating ‘skyrocketing prices’ | The Metro",
@@ -688,7 +877,7 @@
       "pubDate": "2026-10-26T18:08:36+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 18:08:36 GMT",
       "category": "Commodity Markets",
-      "hours_ago": 10.75
+      "hours_ago": 16.29
     },
     {
       "title": "USDA corrects Crop Production report — can NASA help get better data?",
@@ -697,7 +886,7 @@
       "pubDate": "2026-10-26T18:00:18+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 18:00:18 GMT",
       "category": "Crops",
-      "hours_ago": 10.89
+      "hours_ago": 16.43
     },
     {
       "title": "MI’s Mark Forbush recognized for national supervisor award",
@@ -706,7 +895,7 @@
       "pubDate": "2026-10-26T17:55:45+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 17:55:45 GMT",
       "category": "Crops",
-      "hours_ago": 10.96
+      "hours_ago": 16.51
     },
     {
       "title": "Massey Ferguson’s New Baler Chute Can Cut Collection Passes by Up to 50%",
@@ -715,7 +904,7 @@
       "pubDate": "2026-10-26T17:54:44+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 17:54:44 GMT",
       "category": "AgTech",
-      "hours_ago": 10.98
+      "hours_ago": 16.52
     },
     {
       "title": "Terrell Achor farm honored by state for 200 years of family ownership",
@@ -724,25 +913,7 @@
       "pubDate": "2026-10-26T17:51:21+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 17:51:21 GMT",
       "category": "Crops",
-      "hours_ago": 11.04
-    },
-    {
-      "title": "Volunteers and Sponsors Needed for Calving Corner Exhibit at 2027 Farm Show",
-      "source": "Morning Ag Clips",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdTRwVEVpM0Z0ZFJqRWJhR2xiclNtdWpucDgwQ0MyeHBjaHJnWVlPZXJDTzY3NzdLRDgwTU1vVkJWSWQwVzJmUGc5MjhqUjM1WW5lVWgyVkNHTGlYa1pUbVVRWGtleExZMVJ3Q0dxRHp3UTByeGt3bF9sRXc4LWkyMXh2UXVJaHRiMzBmTGwwczE2OXAyek5ER0lrNFdOMzFDcGV1d0o5Z0JERlU?oc=5",
-      "pubDate": "2026-10-26T17:50:11+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 17:50:11 GMT",
-      "category": "Crops",
-      "hours_ago": 11.05
-    },
-    {
-      "title": "Two candidates face off for Iowa agriculture secretary",
-      "source": "KWWL",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPSDhLUnZTUFNoanNFUjF5a3VqcVpzTXJ3dWRVRDl3QkVEM2xsSTc0WmdEajIyUUgyVk5BX2ZuV0RxYzBsMTdqMFNWdE5lTTFDUkdRNkhNTVdmWVBuWGdiMUtMUmp1U2c0SV9qSjZseG8xak1HQWVvR1QwTXZBQy04emJzdGdxWXNucmhleFQwMlZlR1ltRkJDeE4wRndQNk5RUjg5RkZ4a0EtUWJsS0MtRVhNc1NsVEdFdW82MTN1VkFZYmZiR2JUWGx3?oc=5",
-      "pubDate": "2026-10-26T17:49:00+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 17:49:00 GMT",
-      "category": "Crops",
-      "hours_ago": 11.07
+      "hours_ago": 16.58
     },
     {
       "title": "World Bank Cancels $20M Factory Farm Loan After Opposition",
@@ -751,7 +922,7 @@
       "pubDate": "2026-10-26T17:46:30+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 17:46:30 GMT",
       "category": "Crops",
-      "hours_ago": 11.12
+      "hours_ago": 16.66
     },
     {
       "title": "USDA Invests in Wewoka and New Lima Public Schools",
@@ -760,7 +931,7 @@
       "pubDate": "2026-10-26T17:34:06+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 17:34:06 GMT",
       "category": "Crops",
-      "hours_ago": 11.32
+      "hours_ago": 16.87
     },
     {
       "title": "Foster Family Farm celebrates National Pumpkin Day Lieutenant Governor Susan Bysiewicz joins officials to highlight Connecticut agriculture",
@@ -769,7 +940,16 @@
       "pubDate": "2026-10-26T17:28:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 17:28:00 GMT",
       "category": "Crops",
-      "hours_ago": 11.42
+      "hours_ago": 16.97
+    },
+    {
+      "title": "USDA Farm Payment Rules Change in 2026: What LLCs and S Corps Need to Know",
+      "source": "AgroLatam",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPckRWblZEeUs2UDBZQjMzdDYyNHB1THJJSmZ1ZzhpeXVNcmN0V3ZpUHFmNHhJRnVvbjBHMGtpTnV1Rkg2WVNNZ2dFZFNKWmUtVWNCS19SQm1GR3Vva09kckFZYjZPTDRfbUh2N050cWhQYlJET3piTnBvUkRvQVhuUl83blVyQURHVjdreWdoQWhxYjRZZDJHT29vVHU1a3pzSFBNeFhoOGx4Q09OUlE?oc=5",
+      "pubDate": "2026-10-26T17:18:51+00:00",
+      "pubDateStr": "Mon, 26 Oct 2026 17:18:51 GMT",
+      "category": "Crops",
+      "hours_ago": 17.12
     },
     {
       "title": "Closing the Adoption Gap in Water-Smart Agriculture",
@@ -778,7 +958,7 @@
       "pubDate": "2026-10-26T17:15:59+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 17:15:59 GMT",
       "category": "AgTech",
-      "hours_ago": 11.62
+      "hours_ago": 17.17
     },
     {
       "title": "USDA Corn Data Error Shakes Confidence in 2026 Crop Forecasts",
@@ -787,16 +967,7 @@
       "pubDate": "2026-10-26T17:08:42+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 17:08:42 GMT",
       "category": "Crops",
-      "hours_ago": 11.75
-    },
-    {
-      "title": "India’s farmer ID scheme reaches 110M ahead of schedule",
-      "source": "Biometric Update",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOR3ZHcUQ2eHlNNjR3QmN5d2FCdXBTeUFFUDkxcE8yUFY4emd0VXBjX1VwS2ZwU1d1STl6Sl92bzdhMWJ4NWZRUXNnM19MR2lIcEtPRzBtazRxd3BtaUp0dEJ0Wlp0bXktWFRjcm1EZnYySjhaUFlnYkxna1RFZGdtRjlkYWNwREhwdVBUWVJ2a0N1dUxoQTMycQ?oc=5",
-      "pubDate": "2026-10-26T17:00:00+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 17:00:00 GMT",
-      "category": "Crops",
-      "hours_ago": 11.89
+      "hours_ago": 17.29
     },
     {
       "title": "LLC or S Corp? What the New FSA Rules Mean for Your Farm",
@@ -805,16 +976,7 @@
       "pubDate": "2026-10-26T16:54:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 16:54:00 GMT",
       "category": "AgTech",
-      "hours_ago": 11.99
-    },
-    {
-      "title": "One Moment, Please… Our Farmers and Their Impact with Fall Harvest",
-      "source": "Fillmore County Journal",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOY1NlNFZTNzJ6RUJBandqLUtKRTMwTlNTR0MtWVlsYWVyZWxjcTItTnFpcWtVemJqSGRTQ242RVVKSjc5dDRjVnRRcXdnTENCaWowSkpXdjR2NHVRRENlZVhzNVh6M2ExX3FnanlTc2xWTzkzZEhjcTgzd2FEZ2JLQjlKcVM5bHl2aVpKMW5TaUZqV1ZNa1p2cWdFeE1yQzhx?oc=5",
-      "pubDate": "2026-10-26T16:52:21+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 16:52:21 GMT",
-      "category": "Crops",
-      "hours_ago": 12.02
+      "hours_ago": 17.54
     },
     {
       "title": "Applications open for Value-Added Agriculture and Farm to Table grant programs",
@@ -823,142 +985,7 @@
       "pubDate": "2026-10-26T16:45:00+00:00",
       "pubDateStr": "Mon, 26 Oct 2026 16:45:00 GMT",
       "category": "Crops",
-      "hours_ago": 12.14
-    },
-    {
-      "title": "USDA Announces Expanded Disaster Assistance for Farmers and Timber Producers in Vermont",
-      "source": "Morning Ag Clips",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYlp2OUZhVHdCU0VBQlV4QjVTSmNvZ1ZpOGZHNExkcXFKRGhpaTd5V0ZzMGVLNUJER3dLdkJKdjN4aE1iaVhQVGgwV1NOblVoU0pLOVhwTmxoaGU3S0FCb0wxUHB5Tk9ydkN5b1Jfa2szenZudFdoTWlVWkFUQ3AzR1FKMHB2Ymppckx6Umpxd0lCaFE5MW9kcXpHbGdrTUlBc25vWEIxSjd1RmNrNkxkY3VGN09SemJWVkpF?oc=5",
-      "pubDate": "2026-10-26T16:42:39+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 16:42:39 GMT",
-      "category": "Crops",
-      "hours_ago": 12.18
-    },
-    {
-      "title": "Armenia: EU4Innovation East to host discussion on precision agriculture and biodiversity protection at COP17",
-      "source": "EU NEIGHBOURS east",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQZnVtOGJEQzlXQVNQcGVkODRlaGVJTmtiVzVDOFl3YjJvMTY2SUVQcG5HNmFaYVMtUVlwck9MQkdFY3ByNDkwbjVyaGQyc2tlU3dWTkhmclBlRk5Fek5MWVhrUVppZGVvRkwtY2NGbllTRDZnZnh1SGo3NVpuRnZYY0xaV0h1VFNNTW5UNERWUUdZU3M3ay1jTWV3UGFnRE5HbnMzQ3VsbnoyenZBcHRhT296dTFZVTlpM0Z6TTFaN3FWUkVoTVhMMjV6RXdoYU0xMlJYS3lHOWdaVERQSXlOV0ljN18?oc=5",
-      "pubDate": "2026-10-26T16:30:15+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 16:30:15 GMT",
-      "category": "AgTech",
-      "hours_ago": 12.39
-    },
-    {
-      "title": "Iowa’s Rural Mainstreet Index, farm prices increase in October",
-      "source": "Business Record",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUFdEZUNkV3VnUzZOXzBmSFRNeXZ6eVdyMlAycG1uUTdaLXBuN3pIMFNPbk5RN2JQX2diNldhVU5TaTBfUUFjTklvd1JKWm5EWThZLS0wYmZIRF8wMEtiSmdncWREdDlSblpieEFHM3JicmJ4aGVYZFBqQV9NUXJFTTNmNEpvdWlyY3ZoNlRBN19zMl8xTTB3?oc=5",
-      "pubDate": "2026-10-26T16:17:31+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 16:17:31 GMT",
-      "category": "AgTech",
-      "hours_ago": 12.6
-    },
-    {
-      "title": "USDA, FTC investigating ag machinery manufacturing, distribution",
-      "source": "Texas Farm Bureau",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPeHNTSE94YV9LUGZqS1Fvc2pISHhsY05UWXNZVWlHcHFfa08zTWdPU2ZLWDFFWlQxQ0J6SkxhWmRIMV9DZjFPVVFHOVRHbE5kaDVBY0tlMC1yNXd0ZWFHWnNteXJjNGw0QTZ5bF9scHQ4NUlwbGI5UGl4d3lqbDhla19pWXptNnMycVl4WjBvaF9WNDBOTHc?oc=5",
-      "pubDate": "2026-10-26T16:12:05+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 16:12:05 GMT",
-      "category": "Crops",
-      "hours_ago": 12.69
-    },
-    {
-      "title": "Bluffton University offers free agricultural and environmental field trips",
-      "source": "Bluffton Icon",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTE1NLVk1NU9wbHE4WnlmazE4YlMxcjNfTkt5UU5memhhNWozbmVnRXVBUVRnZ2UxZVVvaVM3MEFOdWtURTYtUHltVFFCRTFyQXdsek52N2FVYlpQd0U1bFdtamFmUzd6S2VPdzFkdHNQYmkzQ1JGNTRXVE1MczhpV3RER0lrekZ2U0phYmZkQi1BdU50ejdKMmExRXFrWkRQU1JwRzBDRFVfQi0wdFF2cGxkbEFMOGNwVElz?oc=5",
-      "pubDate": "2026-10-26T16:07:00+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 16:07:00 GMT",
-      "category": "Crops",
-      "hours_ago": 12.77
-    },
-    {
-      "title": "Ukraine wants to move customs inspection of grain trucks deep into two countries",
-      "source": "Твоє місто",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPM2ptR2hKVXM1eXd4OGt2d1djT0dxcG5mb2hsQmVFalBqNFl6QWVmVnFGUVU2SjFNUkUyOHcyUkswMEt2aWs4cEJNS3VUR1VtOXlGUDh5ZVRJaDZUNFltczRJRkhPNEFnaE41M1cwNm44aXNxZ1NTU3RZZFRULVMzNWVscjIwV1FzaC1tWjBhOUdXUV9valN1dW92OFRCMlNvRFJJVHBkdjJxY0V0X0tfZHdELWs5WHc?oc=5",
-      "pubDate": "2026-10-26T16:04:46+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 16:04:46 GMT",
-      "category": "AgTech",
-      "hours_ago": 12.81
-    },
-    {
-      "title": "Did Maine potato farms get over $11 million in federal subsidies in 2026? | Fact brief",
-      "source": "Portland Press Herald - Maine Sunday Telegram",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9xU1prWVBTVGZIaTlLSE1nZkk1Mm8xekM2NXNYT1F1QXVmSEJxUlpJOUpDZnQxb095ZnVCbDFMN3NlX2tSQVpsZUVGbmlqTUU?oc=5",
-      "pubDate": "2026-10-26T16:00:00+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 16:00:00 GMT",
-      "category": "AgTech",
-      "hours_ago": 12.89
-    },
-    {
-      "title": "Agricultural losses from typhoon reach NT$221.63m",
-      "source": "Taipei Times",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1NNVB3SF96MnJhOVVhXzFaU3ZRdnpuRW5LVVdmekJ3NWp0djVHeWtGbmlqZTI3YVFRVktrN2t0aHJoX0dNcjBNOHExbHVzLXRtX2N4T0QzMDJrRFI3am04MDZmbzBjU2FzU3NCRHVRbDRBNHhMZms1U3VR?oc=5",
-      "pubDate": "2026-10-26T16:00:00+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 16:00:00 GMT",
-      "category": "AgTech",
-      "hours_ago": 12.89
-    },
-    {
-      "title": "Kernel grain exports fall 54% as port attacks hit logistics",
-      "source": "The Pig Site",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSThOM1E5a1FkcWJfbWhzc3ZST1Fqa2lLQWQxNUdYdTZ2bjh0UVhNN0hNaGhyUWFfandZSWluQmNIQmc2QnY2a1lENkhQUG01UnNVazFBZUhWUm9McGJsWUI3R2YtZWZsTURXdkUwQWN4bGR4V3k2UEVIbUV1c3N5OU1HdjRzVUhONGJpekJxb3B6MzRsZFh1cUNSTTdBQ1k?oc=5",
-      "pubDate": "2026-10-26T15:50:11+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 15:50:11 GMT",
-      "category": "AgTech",
-      "hours_ago": 13.05
-    },
-    {
-      "title": "Western Ohio Ag Outlook Meeting to Provide Updates on Agriculture, Markets and Farm Policy",
-      "source": "My County Link",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNVJIT3BaLVQ0LTNKWHVZUWFtajhNZjhFZHNwQUVsdEJZTk5DNWJ2c3N1YnFQdzI5UGJWMkdDOHFqUWRSYTNrNldkSEdSV0dUNGUtbjROaER6U0NVLS01YnpYdkk2dFBqYXotdngwSXlyNVhjWS05bTQ0RGVGRGQwOExLNzJqUTVVZnBFaVNSXzM4YlprMDBib0lVaWRTQ2NUMkJRdTJTWjVvR3ltR2Z4TnUtQ28zQQ?oc=5",
-      "pubDate": "2026-10-26T15:47:17+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 15:47:17 GMT",
-      "category": "Commodity Markets",
-      "hours_ago": 13.1
-    },
-    {
-      "title": "Global Sustainable Agriculture Market",
-      "source": "Kings Research",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNcGY1NUYzZDNzM1NHNWJManRoaWxqUlFLLTBudnBFS3g1OGlvRU9hT3dpbDl5SExDMnBTUzdZcmsyakhrRjliWWtQQ0xXZkxETml6Y3puUGNqNG5UT05QNHJOY3JQUDF4OGlld1kxcHhXMUdVaHBsUVZLLWZ1aEZwU1YwU0RaUQ?oc=5",
-      "pubDate": "2026-10-26T15:42:31+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 15:42:31 GMT",
-      "category": "AgTech",
-      "hours_ago": 13.18
-    },
-    {
-      "title": "$20K in damage after farm equipment crash in Fayette County",
-      "source": "KIMT",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbWtTMWRuNjhsYXFrYVdfT2s0c251UGdRc2lxNlliZXRUNURFQXFHZjFuU0hNa2JValBPaGpRa1dTcTd1SE9JWnJ6RUxVSGVOZ1dRNEdfUkdDOXR4aERNNWpTMGZNaVJHa0tsNFRlU0dYUURtS3VqdXhKd2N3Y05wVkhpdE5UWGVKemY0S1BVSXJBdGVhby1SYXpTQlF1WnVkRHNrWWp4Ykdlb0dveTM3aFpsWFBHYkktN2tQWDA1OHJfM0pXX1hKV1FwVjFHOXc?oc=5",
-      "pubDate": "2026-10-26T15:20:28+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 15:20:28 GMT",
-      "category": "AgTech",
-      "hours_ago": 13.55
-    },
-    {
-      "title": "2026 Georgia Farm Dog announced at Sunbelt Expo",
-      "source": "Moultrie Observer",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRVQ3Z0R2ODFOWlBKQnRiRTZiTFlQUzRLQ3dybno5WU1hTFQwN21tckR0NWVodDhxRXdQVXFGRVF4OVVpYnRYbFJqQUJYaEFYRUxVZFh1MnZZSW5HY0JBc1BrNm5WOGNidkpDM2F3Uk94Xzl3RzR2RldORTU3dm5jSnJxUnhjd2RDdXJSbkt1eU8xZw?oc=5",
-      "pubDate": "2026-10-26T15:13:05+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 15:13:05 GMT",
-      "category": "Crops",
-      "hours_ago": 13.67
-    },
-    {
-      "title": "Brazil's Currency Shock Puts U.S. Soybean Exports at Risk",
-      "source": "AgroLatam",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVm1HQTcwT09pZE00MFlFZHBXbkpuQ0MycURnanRCSDJCMnZjd1B1WWlQa1dpLXJ6NzFmc2VpR3lfcUlVOWZiQmFwaHRWdlFqSEhENWI1d2x1M3NYUzV5ODdCcTc0bDFNaXZRLTZtZnhJMHUxOENiRUdMTHE5ckd3aGFR?oc=5",
-      "pubDate": "2026-10-26T15:12:42+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 15:12:42 GMT",
-      "category": "Crops",
-      "hours_ago": 13.68
-    },
-    {
-      "title": "Almond Shell Biochar Facility Planned in California",
-      "source": "AgNet West",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE96QVdpQV84eFR4WS15WU11RFdpZG1mTURMdF9jdDRFWnNWRWN3RmNSanEyMm1VX0Z1elRQeHNuYWxEdXlUUE1lQlR3VUJsWWZHUlZsSm04cy1KMExyX1JZRy1CM3BrbGhVb3JtQV82cnM4UQ?oc=5",
-      "pubDate": "2026-10-26T15:09:53+00:00",
-      "pubDateStr": "Mon, 26 Oct 2026 15:09:53 GMT",
-      "category": "Crops",
-      "hours_ago": 13.73
+      "hours_ago": 17.69
     }
   ]
 }
